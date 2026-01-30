@@ -63,6 +63,10 @@ export const services = sqliteTable('services', {
 	notes: text('notes'),
 	specialInstructions: text('special_instructions'),
 	isConfirmed: integer('is_confirmed', { mode: 'boolean' }).default(false),
+	isBaptism: integer('is_baptism', { mode: 'boolean' }).default(false),
+	isConfirmation: integer('is_confirmation', { mode: 'boolean' }).default(false),
+	isWedding: integer('is_wedding', { mode: 'boolean' }).default(false),
+	isBlessing: integer('is_blessing', { mode: 'boolean' }).default(false),
 	...timestamps
 });
 

@@ -5,41 +5,33 @@ export const Rite = {
 export type Rite = (typeof Rite)[keyof typeof Rite];
 
 export const ServiceType = {
-	SUNDAY_EVENSONG: 'sunday_evensong',
-	THURSDAY_COMPLINE: 'thursday_compline',
-	CHORAL_EUCHARIST: 'choral_eucharist',
+	CHORAL_EVENSONG: 'choral_evensong',
+	COMPLINE: 'compline',
+	SUNG_EUCHARIST: 'sung_eucharist',
 	SAID_EUCHARIST: 'said_eucharist',
 	CHORAL_MATINS: 'choral_matins',
 	MORNING_PRAYER: 'morning_prayer',
 	EVENING_PRAYER: 'evening_prayer',
 	GAUDY_EVENSONG: 'gaudy_evensong',
 	FEAST_DAY: 'feast_day',
-	WEDDING: 'wedding',
-	BLESSING: 'blessing',
 	FUNERAL: 'funeral',
 	MEMORIAL: 'memorial',
-	BAPTISM: 'baptism',
-	CONFIRMATION: 'confirmation',
 	OTHER: 'other'
 } as const;
 export type ServiceType = (typeof ServiceType)[keyof typeof ServiceType];
 
 export const ServiceTypeLabels: Record<ServiceType, string> = {
-	sunday_evensong: 'Sunday Evensong',
-	thursday_compline: 'Thursday Compline',
-	choral_eucharist: 'Choral Eucharist',
+	choral_evensong: 'Choral Evensong',
+	compline: 'Compline',
+	sung_eucharist: 'Sung Eucharist',
 	said_eucharist: 'Said Eucharist',
 	choral_matins: 'Choral Matins',
 	morning_prayer: 'Morning Prayer',
 	evening_prayer: 'Evening Prayer',
 	gaudy_evensong: 'Gaudy Evensong',
 	feast_day: 'Feast Day',
-	wedding: 'Wedding',
-	blessing: 'Blessing',
 	funeral: 'Funeral',
 	memorial: 'Memorial',
-	baptism: 'Baptism',
-	confirmation: 'Confirmation',
 	other: 'Other'
 };
 

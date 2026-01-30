@@ -83,6 +83,10 @@ export const actions: Actions = {
 			notes: (formData.get('notes') as string) || undefined,
 			specialInstructions: (formData.get('specialInstructions') as string) || undefined,
 			isConfirmed: formData.get('isConfirmed') === 'on',
+			isBaptism: formData.get('isBaptism') === 'on',
+			isConfirmation: formData.get('isConfirmation') === 'on',
+			isWedding: formData.get('isWedding') === 'on',
+			isBlessing: formData.get('isBlessing') === 'on',
 			blockId: blockIdStr ? parseInt(blockIdStr, 10) : null
 		});
 

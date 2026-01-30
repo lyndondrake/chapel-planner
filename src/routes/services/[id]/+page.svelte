@@ -104,6 +104,10 @@
 		{:else}
 			<span class="rounded bg-yellow-100 px-2 py-0.5 text-xs text-yellow-800">Draft</span>
 		{/if}
+		{#if data.service.isBaptism}<span class="rounded bg-sky-100 px-2 py-0.5 text-xs text-sky-800">Baptism</span>{/if}
+		{#if data.service.isConfirmation}<span class="rounded bg-violet-100 px-2 py-0.5 text-xs text-violet-800">Confirmation</span>{/if}
+		{#if data.service.isWedding}<span class="rounded bg-pink-100 px-2 py-0.5 text-xs text-pink-800">Wedding</span>{/if}
+		{#if data.service.isBlessing}<span class="rounded bg-emerald-100 px-2 py-0.5 text-xs text-emerald-800">Blessing</span>{/if}
 	</div>
 
 	{#if form?.success}
@@ -237,6 +241,28 @@
 				<input type="checkbox" id="isConfirmed" name="isConfirmed" checked={data.service.isConfirmed ?? false} class="h-4 w-4" />
 				<label for="isConfirmed" class="text-sm font-medium">Confirmed</label>
 			</div>
+
+			<fieldset class="space-y-2">
+				<legend class="text-sm font-medium">Ceremonies</legend>
+				<div class="flex flex-wrap gap-4">
+					<label class="flex items-center gap-2 text-sm">
+						<input type="checkbox" name="isBaptism" checked={data.service.isBaptism ?? false} class="h-4 w-4" />
+						Baptism
+					</label>
+					<label class="flex items-center gap-2 text-sm">
+						<input type="checkbox" name="isConfirmation" checked={data.service.isConfirmation ?? false} class="h-4 w-4" />
+						Confirmation
+					</label>
+					<label class="flex items-center gap-2 text-sm">
+						<input type="checkbox" name="isWedding" checked={data.service.isWedding ?? false} class="h-4 w-4" />
+						Wedding
+					</label>
+					<label class="flex items-center gap-2 text-sm">
+						<input type="checkbox" name="isBlessing" checked={data.service.isBlessing ?? false} class="h-4 w-4" />
+						Blessing
+					</label>
+				</div>
+			</fieldset>
 
 			<div class="flex gap-3">
 				<button type="submit" class="preset-filled-primary-500 rounded px-6 py-2">Save Changes</button>

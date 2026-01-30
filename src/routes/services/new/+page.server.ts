@@ -50,7 +50,11 @@ export const actions: Actions = {
 			liturgicalColour: autoColour,
 			visibility: (formData.get('visibility') as string) || 'college',
 			notes: (formData.get('notes') as string) || undefined,
-			blockId: blockIdStr ? parseInt(blockIdStr, 10) : undefined
+			blockId: blockIdStr ? parseInt(blockIdStr, 10) : undefined,
+			isBaptism: formData.get('isBaptism') === 'on',
+			isConfirmation: formData.get('isConfirmation') === 'on',
+			isWedding: formData.get('isWedding') === 'on',
+			isBlessing: formData.get('isBlessing') === 'on'
 		});
 
 		redirect(303, `/services/${service.id}`);

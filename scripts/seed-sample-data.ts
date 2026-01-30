@@ -95,7 +95,7 @@ console.log(`  Created ${blocks.length} service blocks`);
 const services = [
 	{
 		blockId: 1,
-		serviceType: 'sunday_evensong',
+		serviceType: 'choral_evensong',
 		date: '2025-10-12',
 		time: '18:00',
 		endTime: '19:00',
@@ -109,7 +109,7 @@ const services = [
 	},
 	{
 		blockId: 1,
-		serviceType: 'sunday_evensong',
+		serviceType: 'choral_evensong',
 		date: '2025-10-19',
 		time: '18:00',
 		endTime: '19:00',
@@ -122,7 +122,7 @@ const services = [
 	},
 	{
 		blockId: 1,
-		serviceType: 'sunday_evensong',
+		serviceType: 'choral_evensong',
 		date: '2025-10-26',
 		time: '18:00',
 		endTime: '19:00',
@@ -136,7 +136,7 @@ const services = [
 	},
 	{
 		blockId: 2,
-		serviceType: 'thursday_compline',
+		serviceType: 'compline',
 		date: '2025-10-09',
 		time: '21:30',
 		endTime: '22:00',
@@ -146,7 +146,7 @@ const services = [
 	},
 	{
 		blockId: 2,
-		serviceType: 'thursday_compline',
+		serviceType: 'compline',
 		date: '2025-10-16',
 		time: '21:30',
 		endTime: '22:00',
@@ -155,7 +155,7 @@ const services = [
 		liturgicalColour: 'green'
 	},
 	{
-		serviceType: 'choral_eucharist',
+		serviceType: 'sung_eucharist',
 		date: '2025-10-12',
 		time: '10:00',
 		endTime: '11:00',

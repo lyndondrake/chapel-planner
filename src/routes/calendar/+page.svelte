@@ -12,16 +12,17 @@
 	const dayNames = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
 	const serviceTypeColours: Record<string, string> = {
-		sunday_evensong: 'bg-purple-100 text-purple-800',
-		thursday_compline: 'bg-indigo-100 text-indigo-800',
-		choral_eucharist: 'bg-amber-100 text-amber-800',
+		choral_evensong: 'bg-purple-100 text-purple-800',
+		compline: 'bg-indigo-100 text-indigo-800',
+		sung_eucharist: 'bg-amber-100 text-amber-800',
 		said_eucharist: 'bg-yellow-100 text-yellow-200',
 		choral_matins: 'bg-sky-100 text-sky-800',
 		morning_prayer: 'bg-cyan-100 text-cyan-800',
 		evening_prayer: 'bg-blue-100 text-blue-800',
 		gaudy_evensong: 'bg-fuchsia-100 text-fuchsia-800',
 		feast_day: 'bg-red-100 text-red-800',
-		wedding: 'bg-pink-100 text-pink-800',
+		funeral: 'bg-gray-100 text-gray-800',
+		memorial: 'bg-stone-100 text-stone-800',
 		other: 'bg-surface-700 text-surface-700'
 	};
 
@@ -123,6 +124,10 @@
 											<span class="font-medium">{formatTime(svc.time)}</span>
 										{/if}
 										{svc.title || ServiceTypeLabels[svc.serviceType as keyof typeof ServiceTypeLabels] || svc.serviceType}
+										{#if svc.isBaptism}<span class="text-sky-800" title="Baptism">B</span>{/if}
+										{#if svc.isConfirmation}<span class="text-violet-800" title="Confirmation">C</span>{/if}
+										{#if svc.isWedding}<span class="text-pink-800" title="Wedding">W</span>{/if}
+										{#if svc.isBlessing}<span class="text-emerald-800" title="Blessing">+</span>{/if}
 									</a>
 								{/each}
 							</div>

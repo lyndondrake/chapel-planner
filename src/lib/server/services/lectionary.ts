@@ -128,19 +128,19 @@ export function getReadingsGroupedByContext(date: string, tradition: string = 'c
 
 /**
  * Map a service type to the most appropriate lectionary service context.
- * E.g. choral_eucharist → principal, sunday_evensong → evening_prayer.
+ * E.g. sung_eucharist → principal, choral_evensong → evening_prayer.
  */
 export function serviceTypeToContext(serviceType: string): string {
 	const mapping: Record<string, string> = {
-		choral_eucharist: 'principal',
+		sung_eucharist: 'principal',
 		said_eucharist: 'principal',
 		feast_day: 'principal',
 		morning_prayer: 'morning_prayer',
 		choral_matins: 'morning_prayer',
-		sunday_evensong: 'evening_prayer',
+		choral_evensong: 'evening_prayer',
 		evening_prayer: 'evening_prayer',
 		gaudy_evensong: 'evening_prayer',
-		thursday_compline: 'evening_prayer'
+		compline: 'evening_prayer'
 	};
 	return mapping[serviceType] ?? 'principal';
 }

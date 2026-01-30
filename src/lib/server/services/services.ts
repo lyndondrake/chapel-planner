@@ -19,6 +19,10 @@ export type CreateServiceInput = {
 	notes?: string;
 	specialInstructions?: string;
 	isConfirmed?: boolean;
+	isBaptism?: boolean;
+	isConfirmation?: boolean;
+	isWedding?: boolean;
+	isBlessing?: boolean;
 };
 
 export type UpdateServiceInput = Partial<CreateServiceInput>;
@@ -136,7 +140,11 @@ export function createService(input: CreateServiceInput) {
 			rite: input.rite ?? 'CW',
 			location: input.location ?? 'Chapel',
 			visibility: input.visibility ?? 'college',
-			isConfirmed: input.isConfirmed ?? false
+			isConfirmed: input.isConfirmed ?? false,
+			isBaptism: input.isBaptism ?? false,
+			isConfirmation: input.isConfirmation ?? false,
+			isWedding: input.isWedding ?? false,
+			isBlessing: input.isBlessing ?? false
 		})
 		.returning()
 		.get();

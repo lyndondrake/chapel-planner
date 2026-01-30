@@ -118,6 +118,28 @@
 			</select>
 		</div>
 
+		<fieldset class="space-y-2">
+			<legend class="text-sm font-medium">Ceremonies</legend>
+			<div class="flex flex-wrap gap-4">
+				<label class="flex items-center gap-2 text-sm">
+					<input type="checkbox" name="isBaptism" class="h-4 w-4" />
+					Baptism
+				</label>
+				<label class="flex items-center gap-2 text-sm">
+					<input type="checkbox" name="isConfirmation" class="h-4 w-4" />
+					Confirmation
+				</label>
+				<label class="flex items-center gap-2 text-sm">
+					<input type="checkbox" name="isWedding" class="h-4 w-4" />
+					Wedding
+				</label>
+				<label class="flex items-center gap-2 text-sm">
+					<input type="checkbox" name="isBlessing" class="h-4 w-4" />
+					Blessing
+				</label>
+			</div>
+		</fieldset>
+
 		<div>
 			<label for="notes" class="mb-1 block text-sm font-medium">Notes</label>
 			<textarea id="notes" name="notes" rows="3" class="input w-full rounded border border-surface-300 bg-surface-100 px-3 py-2"></textarea>

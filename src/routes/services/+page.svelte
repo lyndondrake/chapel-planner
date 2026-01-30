@@ -103,7 +103,13 @@
 						<tr class="border-surface-300 hover:bg-surface-100 border-t">
 							<td class="px-4 py-3 text-sm">{formatDate(service.date)}</td>
 							<td class="px-4 py-3 text-sm">{formatTime(service.time)}</td>
-							<td class="px-4 py-3 text-sm hidden sm:table-cell">{ServiceTypeLabels[service.serviceType as keyof typeof ServiceTypeLabels] ?? service.serviceType}</td>
+							<td class="px-4 py-3 text-sm hidden sm:table-cell">
+							{ServiceTypeLabels[service.serviceType as keyof typeof ServiceTypeLabels] ?? service.serviceType}
+							{#if service.isBaptism}<span class="ml-1 rounded bg-sky-100 px-1.5 py-0.5 text-xs text-sky-800">Baptism</span>{/if}
+							{#if service.isConfirmation}<span class="ml-1 rounded bg-violet-100 px-1.5 py-0.5 text-xs text-violet-800">Confirmation</span>{/if}
+							{#if service.isWedding}<span class="ml-1 rounded bg-pink-100 px-1.5 py-0.5 text-xs text-pink-800">Wedding</span>{/if}
+							{#if service.isBlessing}<span class="ml-1 rounded bg-emerald-100 px-1.5 py-0.5 text-xs text-emerald-800">Blessing</span>{/if}
+						</td>
 							<td class="px-4 py-3 text-sm">
 								<a href="/services/{service.id}" class="text-primary-600 hover:underline">
 									{service.title || service.liturgicalDay || ServiceTypeLabels[service.serviceType as keyof typeof ServiceTypeLabels] || 'Service'}
