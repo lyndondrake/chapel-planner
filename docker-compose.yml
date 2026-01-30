@@ -1,0 +1,16 @@
+services:
+  chapel-planner:
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - chapel-data:/app/data
+    environment:
+      - NODE_ENV=production
+      - ORIGIN=http://localhost:3000
+      - PORT=3000
+      - DATABASE_PATH=/app/data/chapel.db
+    restart: unless-stopped
+
+volumes:
+  chapel-data:

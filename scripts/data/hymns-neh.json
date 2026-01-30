@@ -1,0 +1,674 @@
+[
+  {
+    "title": "O come, O come, Emmanuel",
+    "hymnalName": "NEH",
+    "hymnNumber": "11",
+    "author": "Latin, 18th century, tr. J. M. Neale and others",
+    "tune": "VENI EMMANUEL",
+    "metre": "88.88.88"
+  },
+  {
+    "title": "Lo, he comes with clouds descending",
+    "hymnalName": "NEH",
+    "hymnNumber": "9",
+    "author": "Charles Wesley and John Cennick",
+    "tune": "HELMSLEY",
+    "metre": "87.87.47"
+  },
+  {
+    "title": "Come, thou long-expected Jesus",
+    "hymnalName": "NEH",
+    "hymnNumber": "3",
+    "author": "Charles Wesley",
+    "tune": "CROSS OF JESUS",
+    "metre": "87.87"
+  },
+  {
+    "title": "Hark the glad sound! the Saviour comes",
+    "hymnalName": "NEH",
+    "hymnNumber": "6",
+    "author": "Philip Doddridge",
+    "tune": "BRISTOL",
+    "metre": "CM"
+  },
+  {
+    "title": "On Jordan's bank the Baptist's cry",
+    "hymnalName": "NEH",
+    "hymnNumber": "12",
+    "author": "Charles Coffin, tr. John Chandler",
+    "tune": "WINCHESTER NEW",
+    "metre": "LM"
+  },
+  {
+    "title": "Hills of the North, rejoice",
+    "hymnalName": "NEH",
+    "hymnNumber": "7",
+    "author": "Charles E. Oakley",
+    "tune": "LITTLE CORNARD",
+    "metre": "66.66.88"
+  },
+  {
+    "title": "O come, all ye faithful",
+    "hymnalName": "NEH",
+    "hymnNumber": "32",
+    "author": "Latin, 18th century, tr. Frederick Oakeley and others",
+    "tune": "ADESTE FIDELES",
+    "metre": "Irregular"
+  },
+  {
+    "title": "Hark! the herald angels sing",
+    "hymnalName": "NEH",
+    "hymnNumber": "26",
+    "author": "Charles Wesley and others",
+    "tune": "MENDELSSOHN",
+    "metre": "77.77.D"
+  },
+  {
+    "title": "Once in royal David's city",
+    "hymnalName": "NEH",
+    "hymnNumber": "34",
+    "author": "Cecil Frances Alexander",
+    "tune": "IRBY",
+    "metre": "87.87.77"
+  },
+  {
+    "title": "Silent night, holy night",
+    "hymnalName": "NEH",
+    "hymnNumber": "38",
+    "author": "Joseph Mohr, tr. John Freeman Young",
+    "tune": "STILLE NACHT",
+    "metre": "Irregular"
+  },
+  {
+    "title": "O little town of Bethlehem",
+    "hymnalName": "NEH",
+    "hymnNumber": "33",
+    "author": "Phillips Brooks",
+    "tune": "FOREST GREEN",
+    "metre": "86.86.D"
+  },
+  {
+    "title": "While shepherds watched their flocks by night",
+    "hymnalName": "NEH",
+    "hymnNumber": "40",
+    "author": "Nahum Tate",
+    "tune": "WINCHESTER OLD",
+    "metre": "CM"
+  },
+  {
+    "title": "In the bleak midwinter",
+    "hymnalName": "NEH",
+    "hymnNumber": "29",
+    "author": "Christina Rossetti",
+    "tune": "CRANHAM",
+    "metre": "Irregular"
+  },
+  {
+    "title": "Of the Father's love begotten",
+    "hymnalName": "NEH",
+    "hymnNumber": "36",
+    "author": "Aurelius Clemens Prudentius, tr. J. M. Neale and H. W. Baker",
+    "tune": "DIVINUM MYSTERIUM",
+    "metre": "87.87.87.7"
+  },
+  {
+    "title": "As with gladness men of old",
+    "hymnalName": "NEH",
+    "hymnNumber": "47",
+    "author": "William Chatterton Dix",
+    "tune": "DIX",
+    "metre": "77.77.77"
+  },
+  {
+    "title": "Brightest and best of the sons of the morning",
+    "hymnalName": "NEH",
+    "hymnNumber": "48",
+    "author": "Reginald Heber",
+    "tune": "EPIPHANY",
+    "metre": "11 10.11 10"
+  },
+  {
+    "title": "Songs of thankfulness and praise",
+    "hymnalName": "NEH",
+    "hymnNumber": "56",
+    "author": "Christopher Wordsworth",
+    "tune": "ST EDMUND",
+    "metre": "77.77.77"
+  },
+  {
+    "title": "Forty days and forty nights",
+    "hymnalName": "NEH",
+    "hymnNumber": "67",
+    "author": "George Hunt Smyttan",
+    "tune": "AUS DER TIEFE",
+    "metre": "77.77"
+  },
+  {
+    "title": "Lord Jesus, think on me",
+    "hymnalName": "NEH",
+    "hymnNumber": "70",
+    "author": "Synesius of Cyrene, tr. Allen W. Chatfield",
+    "tune": "SOUTHWELL",
+    "metre": "SM"
+  },
+  {
+    "title": "O sacred head, sore wounded",
+    "hymnalName": "NEH",
+    "hymnNumber": "90",
+    "author": "Paul Gerhardt, after Latin, tr. Robert Bridges",
+    "tune": "PASSION CHORALE",
+    "metre": "76.76.D"
+  },
+  {
+    "title": "There is a green hill far away",
+    "hymnalName": "NEH",
+    "hymnNumber": "92",
+    "author": "Cecil Frances Alexander",
+    "tune": "HORSLEY",
+    "metre": "CM"
+  },
+  {
+    "title": "My song is love unknown",
+    "hymnalName": "NEH",
+    "hymnNumber": "86",
+    "author": "Samuel Crossman",
+    "tune": "LOVE UNKNOWN",
+    "metre": "66.66.44.44"
+  },
+  {
+    "title": "When I survey the wondrous cross",
+    "hymnalName": "NEH",
+    "hymnNumber": "95",
+    "author": "Isaac Watts",
+    "tune": "ROCKINGHAM",
+    "metre": "LM"
+  },
+  {
+    "title": "Ride on! ride on in majesty",
+    "hymnalName": "NEH",
+    "hymnNumber": "91",
+    "author": "Henry Hart Milman",
+    "tune": "WINCHESTER NEW",
+    "metre": "LM"
+  },
+  {
+    "title": "All glory, laud, and honour",
+    "hymnalName": "NEH",
+    "hymnNumber": "509",
+    "author": "Theodulph of Orleans, tr. J. M. Neale",
+    "tune": "ST THEODULPH",
+    "metre": "76.76.D"
+  },
+  {
+    "title": "Drop, drop, slow tears",
+    "hymnalName": "NEH",
+    "hymnNumber": "78",
+    "author": "Phineas Fletcher",
+    "tune": "SONG 46",
+    "metre": "Irregular"
+  },
+  {
+    "title": "Jesus Christ is risen today",
+    "hymnalName": "NEH",
+    "hymnNumber": "110",
+    "author": "Latin, 14th century, tr. Tate and Brady",
+    "tune": "EASTER HYMN",
+    "metre": "77.77 and Alleluias"
+  },
+  {
+    "title": "The day of resurrection!",
+    "hymnalName": "NEH",
+    "hymnNumber": "117",
+    "author": "John of Damascus, tr. J. M. Neale",
+    "tune": "ELLACOMBE",
+    "metre": "76.76.D"
+  },
+  {
+    "title": "Thine be the glory, risen, conquering Son",
+    "hymnalName": "NEH",
+    "hymnNumber": "120",
+    "author": "Edmond Budry, tr. Richard Birch Hoyle",
+    "tune": "MACCABAEUS",
+    "metre": "55.65.65.65 and refrain"
+  },
+  {
+    "title": "The strife is o'er, the battle done",
+    "hymnalName": "NEH",
+    "hymnNumber": "119",
+    "author": "Latin, 17th century, tr. Francis Pott",
+    "tune": "VICTORY",
+    "metre": "888 and Alleluias"
+  },
+  {
+    "title": "Ye choirs of new Jerusalem",
+    "hymnalName": "NEH",
+    "hymnNumber": "125",
+    "author": "Fulbert of Chartres, tr. Robert Campbell",
+    "tune": "ST FULBERT",
+    "metre": "CM"
+  },
+  {
+    "title": "Love's redeeming work is done",
+    "hymnalName": "NEH",
+    "hymnNumber": "113",
+    "author": "Charles Wesley",
+    "tune": "SAVANNAH",
+    "metre": "77.77"
+  },
+  {
+    "title": "Alleluia! Alleluia! Hearts to heaven and voices raise",
+    "hymnalName": "NEH",
+    "hymnNumber": "103",
+    "author": "Christopher Wordsworth",
+    "tune": "LUX EOI",
+    "metre": "87.87.D"
+  },
+  {
+    "title": "Hail the day that sees him rise",
+    "hymnalName": "NEH",
+    "hymnNumber": "130",
+    "author": "Charles Wesley",
+    "tune": "LLANFAIR",
+    "metre": "77.77 and Alleluias"
+  },
+  {
+    "title": "Come down, O Love divine",
+    "hymnalName": "NEH",
+    "hymnNumber": "137",
+    "author": "Bianco da Siena, tr. Richard Frederick Littledale",
+    "tune": "DOWN AMPNEY",
+    "metre": "66.11.D"
+  },
+  {
+    "title": "Come, Holy Ghost, our souls inspire",
+    "hymnalName": "NEH",
+    "hymnNumber": "138",
+    "author": "Latin, 9th century, tr. John Cosin",
+    "tune": "VENI CREATOR",
+    "metre": "LM"
+  },
+  {
+    "title": "Breathe on me, Breath of God",
+    "hymnalName": "NEH",
+    "hymnNumber": "342",
+    "author": "Edwin Hatch",
+    "tune": "CARLISLE",
+    "metre": "SM"
+  },
+  {
+    "title": "Holy, holy, holy! Lord God almighty",
+    "hymnalName": "NEH",
+    "hymnNumber": "146",
+    "author": "Reginald Heber",
+    "tune": "NICAEA",
+    "metre": "11 12.12 10"
+  },
+  {
+    "title": "Immortal, invisible, God only wise",
+    "hymnalName": "NEH",
+    "hymnNumber": "199",
+    "author": "Walter Chalmers Smith",
+    "tune": "ST DENIO",
+    "metre": "11 11.11 11"
+  },
+  {
+    "title": "Praise, my soul, the King of heaven",
+    "hymnalName": "NEH",
+    "hymnNumber": "436",
+    "author": "Henry Francis Lyte",
+    "tune": "PRAISE MY SOUL",
+    "metre": "87.87.87"
+  },
+  {
+    "title": "All people that on earth do dwell",
+    "hymnalName": "NEH",
+    "hymnNumber": "334",
+    "author": "William Kethe",
+    "tune": "OLD HUNDREDTH",
+    "metre": "LM"
+  },
+  {
+    "title": "Guide me, O thou great Redeemer",
+    "hymnalName": "NEH",
+    "hymnNumber": "368",
+    "author": "William Williams, tr. Peter Williams",
+    "tune": "CWM RHONDDA",
+    "metre": "87.87.87.87"
+  },
+  {
+    "title": "Love divine, all loves excelling",
+    "hymnalName": "NEH",
+    "hymnNumber": "408",
+    "author": "Charles Wesley",
+    "tune": "BLAENWERN",
+    "metre": "87.87.D"
+  },
+  {
+    "title": "The Lord's my shepherd, I'll not want",
+    "hymnalName": "NEH",
+    "hymnNumber": "459",
+    "author": "Scottish Psalter, 1650",
+    "tune": "CRIMOND",
+    "metre": "CM"
+  },
+  {
+    "title": "Dear Lord and Father of mankind",
+    "hymnalName": "NEH",
+    "hymnNumber": "353",
+    "author": "John Greenleaf Whittier",
+    "tune": "REPTON",
+    "metre": "86.886"
+  },
+  {
+    "title": "All creatures of our God and King",
+    "hymnalName": "NEH",
+    "hymnNumber": "263",
+    "author": "Francis of Assisi, tr. William Henry Draper",
+    "tune": "LASST UNS ERFREUEN",
+    "metre": "88.44.88 and Alleluias"
+  },
+  {
+    "title": "Praise to the Holiest in the height",
+    "hymnalName": "NEH",
+    "hymnNumber": "439",
+    "author": "John Henry Newman",
+    "tune": "GERONTIUS",
+    "metre": "CM"
+  },
+  {
+    "title": "O worship the King, all-glorious above",
+    "hymnalName": "NEH",
+    "hymnNumber": "433",
+    "author": "Robert Grant",
+    "tune": "HANOVER",
+    "metre": "10 10.11 11"
+  },
+  {
+    "title": "Lead, kindly Light, amid the encircling gloom",
+    "hymnalName": "NEH",
+    "hymnNumber": "392",
+    "author": "John Henry Newman",
+    "tune": "ALBERTA",
+    "metre": "10 4.10 4.10 10"
+  },
+  {
+    "title": "Abide with me; fast falls the eventide",
+    "hymnalName": "NEH",
+    "hymnNumber": "331",
+    "author": "Henry Francis Lyte",
+    "tune": "EVENTIDE",
+    "metre": "10 10.10 10"
+  },
+  {
+    "title": "The day thou gavest, Lord, is ended",
+    "hymnalName": "NEH",
+    "hymnNumber": "252",
+    "author": "John Ellerton",
+    "tune": "ST CLEMENT",
+    "metre": "98.98"
+  },
+  {
+    "title": "Glorious things of thee are spoken",
+    "hymnalName": "NEH",
+    "hymnNumber": "362",
+    "author": "John Newton",
+    "tune": "AUSTRIA",
+    "metre": "87.87.D"
+  },
+  {
+    "title": "For all the saints who from their labours rest",
+    "hymnalName": "NEH",
+    "hymnNumber": "197",
+    "author": "William Walsham How",
+    "tune": "SINE NOMINE",
+    "metre": "10 10.10 and Alleluias"
+  },
+  {
+    "title": "Firmly I believe and truly",
+    "hymnalName": "NEH",
+    "hymnNumber": "359",
+    "author": "John Henry Newman",
+    "tune": "SHIPSTON",
+    "metre": "87.87"
+  },
+  {
+    "title": "O God, our help in ages past",
+    "hymnalName": "NEH",
+    "hymnNumber": "417",
+    "author": "Isaac Watts",
+    "tune": "ST ANNE",
+    "metre": "CM"
+  },
+  {
+    "title": "Eternal Father, strong to save",
+    "hymnalName": "NEH",
+    "hymnNumber": "354",
+    "author": "William Whiting",
+    "tune": "MELITA",
+    "metre": "88.88.88"
+  },
+  {
+    "title": "Angel voices, ever singing",
+    "hymnalName": "NEH",
+    "hymnNumber": "336",
+    "author": "Francis Pott",
+    "tune": "ANGEL VOICES",
+    "metre": "85.85.843"
+  },
+  {
+    "title": "Awake, my soul, and with the sun",
+    "hymnalName": "NEH",
+    "hymnNumber": "257",
+    "author": "Thomas Ken",
+    "tune": "MORNING HYMN",
+    "metre": "LM"
+  },
+  {
+    "title": "Christ is made the sure foundation",
+    "hymnalName": "NEH",
+    "hymnNumber": "205",
+    "author": "Latin, 7th century, tr. J. M. Neale",
+    "tune": "WESTMINSTER ABBEY",
+    "metre": "87.87.87"
+  },
+  {
+    "title": "Be thou my vision, O Lord of my heart",
+    "hymnalName": "NEH",
+    "hymnNumber": "339",
+    "author": "Irish, 8th century, tr. Mary Byrne, versified Eleanor Hull",
+    "tune": "SLANE",
+    "metre": "10 10.10 10"
+  },
+  {
+    "title": "Lord of all hopefulness, Lord of all joy",
+    "hymnalName": "NEH",
+    "hymnNumber": "239",
+    "author": "Jan Struther",
+    "tune": "SLANE",
+    "metre": "10 10.10 10"
+  },
+  {
+    "title": "Alleluia, sing to Jesus!",
+    "hymnalName": "NEH",
+    "hymnNumber": "271",
+    "author": "William Chatterton Dix",
+    "tune": "HYFRYDOL",
+    "metre": "87.87.D"
+  },
+  {
+    "title": "Soul of my Saviour, sanctify my breast",
+    "hymnalName": "NEH",
+    "hymnNumber": "306",
+    "author": "Latin, 14th century, tr. anonymous",
+    "tune": "ANIMA CHRISTI",
+    "metre": "10 10.10 10"
+  },
+  {
+    "title": "O praise ye the Lord!",
+    "hymnalName": "NEH",
+    "hymnNumber": "427",
+    "author": "Henry Williams Baker",
+    "tune": "LAUDATE DOMINUM",
+    "metre": "10 10.11 11"
+  },
+  {
+    "title": "Now thank we all our God",
+    "hymnalName": "NEH",
+    "hymnNumber": "413",
+    "author": "Martin Rinkart, tr. Catherine Winkworth",
+    "tune": "NUN DANKET",
+    "metre": "67.67.66.66"
+  },
+  {
+    "title": "Morning has broken",
+    "hymnalName": "NEH",
+    "hymnNumber": "237",
+    "author": "Eleanor Farjeon",
+    "tune": "BUNESSAN",
+    "metre": "54.54.D"
+  },
+  {
+    "title": "Tell out, my soul, the greatness of the Lord",
+    "hymnalName": "NEH",
+    "hymnNumber": "186",
+    "author": "Timothy Dudley-Smith",
+    "tune": "WOODLANDS",
+    "metre": "10 10.10 10"
+  },
+  {
+    "title": "Let all mortal flesh keep silence",
+    "hymnalName": "NEH",
+    "hymnNumber": "295",
+    "author": "Liturgy of St James, tr. Gerard Moultrie",
+    "tune": "PICARDY",
+    "metre": "87.87.87"
+  },
+  {
+    "title": "Jerusalem the golden",
+    "hymnalName": "NEH",
+    "hymnNumber": "381",
+    "author": "Bernard of Cluny, tr. J. M. Neale",
+    "tune": "EWING",
+    "metre": "76.76.D"
+  },
+  {
+    "title": "God, that madest earth and heaven",
+    "hymnalName": "NEH",
+    "hymnNumber": "249",
+    "author": "Reginald Heber and others",
+    "tune": "AR HYD Y NOS",
+    "metre": "84.84.88.84"
+  },
+  {
+    "title": "The Church's one foundation",
+    "hymnalName": "NEH",
+    "hymnNumber": "484",
+    "author": "Samuel John Stone",
+    "tune": "AURELIA",
+    "metre": "76.76.D"
+  },
+  {
+    "title": "Lord, enthroned in heavenly splendour",
+    "hymnalName": "NEH",
+    "hymnNumber": "296",
+    "author": "George Hugh Bourne",
+    "tune": "ST HELEN",
+    "metre": "87.87.D"
+  },
+  {
+    "title": "Thy hand, O God, has guided",
+    "hymnalName": "NEH",
+    "hymnNumber": "485",
+    "author": "Edward Hayes Plumptre",
+    "tune": "THORNBURY",
+    "metre": "76.76.D"
+  },
+  {
+    "title": "Fight the good fight with all thy might",
+    "hymnalName": "NEH",
+    "hymnNumber": "357",
+    "author": "John Samuel Bewley Monsell",
+    "tune": "DUKE STREET",
+    "metre": "LM"
+  },
+  {
+    "title": "Ye holy angels bright",
+    "hymnalName": "NEH",
+    "hymnNumber": "475",
+    "author": "Richard Baxter and John Hampden Gurney",
+    "tune": "DARWALL'S 148TH",
+    "metre": "66.66.44.44"
+  },
+  {
+    "title": "Bright the vision that delighted",
+    "hymnalName": "NEH",
+    "hymnNumber": "343",
+    "author": "Richard Mant",
+    "tune": "LAUS DEO",
+    "metre": "87.87.D"
+  },
+  {
+    "title": "Just as I am, without one plea",
+    "hymnalName": "NEH",
+    "hymnNumber": "294",
+    "author": "Charlotte Elliott",
+    "tune": "SAFFRON WALDEN",
+    "metre": "88.86"
+  },
+  {
+    "title": "Ye servants of God, your Master proclaim",
+    "hymnalName": "NEH",
+    "hymnNumber": "476",
+    "author": "Charles Wesley",
+    "tune": "PADERBORN",
+    "metre": "10 10.11 11"
+  },
+  {
+    "title": "O Jesus, I have promised",
+    "hymnalName": "NEH",
+    "hymnNumber": "420",
+    "author": "John Ernest Bode",
+    "tune": "WOLVERCOTE",
+    "metre": "76.76.D"
+  },
+  {
+    "title": "King of glory, King of peace",
+    "hymnalName": "NEH",
+    "hymnNumber": "391",
+    "author": "George Herbert",
+    "tune": "GWALCHMAI",
+    "metre": "74.74.D"
+  },
+  {
+    "title": "Lord, for the years your love has kept and guided",
+    "hymnalName": "NEH",
+    "hymnNumber": "483",
+    "author": "Timothy Dudley-Smith",
+    "tune": "LORD OF THE YEARS",
+    "metre": "11 10.11 10"
+  },
+  {
+    "title": "And did those feet in ancient time",
+    "hymnalName": "NEH",
+    "hymnNumber": "488",
+    "author": "William Blake",
+    "tune": "JERUSALEM",
+    "metre": "Irregular"
+  },
+  {
+    "title": "Ye watchers and ye holy ones",
+    "hymnalName": "NEH",
+    "hymnNumber": "478",
+    "author": "J. Athelstan Riley",
+    "tune": "LASST UNS ERFREUEN",
+    "metre": "88.44.88 and Alleluias"
+  },
+  {
+    "title": "How shall I sing that majesty",
+    "hymnalName": "NEH",
+    "hymnNumber": "373",
+    "author": "John Mason",
+    "tune": "COE FEN",
+    "metre": "86.86.88"
+  }
+]

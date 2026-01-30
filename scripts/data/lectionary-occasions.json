@@ -1,0 +1,651 @@
+[
+  {
+    "name": "First Sunday of Advent",
+    "slug": "advent-1",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Second Sunday of Advent",
+    "slug": "advent-2",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Third Sunday of Advent",
+    "slug": "advent-3",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Fourth Sunday of Advent",
+    "slug": "advent-4",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Christmas Day",
+    "slug": "christmas-day",
+    "season": "christmas",
+    "colour": "gold",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 25,
+    "priority": 100
+  },
+  {
+    "name": "First Sunday of Christmas",
+    "slug": "christmas-1",
+    "season": "christmas",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Second Sunday of Christmas",
+    "slug": "christmas-2",
+    "season": "christmas",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "The Epiphany",
+    "slug": "epiphany",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 1,
+    "fixedDay": 6,
+    "priority": 100
+  },
+  {
+    "name": "The Baptism of Christ (First Sunday of Epiphany)",
+    "slug": "epiphany-1",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Second Sunday of Epiphany",
+    "slug": "epiphany-2",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Third Sunday of Epiphany",
+    "slug": "epiphany-3",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Fourth Sunday of Epiphany",
+    "slug": "epiphany-4",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "The Presentation of Christ in the Temple (Candlemas)",
+    "slug": "candlemas",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 2,
+    "fixedDay": 2,
+    "priority": 100
+  },
+  {
+    "name": "Proper 1",
+    "slug": "proper-1",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 2",
+    "slug": "proper-2",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 3",
+    "slug": "proper-3",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Second Sunday before Lent",
+    "slug": "before-lent-2",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Sunday next before Lent",
+    "slug": "before-lent-1",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Ash Wednesday",
+    "slug": "ash-wednesday",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "dayOfWeek": 3,
+    "priority": 80
+  },
+  {
+    "name": "First Sunday of Lent",
+    "slug": "lent-1",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Second Sunday of Lent",
+    "slug": "lent-2",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Third Sunday of Lent",
+    "slug": "lent-3",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Fourth Sunday of Lent (Mothering Sunday)",
+    "slug": "lent-4",
+    "season": "lent",
+    "colour": "rose",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Fifth Sunday of Lent (Passiontide begins)",
+    "slug": "lent-5",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Palm Sunday",
+    "slug": "palm-sunday",
+    "season": "holy_week",
+    "colour": "red",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 0,
+    "priority": 90
+  },
+  {
+    "name": "Monday of Holy Week",
+    "slug": "holy-monday",
+    "season": "holy_week",
+    "colour": "red",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 1,
+    "priority": 80
+  },
+  {
+    "name": "Tuesday of Holy Week",
+    "slug": "holy-tuesday",
+    "season": "holy_week",
+    "colour": "red",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 2,
+    "priority": 80
+  },
+  {
+    "name": "Wednesday of Holy Week",
+    "slug": "holy-wednesday",
+    "season": "holy_week",
+    "colour": "red",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 3,
+    "priority": 80
+  },
+  {
+    "name": "Maundy Thursday",
+    "slug": "maundy-thursday",
+    "season": "holy_week",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 4,
+    "priority": 100
+  },
+  {
+    "name": "Good Friday",
+    "slug": "good-friday",
+    "season": "holy_week",
+    "colour": "red",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 5,
+    "priority": 100
+  },
+  {
+    "name": "Easter Eve (Holy Saturday)",
+    "slug": "easter-eve",
+    "season": "holy_week",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 6,
+    "priority": 100
+  },
+  {
+    "name": "Easter Day",
+    "slug": "easter-day",
+    "season": "easter",
+    "colour": "gold",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 0,
+    "priority": 100
+  },
+  {
+    "name": "Second Sunday of Easter",
+    "slug": "easter-2",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Third Sunday of Easter",
+    "slug": "easter-3",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Fourth Sunday of Easter",
+    "slug": "easter-4",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Fifth Sunday of Easter",
+    "slug": "easter-5",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Sixth Sunday of Easter",
+    "slug": "easter-6",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Ascension Day",
+    "slug": "ascension-day",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "dayOfWeek": 4,
+    "priority": 100
+  },
+  {
+    "name": "Seventh Sunday of Easter (Sunday after Ascension Day)",
+    "slug": "easter-7",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Day of Pentecost (Whit Sunday)",
+    "slug": "pentecost",
+    "season": "pentecost",
+    "colour": "red",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 100
+  },
+  {
+    "name": "Trinity Sunday",
+    "slug": "trinity-sunday",
+    "season": "trinity",
+    "colour": "white",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 100
+  },
+  {
+    "name": "Proper 4",
+    "slug": "proper-4",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 5",
+    "slug": "proper-5",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 6",
+    "slug": "proper-6",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 7",
+    "slug": "proper-7",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 8",
+    "slug": "proper-8",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 9",
+    "slug": "proper-9",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 10",
+    "slug": "proper-10",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 11",
+    "slug": "proper-11",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 12",
+    "slug": "proper-12",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 13",
+    "slug": "proper-13",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 14",
+    "slug": "proper-14",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 15",
+    "slug": "proper-15",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 16",
+    "slug": "proper-16",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 17",
+    "slug": "proper-17",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 18",
+    "slug": "proper-18",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 19",
+    "slug": "proper-19",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 20",
+    "slug": "proper-20",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 21",
+    "slug": "proper-21",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 22",
+    "slug": "proper-22",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 23",
+    "slug": "proper-23",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 24",
+    "slug": "proper-24",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Proper 25",
+    "slug": "proper-25",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "All Saints' Day",
+    "slug": "all-saints",
+    "season": "kingdom",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 1,
+    "priority": 100
+  },
+  {
+    "name": "Fourth Sunday before Advent",
+    "slug": "kingdom-4",
+    "season": "kingdom",
+    "colour": "red",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Third Sunday before Advent",
+    "slug": "kingdom-3",
+    "season": "kingdom",
+    "colour": "red",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Second Sunday before Advent",
+    "slug": "kingdom-2",
+    "season": "kingdom",
+    "colour": "red",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Christ the King (Sunday next before Advent)",
+    "slug": "christ-the-king",
+    "season": "kingdom",
+    "colour": "red",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 0,
+    "priority": 50
+  }
+]
