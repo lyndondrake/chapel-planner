@@ -1,6 +1,11 @@
 import { eq, and } from 'drizzle-orm';
 import { db, lectionaryOccasions, lectionaryReadings, lectionaryDateMap } from '../db';
-import { getLiturgicalSeason, getLiturgicalYear, toISODate } from '$lib/utils/liturgical-date';
+import {
+	getLiturgicalSeason,
+	getLiturgicalYear,
+	getOfficeCycleYear,
+	toISODate
+} from '$lib/utils/liturgical-date';
 
 /**
  * Look up the lectionary occasion for a given date.
@@ -56,7 +61,8 @@ export function getReadingsForOccasion(
 	occasionId: number,
 	tradition: string = 'cw',
 	liturgicalYear?: string | null,
-	serviceContext?: string | null
+	serviceContext?: string | null,
+	officeCycleYear?: string | null
 ) {
 	let readings = db
 		.select()
@@ -69,10 +75,13 @@ export function getReadingsForOccasion(
 		)
 		.all();
 
-	// Filter by liturgical year: include readings for this year or those without a year specification
+	// Filter by liturgical year (A/B/C) and office cycle year (1/2)
 	if (liturgicalYear) {
 		readings = readings.filter(
-			(r) => !r.alternateYear || r.alternateYear === liturgicalYear
+			(r) =>
+				!r.alternateYear ||
+				r.alternateYear === liturgicalYear ||
+				(officeCycleYear && r.alternateYear === officeCycleYear)
 		);
 	}
 
@@ -104,10 +113,15 @@ export function getReadingsGroupedByContext(date: string, tradition: string = 'c
 		)
 		.all();
 
-	// Filter by liturgical year
+	// Filter by liturgical year (A/B/C for principal) and office cycle year (1/2 for office/eucharist)
 	const litYear = occasion.liturgicalYear;
+	const dateObj = new Date(date + 'T12:00:00');
+	const officeYear = getOfficeCycleYear(dateObj);
 	const filtered = allReadings.filter(
-		(r) => !r.alternateYear || r.alternateYear === litYear
+		(r) =>
+			!r.alternateYear ||
+			r.alternateYear === litYear ||
+			r.alternateYear === officeYear
 	);
 
 	// Group by service context
@@ -157,11 +171,14 @@ export function getReadingsForDateAndContext(
 	const occasion = getOccasionByDate(date);
 	if (!occasion) return { occasion: null, readings: [] };
 
+	const dateObj = new Date(date + 'T12:00:00');
+	const officeYear = getOfficeCycleYear(dateObj);
 	const readings = getReadingsForOccasion(
 		occasion.id,
 		tradition,
 		occasion.liturgicalYear,
-		serviceContext
+		serviceContext,
+		officeYear
 	);
 	return { occasion, readings };
 }
@@ -174,7 +191,9 @@ export function getReadingsForDate(date: string, tradition: string = 'cw') {
 	const occasion = getOccasionByDate(date);
 	if (!occasion) return { occasion: null, readings: [] };
 
-	const readings = getReadingsForOccasion(occasion.id, tradition, occasion.liturgicalYear);
+	const dateObj = new Date(date + 'T12:00:00');
+	const officeYear = getOfficeCycleYear(dateObj);
+	const readings = getReadingsForOccasion(occasion.id, tradition, occasion.liturgicalYear, null, officeYear);
 	return { occasion, readings };
 }
 

@@ -166,6 +166,20 @@ export function getLiturgicalSeason(
 }
 
 /**
+ * Determine the weekday office/eucharist cycle year (1 or 2) for a given date.
+ * The office lectionary alternates on a 2-year cycle aligned with the liturgical year.
+ * Odd liturgical years (starting from Advent) = Year 1.
+ */
+export function getOfficeCycleYear(date: Date): '1' | '2' {
+	let year = date.getFullYear();
+	const adventSunday = getAdventSunday(year);
+	if (date < adventSunday) {
+		year = year - 1;
+	}
+	return year % 2 === 1 ? '1' : '2';
+}
+
+/**
  * Determine the RCL liturgical year for a given date.
  * Year A when year % 3 === 1, B when === 2, C when === 0.
  * The liturgical year begins on Advent Sunday.

@@ -63,7 +63,8 @@ console.log(`  Inserted ${Object.keys(slugToId).length} occasions.`);
 const readingFiles = [
 	'scripts/data/lectionary-readings-cw-principal.json',
 	'scripts/data/lectionary-readings-cw-office.json',
-	'scripts/data/lectionary-readings-bcp-office.json'
+	'scripts/data/lectionary-readings-cw-eucharist.json',
+	'scripts/data/lectionary-readings-bcp-hc.json'
 ];
 
 let readingsInserted = 0;
