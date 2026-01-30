@@ -12,17 +12,17 @@
 	const dayNames = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
 	const serviceTypeColours: Record<string, string> = {
-		sunday_evensong: 'bg-purple-900 text-purple-200',
-		thursday_compline: 'bg-indigo-900 text-indigo-200',
-		choral_eucharist: 'bg-amber-900 text-amber-200',
-		said_eucharist: 'bg-yellow-900 text-yellow-200',
-		choral_matins: 'bg-sky-900 text-sky-200',
-		morning_prayer: 'bg-cyan-900 text-cyan-200',
-		evening_prayer: 'bg-blue-900 text-blue-200',
-		gaudy_evensong: 'bg-fuchsia-900 text-fuchsia-200',
-		feast_day: 'bg-red-900 text-red-200',
-		wedding: 'bg-pink-900 text-pink-200',
-		other: 'bg-surface-700 text-surface-200'
+		sunday_evensong: 'bg-purple-100 text-purple-800',
+		thursday_compline: 'bg-indigo-100 text-indigo-800',
+		choral_eucharist: 'bg-amber-100 text-amber-800',
+		said_eucharist: 'bg-yellow-100 text-yellow-200',
+		choral_matins: 'bg-sky-100 text-sky-800',
+		morning_prayer: 'bg-cyan-100 text-cyan-800',
+		evening_prayer: 'bg-blue-100 text-blue-800',
+		gaudy_evensong: 'bg-fuchsia-100 text-fuchsia-800',
+		feast_day: 'bg-red-100 text-red-800',
+		wedding: 'bg-pink-100 text-pink-800',
+		other: 'bg-surface-700 text-surface-700'
 	};
 
 	function getColour(serviceType: string) {
@@ -85,30 +85,30 @@
 		<div class="flex items-center gap-3">
 			<a
 				href="/calendar?year={prevMonth.year}&month={prevMonth.month}"
-				class="text-surface-400 hover:text-surface-200 rounded border border-surface-600 px-3 py-1"
+				class="text-surface-500 hover:text-surface-700 rounded border border-surface-300 px-3 py-1"
 			>&larr;</a>
 			<span class="text-lg font-semibold">{monthNames[data.month - 1]} {data.year}</span>
 			<a
 				href="/calendar?year={nextMonth.year}&month={nextMonth.month}"
-				class="text-surface-400 hover:text-surface-200 rounded border border-surface-600 px-3 py-1"
+				class="text-surface-500 hover:text-surface-700 rounded border border-surface-300 px-3 py-1"
 			>&rarr;</a>
 		</div>
 	</div>
 
-	<div class="overflow-hidden rounded-lg border border-surface-700">
+	<div class="overflow-hidden rounded-lg border border-surface-300">
 		<!-- Day headers -->
-		<div class="grid grid-cols-7 bg-surface-800">
+		<div class="grid grid-cols-7 bg-surface-100">
 			{#each dayNames as day}
-				<div class="border-b border-surface-700 px-2 py-2 text-center text-xs font-medium text-surface-400">{day}</div>
+				<div class="border-b border-surface-300 px-2 py-2 text-center text-xs font-medium text-surface-500">{day}</div>
 			{/each}
 		</div>
 
 		<!-- Calendar grid -->
 		<div class="grid grid-cols-7">
 			{#each calendarDays as cell}
-				<div class="min-h-24 border-b border-r border-surface-700 p-1 {cell.dateStr === todayStr ? 'bg-surface-800' : ''}">
+				<div class="min-h-24 border-b border-r border-surface-300 p-1 {cell.dateStr === todayStr ? 'bg-surface-100' : ''}">
 					{#if cell.date}
-						<div class="mb-1 text-right text-xs {cell.dateStr === todayStr ? 'font-bold text-primary-400' : 'text-surface-400'}">
+						<div class="mb-1 text-right text-xs {cell.dateStr === todayStr ? 'font-bold text-primary-600' : 'text-surface-500'}">
 							{cell.date}
 						</div>
 						{#if servicesByDate[cell.dateStr]}

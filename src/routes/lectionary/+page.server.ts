@@ -1,4 +1,7 @@
-import { getReadingsForDate, listOccasions } from '$lib/server/services/lectionary';
+import {
+	getReadingsGroupedByContext,
+	getOccasionByDate
+} from '$lib/server/services/lectionary';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ url }) => {
@@ -8,11 +11,12 @@ export const load: PageServerLoad = async ({ url }) => {
 	const today = new Date().toISOString().split('T')[0];
 	const date = dateParam || today;
 
-	const { occasion, readings } = getReadingsForDate(date, tradition);
+	// Get readings grouped by service context for the selected tradition
+	const { occasion, groups } = getReadingsGroupedByContext(date, tradition);
 
-	// Also get BCP readings if we're showing CW, for comparison
+	// Also get readings for the alternate tradition
 	const altTradition = tradition === 'cw' ? 'bcp' : 'cw';
-	const altData = getReadingsForDate(date, altTradition);
+	const altData = getReadingsGroupedByContext(date, altTradition);
 
 	return {
 		date,
@@ -27,8 +31,8 @@ export const load: PageServerLoad = async ({ url }) => {
 					liturgicalYear: occasion.liturgicalYear
 				}
 			: null,
-		readings,
+		groups,
 		altTradition,
-		altReadings: altData.readings
+		altGroups: altData.groups
 	};
 };

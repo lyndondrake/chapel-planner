@@ -8,7 +8,7 @@ import {
 	updateHospitality,
 	getHospitalityByRole
 } from '$lib/server/services/hospitality';
-import { getReadingsForDate } from '$lib/server/services/lectionary';
+import { getReadingsForDateAndContext, serviceTypeToContext } from '$lib/server/services/lectionary';
 import {
 	createServiceReading,
 	updateServiceReading,
@@ -33,9 +33,14 @@ export const load: PageServerLoad = async ({ params }) => {
 	const blocks = await listBlocks();
 	const people = await listPeople();
 
-	// Get suggested lectionary readings for this service date
+	// Get suggested lectionary readings for this service date, filtered by service context
 	const tradition = service.rite === 'BCP' ? 'bcp' : 'cw';
-	const { occasion, readings: suggestedReadings } = getReadingsForDate(service.date, tradition);
+	const context = serviceTypeToContext(service.serviceType);
+	const { occasion, readings: suggestedReadings } = getReadingsForDateAndContext(
+		service.date,
+		tradition,
+		context
+	);
 
 	const allHymns = await listHymns();
 

@@ -14,7 +14,7 @@ export type CreateBlockInput = {
 export type UpdateBlockInput = Partial<CreateBlockInput>;
 
 export function listBlocks() {
-	return db.select().from(serviceBlocks).orderBy(serviceBlocks.startDate);
+	return db.select().from(serviceBlocks).orderBy(serviceBlocks.startDate).all();
 }
 
 export function getBlock(id: number) {

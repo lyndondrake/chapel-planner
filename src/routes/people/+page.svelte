@@ -21,7 +21,7 @@
 			name="search"
 			value={data.search}
 			placeholder="Search…"
-			class="input flex-1 rounded border border-surface-600 bg-surface-800 px-3 py-2"
+			class="input flex-1 rounded border border-surface-300 bg-surface-100 px-3 py-2"
 			aria-label="Search people"
 		/>
 		<label class="flex items-center gap-2 text-sm">
@@ -32,12 +32,12 @@
 	</form>
 
 	{#if data.people.length === 0}
-		<p class="text-surface-400 py-12 text-center">No people found.</p>
+		<p class="text-surface-500 py-12 text-center">No people found.</p>
 	{:else}
-		<div class="text-surface-400 text-sm">{data.people.length} {data.people.length === 1 ? 'person' : 'people'}</div>
-		<div class="overflow-x-auto rounded-lg border border-surface-700">
+		<div class="text-surface-500 text-sm">{data.people.length} {data.people.length === 1 ? 'person' : 'people'}</div>
+		<div class="overflow-x-auto rounded-lg border border-surface-300">
 			<table class="w-full">
-				<thead class="bg-surface-800">
+				<thead class="bg-surface-100">
 					<tr>
 						<th class="px-4 py-3 text-left text-sm font-medium">Name</th>
 						<th class="px-4 py-3 text-left text-sm font-medium hidden sm:table-cell">Email</th>
@@ -47,9 +47,9 @@
 				</thead>
 				<tbody>
 					{#each data.people as person}
-						<tr class="border-surface-700 hover:bg-surface-800 border-t">
+						<tr class="border-surface-300 hover:bg-surface-100 border-t">
 							<td class="px-4 py-3 text-sm">
-								<a href="/people/{person.id}" class="text-primary-400 hover:underline">
+								<a href="/people/{person.id}" class="text-primary-600 hover:underline">
 									{formatPersonName(person)}
 								</a>
 							</td>

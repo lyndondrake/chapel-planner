@@ -16,15 +16,15 @@
 	<div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
 		<a href="/services" class="preset-outlined-surface-50 rounded-lg p-6 transition-shadow hover:shadow-lg">
 			<div class="text-3xl font-bold">{data.totalServices}</div>
-			<div class="text-surface-400">Upcoming Services</div>
+			<div class="text-surface-500">Upcoming Services</div>
 		</a>
 		<a href="/blocks" class="preset-outlined-surface-50 rounded-lg p-6 transition-shadow hover:shadow-lg">
 			<div class="text-3xl font-bold">{data.totalBlocks}</div>
-			<div class="text-surface-400">Service Blocks</div>
+			<div class="text-surface-500">Service Blocks</div>
 		</a>
 		<a href="/people" class="preset-outlined-surface-50 rounded-lg p-6 transition-shadow hover:shadow-lg">
 			<div class="text-3xl font-bold">{data.totalPeople}</div>
-			<div class="text-surface-400">People</div>
+			<div class="text-surface-500">People</div>
 		</a>
 	</div>
 
@@ -35,11 +35,11 @@
 		</div>
 
 		{#if data.upcomingServices.length === 0}
-			<p class="text-surface-400 py-8 text-center">No upcoming services.</p>
+			<p class="text-surface-500 py-8 text-center">No upcoming services.</p>
 		{:else}
-			<div class="overflow-x-auto rounded-lg border border-surface-700">
+			<div class="overflow-x-auto rounded-lg border border-surface-300">
 				<table class="w-full">
-					<thead class="bg-surface-800">
+					<thead class="bg-surface-100">
 						<tr>
 							<th class="px-4 py-3 text-left text-sm font-medium">Date</th>
 							<th class="px-4 py-3 text-left text-sm font-medium">Time</th>
@@ -50,12 +50,12 @@
 					</thead>
 					<tbody>
 						{#each data.upcomingServices as service}
-							<tr class="border-surface-700 hover:bg-surface-800 border-t">
+							<tr class="border-surface-300 hover:bg-surface-100 border-t">
 								<td class="px-4 py-3 text-sm">{formatDate(service.date)}</td>
 								<td class="px-4 py-3 text-sm">{formatTime(service.time)}</td>
 								<td class="px-4 py-3 text-sm hidden sm:table-cell">{ServiceTypeLabels[service.serviceType as keyof typeof ServiceTypeLabels] ?? service.serviceType}</td>
 								<td class="px-4 py-3 text-sm">
-									<a href="/services/{service.id}" class="text-primary-400 hover:underline">
+									<a href="/services/{service.id}" class="text-primary-600 hover:underline">
 										{service.title || service.liturgicalDay || ServiceTypeLabels[service.serviceType as keyof typeof ServiceTypeLabels] || 'Service'}
 									</a>
 								</td>

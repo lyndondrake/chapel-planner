@@ -14,6 +14,10 @@ const db = drizzle(sqlite, { schema });
 
 console.log('Seeding hymn data...');
 
+// Clear existing hymns
+db.delete(schema.hymns).run();
+console.log('  Cleared existing hymn data.');
+
 const hymnsRaw = JSON.parse(
 	readFileSync(resolve('scripts/data/hymns-neh.json'), 'utf-8')
 );

@@ -155,6 +155,25 @@ export const LiturgicalColour = {
 } as const;
 export type LiturgicalColour = (typeof LiturgicalColour)[keyof typeof LiturgicalColour];
 
+export const ServiceContext = {
+	PRINCIPAL: 'principal',
+	MORNING_PRAYER: 'morning_prayer',
+	EVENING_PRAYER: 'evening_prayer',
+	SECOND_SERVICE: 'second_service',
+	THIRD_SERVICE: 'third_service',
+	DAILY_EUCHARIST: 'daily_eucharist'
+} as const;
+export type ServiceContext = (typeof ServiceContext)[keyof typeof ServiceContext];
+
+export const ServiceContextLabels: Record<ServiceContext, string> = {
+	principal: 'Principal Service',
+	morning_prayer: 'Morning Prayer',
+	evening_prayer: 'Evening Prayer',
+	second_service: 'Second Service',
+	third_service: 'Third Service',
+	daily_eucharist: 'Daily Eucharist'
+};
+
 export const MusicType = {
 	HYMN: 'hymn',
 	ANTHEM: 'anthem',

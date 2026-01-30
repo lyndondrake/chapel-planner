@@ -647,5 +647,3105 @@
     "weekOfSeason": 4,
     "dayOfWeek": 0,
     "priority": 50
+  },
+  {
+    "name": "Monday of Advent Week 1",
+    "slug": "advent-1-mon",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Advent Week 1",
+    "slug": "advent-1-tue",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Advent Week 1",
+    "slug": "advent-1-wed",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Advent Week 1",
+    "slug": "advent-1-thu",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Advent Week 1",
+    "slug": "advent-1-fri",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Advent Week 1",
+    "slug": "advent-1-sat",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Advent Week 2",
+    "slug": "advent-2-mon",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Advent Week 2",
+    "slug": "advent-2-tue",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Advent Week 2",
+    "slug": "advent-2-wed",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Advent Week 2",
+    "slug": "advent-2-thu",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Advent Week 2",
+    "slug": "advent-2-fri",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Advent Week 2",
+    "slug": "advent-2-sat",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Advent Week 3",
+    "slug": "advent-3-mon",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Advent Week 3",
+    "slug": "advent-3-tue",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Advent Week 3",
+    "slug": "advent-3-wed",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Advent Week 3",
+    "slug": "advent-3-thu",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Advent Week 3",
+    "slug": "advent-3-fri",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Advent Week 3",
+    "slug": "advent-3-sat",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Advent Week 4",
+    "slug": "advent-4-mon",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Advent Week 4",
+    "slug": "advent-4-tue",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Advent Week 4",
+    "slug": "advent-4-wed",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Advent Week 4",
+    "slug": "advent-4-thu",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Advent Week 4",
+    "slug": "advent-4-fri",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Advent Week 4",
+    "slug": "advent-4-sat",
+    "season": "advent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Christmas Season \u2014 December 26",
+    "slug": "christmas-dec-26",
+    "season": "christmas",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 26,
+    "priority": 30
+  },
+  {
+    "name": "Christmas Season \u2014 December 27",
+    "slug": "christmas-dec-27",
+    "season": "christmas",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 27,
+    "priority": 30
+  },
+  {
+    "name": "Christmas Season \u2014 December 28",
+    "slug": "christmas-dec-28",
+    "season": "christmas",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 28,
+    "priority": 30
+  },
+  {
+    "name": "Christmas Season \u2014 December 29",
+    "slug": "christmas-dec-29",
+    "season": "christmas",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 29,
+    "priority": 30
+  },
+  {
+    "name": "Christmas Season \u2014 December 30",
+    "slug": "christmas-dec-30",
+    "season": "christmas",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 30,
+    "priority": 30
+  },
+  {
+    "name": "Christmas Season \u2014 December 31",
+    "slug": "christmas-dec-31",
+    "season": "christmas",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 31,
+    "priority": 30
+  },
+  {
+    "name": "Christmas Season \u2014 January 1",
+    "slug": "christmas-jan-1",
+    "season": "christmas",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 1,
+    "fixedDay": 1,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Epiphany Week 1",
+    "slug": "epiphany-1-mon",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Epiphany Week 1",
+    "slug": "epiphany-1-tue",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Epiphany Week 1",
+    "slug": "epiphany-1-wed",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Epiphany Week 1",
+    "slug": "epiphany-1-thu",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Epiphany Week 1",
+    "slug": "epiphany-1-fri",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Epiphany Week 1",
+    "slug": "epiphany-1-sat",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Epiphany Week 2",
+    "slug": "epiphany-2-mon",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Epiphany Week 2",
+    "slug": "epiphany-2-tue",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Epiphany Week 2",
+    "slug": "epiphany-2-wed",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Epiphany Week 2",
+    "slug": "epiphany-2-thu",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Epiphany Week 2",
+    "slug": "epiphany-2-fri",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Epiphany Week 2",
+    "slug": "epiphany-2-sat",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Epiphany Week 3",
+    "slug": "epiphany-3-mon",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Epiphany Week 3",
+    "slug": "epiphany-3-tue",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Epiphany Week 3",
+    "slug": "epiphany-3-wed",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Epiphany Week 3",
+    "slug": "epiphany-3-thu",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Epiphany Week 3",
+    "slug": "epiphany-3-fri",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Epiphany Week 3",
+    "slug": "epiphany-3-sat",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Epiphany Week 4",
+    "slug": "epiphany-4-mon",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Epiphany Week 4",
+    "slug": "epiphany-4-tue",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Epiphany Week 4",
+    "slug": "epiphany-4-wed",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Epiphany Week 4",
+    "slug": "epiphany-4-thu",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Epiphany Week 4",
+    "slug": "epiphany-4-fri",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Epiphany Week 4",
+    "slug": "epiphany-4-sat",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Before Lent Week 1",
+    "slug": "before-lent-1-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Before Lent Week 1",
+    "slug": "before-lent-1-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Before Lent Week 1",
+    "slug": "before-lent-1-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Before Lent Week 1",
+    "slug": "before-lent-1-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Before Lent Week 1",
+    "slug": "before-lent-1-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Before Lent Week 1",
+    "slug": "before-lent-1-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Before Lent Week 2",
+    "slug": "before-lent-2-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Before Lent Week 2",
+    "slug": "before-lent-2-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Before Lent Week 2",
+    "slug": "before-lent-2-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Before Lent Week 2",
+    "slug": "before-lent-2-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Before Lent Week 2",
+    "slug": "before-lent-2-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Before Lent Week 2",
+    "slug": "before-lent-2-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Lent Week 1",
+    "slug": "lent-1-mon",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Lent Week 1",
+    "slug": "lent-1-tue",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Lent Week 1",
+    "slug": "lent-1-wed",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Lent Week 1",
+    "slug": "lent-1-thu",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Lent Week 1",
+    "slug": "lent-1-fri",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Lent Week 1",
+    "slug": "lent-1-sat",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 1,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Lent Week 2",
+    "slug": "lent-2-mon",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Lent Week 2",
+    "slug": "lent-2-tue",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Lent Week 2",
+    "slug": "lent-2-wed",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Lent Week 2",
+    "slug": "lent-2-thu",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Lent Week 2",
+    "slug": "lent-2-fri",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Lent Week 2",
+    "slug": "lent-2-sat",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Lent Week 3",
+    "slug": "lent-3-mon",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Lent Week 3",
+    "slug": "lent-3-tue",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Lent Week 3",
+    "slug": "lent-3-wed",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Lent Week 3",
+    "slug": "lent-3-thu",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Lent Week 3",
+    "slug": "lent-3-fri",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Lent Week 3",
+    "slug": "lent-3-sat",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Lent Week 4",
+    "slug": "lent-4-mon",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Lent Week 4",
+    "slug": "lent-4-tue",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Lent Week 4",
+    "slug": "lent-4-wed",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Lent Week 4",
+    "slug": "lent-4-thu",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Lent Week 4",
+    "slug": "lent-4-fri",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Lent Week 4",
+    "slug": "lent-4-sat",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Lent Week 5",
+    "slug": "lent-5-mon",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Lent Week 5",
+    "slug": "lent-5-tue",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Lent Week 5",
+    "slug": "lent-5-wed",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Lent Week 5",
+    "slug": "lent-5-thu",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Lent Week 5",
+    "slug": "lent-5-fri",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Lent Week 5",
+    "slug": "lent-5-sat",
+    "season": "lent",
+    "colour": "purple",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Easter Week 2",
+    "slug": "easter-2-mon",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Easter Week 2",
+    "slug": "easter-2-tue",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Easter Week 2",
+    "slug": "easter-2-wed",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Easter Week 2",
+    "slug": "easter-2-thu",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Easter Week 2",
+    "slug": "easter-2-fri",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Easter Week 2",
+    "slug": "easter-2-sat",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Easter Week 3",
+    "slug": "easter-3-mon",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Easter Week 3",
+    "slug": "easter-3-tue",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Easter Week 3",
+    "slug": "easter-3-wed",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Easter Week 3",
+    "slug": "easter-3-thu",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Easter Week 3",
+    "slug": "easter-3-fri",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Easter Week 3",
+    "slug": "easter-3-sat",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Easter Week 4",
+    "slug": "easter-4-mon",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Easter Week 4",
+    "slug": "easter-4-tue",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Easter Week 4",
+    "slug": "easter-4-wed",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Easter Week 4",
+    "slug": "easter-4-thu",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Easter Week 4",
+    "slug": "easter-4-fri",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Easter Week 4",
+    "slug": "easter-4-sat",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Easter Week 5",
+    "slug": "easter-5-mon",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Easter Week 5",
+    "slug": "easter-5-tue",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Easter Week 5",
+    "slug": "easter-5-wed",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Easter Week 5",
+    "slug": "easter-5-thu",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Easter Week 5",
+    "slug": "easter-5-fri",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Easter Week 5",
+    "slug": "easter-5-sat",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Easter Week 6",
+    "slug": "easter-6-mon",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Easter Week 6",
+    "slug": "easter-6-tue",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Easter Week 6",
+    "slug": "easter-6-wed",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Easter Week 6",
+    "slug": "easter-6-thu",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Easter Week 6",
+    "slug": "easter-6-fri",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Easter Week 6",
+    "slug": "easter-6-sat",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Easter Week 7",
+    "slug": "easter-7-mon",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Easter Week 7",
+    "slug": "easter-7-tue",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Easter Week 7",
+    "slug": "easter-7-wed",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Easter Week 7",
+    "slug": "easter-7-thu",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Easter Week 7",
+    "slug": "easter-7-fri",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Easter Week 7",
+    "slug": "easter-7-sat",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 4",
+    "slug": "proper-4-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 4",
+    "slug": "proper-4-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 4",
+    "slug": "proper-4-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 4",
+    "slug": "proper-4-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 4",
+    "slug": "proper-4-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 4",
+    "slug": "proper-4-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 5",
+    "slug": "proper-5-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 5",
+    "slug": "proper-5-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 5",
+    "slug": "proper-5-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 5",
+    "slug": "proper-5-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 5",
+    "slug": "proper-5-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 5",
+    "slug": "proper-5-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 6",
+    "slug": "proper-6-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 6",
+    "slug": "proper-6-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 6",
+    "slug": "proper-6-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 6",
+    "slug": "proper-6-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 6",
+    "slug": "proper-6-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 6",
+    "slug": "proper-6-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 6,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 7",
+    "slug": "proper-7-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 7",
+    "slug": "proper-7-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 7",
+    "slug": "proper-7-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 7",
+    "slug": "proper-7-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 7",
+    "slug": "proper-7-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 7",
+    "slug": "proper-7-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 7,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 8",
+    "slug": "proper-8-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 8,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 8",
+    "slug": "proper-8-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 8,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 8",
+    "slug": "proper-8-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 8,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 8",
+    "slug": "proper-8-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 8,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 8",
+    "slug": "proper-8-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 8,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 8",
+    "slug": "proper-8-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 8,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 9",
+    "slug": "proper-9-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 9,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 9",
+    "slug": "proper-9-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 9,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 9",
+    "slug": "proper-9-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 9,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 9",
+    "slug": "proper-9-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 9,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 9",
+    "slug": "proper-9-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 9,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 9",
+    "slug": "proper-9-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 9,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 10",
+    "slug": "proper-10-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 10,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 10",
+    "slug": "proper-10-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 10,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 10",
+    "slug": "proper-10-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 10,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 10",
+    "slug": "proper-10-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 10,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 10",
+    "slug": "proper-10-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 10,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 10",
+    "slug": "proper-10-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 10,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 11",
+    "slug": "proper-11-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 11,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 11",
+    "slug": "proper-11-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 11,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 11",
+    "slug": "proper-11-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 11,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 11",
+    "slug": "proper-11-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 11,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 11",
+    "slug": "proper-11-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 11,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 11",
+    "slug": "proper-11-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 11,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 12",
+    "slug": "proper-12-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 12,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 12",
+    "slug": "proper-12-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 12,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 12",
+    "slug": "proper-12-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 12,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 12",
+    "slug": "proper-12-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 12,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 12",
+    "slug": "proper-12-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 12,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 12",
+    "slug": "proper-12-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 12,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 13",
+    "slug": "proper-13-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 13,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 13",
+    "slug": "proper-13-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 13,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 13",
+    "slug": "proper-13-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 13,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 13",
+    "slug": "proper-13-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 13,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 13",
+    "slug": "proper-13-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 13,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 13",
+    "slug": "proper-13-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 13,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 14",
+    "slug": "proper-14-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 14,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 14",
+    "slug": "proper-14-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 14,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 14",
+    "slug": "proper-14-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 14,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 14",
+    "slug": "proper-14-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 14,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 14",
+    "slug": "proper-14-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 14,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 14",
+    "slug": "proper-14-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 14,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 15",
+    "slug": "proper-15-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 15,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 15",
+    "slug": "proper-15-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 15,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 15",
+    "slug": "proper-15-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 15,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 15",
+    "slug": "proper-15-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 15,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 15",
+    "slug": "proper-15-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 15,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 15",
+    "slug": "proper-15-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 15,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 16",
+    "slug": "proper-16-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 16,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 16",
+    "slug": "proper-16-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 16,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 16",
+    "slug": "proper-16-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 16,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 16",
+    "slug": "proper-16-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 16,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 16",
+    "slug": "proper-16-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 16,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 16",
+    "slug": "proper-16-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 16,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 17",
+    "slug": "proper-17-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 17,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 17",
+    "slug": "proper-17-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 17,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 17",
+    "slug": "proper-17-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 17,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 17",
+    "slug": "proper-17-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 17,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 17",
+    "slug": "proper-17-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 17,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 17",
+    "slug": "proper-17-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 17,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 18",
+    "slug": "proper-18-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 18,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 18",
+    "slug": "proper-18-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 18,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 18",
+    "slug": "proper-18-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 18,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 18",
+    "slug": "proper-18-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 18,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 18",
+    "slug": "proper-18-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 18,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 18",
+    "slug": "proper-18-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 18,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 19",
+    "slug": "proper-19-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 19,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 19",
+    "slug": "proper-19-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 19,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 19",
+    "slug": "proper-19-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 19,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 19",
+    "slug": "proper-19-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 19,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 19",
+    "slug": "proper-19-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 19,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 19",
+    "slug": "proper-19-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 19,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 20",
+    "slug": "proper-20-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 20,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 20",
+    "slug": "proper-20-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 20,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 20",
+    "slug": "proper-20-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 20,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 20",
+    "slug": "proper-20-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 20,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 20",
+    "slug": "proper-20-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 20,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 20",
+    "slug": "proper-20-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 20,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 21",
+    "slug": "proper-21-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 21,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 21",
+    "slug": "proper-21-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 21,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 21",
+    "slug": "proper-21-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 21,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 21",
+    "slug": "proper-21-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 21,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 21",
+    "slug": "proper-21-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 21,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 21",
+    "slug": "proper-21-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 21,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 22",
+    "slug": "proper-22-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 22,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 22",
+    "slug": "proper-22-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 22,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 22",
+    "slug": "proper-22-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 22,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 22",
+    "slug": "proper-22-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 22,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 22",
+    "slug": "proper-22-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 22,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 22",
+    "slug": "proper-22-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 22,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 23",
+    "slug": "proper-23-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 23,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 23",
+    "slug": "proper-23-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 23,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 23",
+    "slug": "proper-23-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 23,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 23",
+    "slug": "proper-23-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 23,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 23",
+    "slug": "proper-23-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 23,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 23",
+    "slug": "proper-23-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 23,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 24",
+    "slug": "proper-24-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 24,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 24",
+    "slug": "proper-24-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 24,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 24",
+    "slug": "proper-24-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 24,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 24",
+    "slug": "proper-24-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 24,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 24",
+    "slug": "proper-24-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 24,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 24",
+    "slug": "proper-24-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 24,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Proper Week 25",
+    "slug": "proper-25-mon",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 25,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Proper Week 25",
+    "slug": "proper-25-tue",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 25,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Proper Week 25",
+    "slug": "proper-25-wed",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 25,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Proper Week 25",
+    "slug": "proper-25-thu",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 25,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Proper Week 25",
+    "slug": "proper-25-fri",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 25,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Proper Week 25",
+    "slug": "proper-25-sat",
+    "season": "ordinary_time",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 25,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Kingdom Week 4",
+    "slug": "kingdom-4-mon",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Kingdom Week 4",
+    "slug": "kingdom-4-tue",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Kingdom Week 4",
+    "slug": "kingdom-4-wed",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Kingdom Week 4",
+    "slug": "kingdom-4-thu",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Kingdom Week 4",
+    "slug": "kingdom-4-fri",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Kingdom Week 4",
+    "slug": "kingdom-4-sat",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 4,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Kingdom Week 3",
+    "slug": "kingdom-3-mon",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Kingdom Week 3",
+    "slug": "kingdom-3-tue",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Kingdom Week 3",
+    "slug": "kingdom-3-wed",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Kingdom Week 3",
+    "slug": "kingdom-3-thu",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Kingdom Week 3",
+    "slug": "kingdom-3-fri",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Kingdom Week 3",
+    "slug": "kingdom-3-sat",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 3,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Monday of Kingdom Week 2",
+    "slug": "kingdom-2-mon",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Kingdom Week 2",
+    "slug": "kingdom-2-tue",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Kingdom Week 2",
+    "slug": "kingdom-2-wed",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Kingdom Week 2",
+    "slug": "kingdom-2-thu",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Kingdom Week 2",
+    "slug": "kingdom-2-fri",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Kingdom Week 2",
+    "slug": "kingdom-2-sat",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 2,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "St Stephen",
+    "slug": "st-stephen",
+    "season": "christmas",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 26,
+    "priority": 90
+  },
+  {
+    "name": "St John the Evangelist",
+    "slug": "st-john-evangelist",
+    "season": "christmas",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 27,
+    "priority": 90
+  },
+  {
+    "name": "Holy Innocents",
+    "slug": "holy-innocents",
+    "season": "christmas",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 28,
+    "priority": 90
+  },
+  {
+    "name": "Naming of Jesus",
+    "slug": "naming-of-jesus",
+    "season": "christmas",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 1,
+    "fixedDay": 1,
+    "priority": 90
+  },
+  {
+    "name": "Conversion of St Paul",
+    "slug": "conversion-of-st-paul",
+    "season": "epiphany",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 1,
+    "fixedDay": 25,
+    "priority": 90
+  },
+  {
+    "name": "St Joseph",
+    "slug": "st-joseph",
+    "season": "lent",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 3,
+    "fixedDay": 19,
+    "priority": 90
+  },
+  {
+    "name": "Annunciation of Our Lord",
+    "slug": "annunciation",
+    "season": "lent",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 3,
+    "fixedDay": 25,
+    "priority": 90
+  },
+  {
+    "name": "St Mark",
+    "slug": "st-mark",
+    "season": "easter",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 4,
+    "fixedDay": 25,
+    "priority": 80
+  },
+  {
+    "name": "SS Philip & James",
+    "slug": "ss-philip-and-james",
+    "season": "easter",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 5,
+    "fixedDay": 1,
+    "priority": 80
+  },
+  {
+    "name": "St Matthias",
+    "slug": "st-matthias",
+    "season": "easter",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 5,
+    "fixedDay": 14,
+    "priority": 80
+  },
+  {
+    "name": "Visit of Mary to Elizabeth",
+    "slug": "visit-of-mary",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 5,
+    "fixedDay": 31,
+    "priority": 80
+  },
+  {
+    "name": "St Barnabas",
+    "slug": "st-barnabas",
+    "season": "ordinary_time",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 6,
+    "fixedDay": 11,
+    "priority": 80
+  },
+  {
+    "name": "Birth of St John the Baptist",
+    "slug": "birth-of-st-john-baptist",
+    "season": "ordinary_time",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 6,
+    "fixedDay": 24,
+    "priority": 90
+  },
+  {
+    "name": "SS Peter & Paul",
+    "slug": "ss-peter-and-paul",
+    "season": "ordinary_time",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 6,
+    "fixedDay": 29,
+    "priority": 90
+  },
+  {
+    "name": "St Thomas",
+    "slug": "st-thomas",
+    "season": "ordinary_time",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 7,
+    "fixedDay": 3,
+    "priority": 80
+  },
+  {
+    "name": "St Mary Magdalene",
+    "slug": "st-mary-magdalene",
+    "season": "ordinary_time",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 7,
+    "fixedDay": 22,
+    "priority": 80
+  },
+  {
+    "name": "St James",
+    "slug": "st-james",
+    "season": "ordinary_time",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 7,
+    "fixedDay": 25,
+    "priority": 90
+  },
+  {
+    "name": "Transfiguration of Our Lord",
+    "slug": "transfiguration",
+    "season": "ordinary_time",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 6,
+    "priority": 90
+  },
+  {
+    "name": "Blessed Virgin Mary",
+    "slug": "blessed-virgin-mary",
+    "season": "ordinary_time",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 15,
+    "priority": 90
+  },
+  {
+    "name": "St Bartholomew",
+    "slug": "st-bartholomew",
+    "season": "ordinary_time",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 24,
+    "priority": 80
+  },
+  {
+    "name": "Holy Cross Day",
+    "slug": "holy-cross-day",
+    "season": "ordinary_time",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 14,
+    "priority": 80
+  },
+  {
+    "name": "St Matthew",
+    "slug": "st-matthew",
+    "season": "ordinary_time",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 21,
+    "priority": 90
+  },
+  {
+    "name": "St Michael & All Angels",
+    "slug": "st-michael-all-angels",
+    "season": "ordinary_time",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 29,
+    "priority": 90
+  },
+  {
+    "name": "St Luke",
+    "slug": "st-luke",
+    "season": "ordinary_time",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 18,
+    "priority": 80
+  },
+  {
+    "name": "SS Simon & Jude",
+    "slug": "ss-simon-and-jude",
+    "season": "ordinary_time",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 28,
+    "priority": 80
+  },
+  {
+    "name": "All Souls",
+    "slug": "all-souls",
+    "season": "kingdom",
+    "colour": "purple",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 2,
+    "priority": 80
+  },
+  {
+    "name": "St Andrew",
+    "slug": "st-andrew",
+    "season": "advent",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 30,
+    "priority": 90
   }
 ]

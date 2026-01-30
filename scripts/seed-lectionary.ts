@@ -1,7 +1,7 @@
 import Database from 'better-sqlite3';
 import { drizzle } from 'drizzle-orm/better-sqlite3';
 import { resolve } from 'path';
-import { mkdirSync, readFileSync } from 'fs';
+import { mkdirSync, readFileSync, existsSync } from 'fs';
 import * as schema from '../src/lib/server/db/schema';
 
 const DB_PATH = resolve('data/chapel-planner.db');
@@ -15,6 +15,12 @@ sqlite.pragma('foreign_keys = ON');
 const db = drizzle(sqlite, { schema });
 
 console.log('Seeding lectionary data...');
+
+// Clear existing lectionary data (order matters for FK constraints)
+db.delete(schema.lectionaryDateMap).run();
+db.delete(schema.lectionaryReadings).run();
+db.delete(schema.lectionaryOccasions).run();
+console.log('  Cleared existing lectionary data.');
 
 // --- 1. Load and insert occasions ---
 
@@ -52,45 +58,58 @@ for (const occ of occasionsRaw) {
 
 console.log(`  Inserted ${Object.keys(slugToId).length} occasions.`);
 
-// --- 2. Load and insert readings ---
+// --- 2. Load and insert readings from multiple files ---
 
-const readingsRaw = JSON.parse(
-	readFileSync(resolve('scripts/data/lectionary-readings.json'), 'utf-8')
-);
-
-console.log(`  Loading ${readingsRaw.length} readings...`);
+const readingFiles = [
+	'scripts/data/lectionary-readings-cw-principal.json',
+	'scripts/data/lectionary-readings-cw-office.json',
+	'scripts/data/lectionary-readings-bcp-office.json'
+];
 
 let readingsInserted = 0;
 let readingsSkipped = 0;
 
-for (const reading of readingsRaw) {
-	const occasionId = slugToId[reading.occasionSlug];
-	if (!occasionId) {
-		readingsSkipped++;
+for (const file of readingFiles) {
+	const filePath = resolve(file);
+	if (!existsSync(filePath)) {
+		console.log(`  Skipping ${file} (not found)`);
 		continue;
 	}
 
-	db.insert(schema.lectionaryReadings)
-		.values({
-			occasionId,
-			tradition: reading.tradition,
-			serviceContext: reading.serviceContext ?? 'principal',
-			readingType: reading.readingType,
-			book: reading.book ?? null,
-			chapter: reading.chapter ?? null,
-			verseStart: reading.verseStart ?? null,
-			verseEnd: reading.verseEnd ?? null,
-			reference: reading.reference,
-			alternateYear: reading.alternateYear ?? null,
-			isOptional: reading.isOptional ?? false,
-			sortOrder: reading.sortOrder ?? 0
-		})
-		.run();
+	const readingsRaw = JSON.parse(readFileSync(filePath, 'utf-8'));
+	console.log(`  Loading ${readingsRaw.length} readings from ${file}...`);
 
-	readingsInserted++;
+	for (const reading of readingsRaw) {
+		const occasionId = slugToId[reading.occasionSlug];
+		if (!occasionId) {
+			readingsSkipped++;
+			continue;
+		}
+
+		db.insert(schema.lectionaryReadings)
+			.values({
+				occasionId,
+				tradition: reading.tradition,
+				serviceContext: reading.serviceContext ?? 'principal',
+				readingType: reading.readingType,
+				book: reading.book ?? null,
+				chapter: reading.chapter ?? null,
+				verseStart: reading.verseStart ?? null,
+				verseEnd: reading.verseEnd ?? null,
+				reference: reading.reference,
+				alternateYear: reading.alternateYear ?? null,
+				isOptional: reading.isOptional ?? false,
+				sortOrder: reading.sortOrder ?? 0
+			})
+			.run();
+
+		readingsInserted++;
+	}
 }
 
-console.log(`  Inserted ${readingsInserted} readings (${readingsSkipped} skipped due to missing occasion).`);
+console.log(
+	`  Inserted ${readingsInserted} readings (${readingsSkipped} skipped due to missing occasion).`
+);
 
 // --- 3. Generate date map ---
 
@@ -150,7 +169,6 @@ function getLiturgicalYear(date: Date): 'A' | 'B' | 'C' {
 function getSundaysBetween(start: Date, end: Date): Date[] {
 	const sundays: Date[] = [];
 	let current = new Date(start);
-	// Advance to the next Sunday if start isn't one
 	while (current.getDay() !== 0) {
 		current = addDays(current, 1);
 	}
@@ -160,6 +178,8 @@ function getSundaysBetween(start: Date, end: Date): Date[] {
 	}
 	return sundays;
 }
+
+const dayAbbrevs = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 
 let dateMapInserted = 0;
 
@@ -181,20 +201,58 @@ function insertDateMap(date: string, slug: string, isPrincipal: boolean = true) 
 	dateMapInserted++;
 }
 
+/**
+ * Insert weekday entries (Mon–Sat) for a given week.
+ * sundayDate is the Sunday that starts the week.
+ * slugPrefix is e.g. 'advent-1' — weekdays become 'advent-1-mon', etc.
+ */
+function insertWeekdays(sundayDate: Date, slugPrefix: string) {
+	for (let d = 1; d <= 6; d++) {
+		const weekday = addDays(sundayDate, d);
+		const slug = `${slugPrefix}-${dayAbbrevs[d]}`;
+		if (slugToId[slug]) {
+			insertDateMap(toISO(weekday), slug);
+		}
+	}
+}
+
 for (let year = 2024; year <= 2030; year++) {
 	const easter = computeEaster(year);
 	const adventSunday = getAdventSunday(year);
 
-	// --- Advent Sundays ---
+	// --- Advent Sundays + weekdays ---
 	for (let w = 0; w < 4; w++) {
-		insertDateMap(toISO(addDays(adventSunday, w * 7)), `advent-${w + 1}`);
+		const sunday = addDays(adventSunday, w * 7);
+		insertDateMap(toISO(sunday), `advent-${w + 1}`);
+		insertWeekdays(sunday, `advent-${w + 1}`);
 	}
 
 	// --- Christmas Day ---
 	insertDateMap(`${year}-12-25`, 'christmas-day');
 
+	// --- Christmas date-specific days (Dec 26–31, Jan 1) ---
+	// These are fixed-date occasions in the Christmas season
+	const christmasDateSlugs: Record<string, string> = {
+		'12-26': 'christmas-dec-26',
+		'12-27': 'christmas-dec-27',
+		'12-28': 'christmas-dec-28',
+		'12-29': 'christmas-dec-29',
+		'12-30': 'christmas-dec-30',
+		'12-31': 'christmas-dec-31'
+	};
+	for (const [md, slug] of Object.entries(christmasDateSlugs)) {
+		const dateStr = `${year}-${md}`;
+		insertDateMap(dateStr, slug);
+	}
+	// Jan 1 of the following year
+	insertDateMap(`${year + 1}-01-01`, 'christmas-jan-1');
+
+	// --- Christmas fixed feasts (as non-principal if they overlap) ---
+	if (slugToId['st-stephen']) insertDateMap(`${year}-12-26`, 'st-stephen', false);
+	if (slugToId['st-john-evangelist']) insertDateMap(`${year}-12-27`, 'st-john-evangelist', false);
+	if (slugToId['holy-innocents']) insertDateMap(`${year}-12-28`, 'holy-innocents', false);
+
 	// --- Christmas Sundays ---
-	// First Sunday of Christmas: the Sunday between Dec 26 and Jan 1
 	const christmasSundays = getSundaysBetween(
 		new Date(year, 11, 26),
 		new Date(year + 1, 0, 1)
@@ -203,7 +261,6 @@ for (let year = 2024; year <= 2030; year++) {
 		insertDateMap(toISO(christmasSundays[0]), 'christmas-1');
 	}
 
-	// Second Sunday of Christmas: the Sunday between Jan 2 and Jan 5
 	const christmas2Sundays = getSundaysBetween(
 		new Date(year + 1, 0, 2),
 		new Date(year + 1, 0, 5)
@@ -212,42 +269,49 @@ for (let year = 2024; year <= 2030; year++) {
 		insertDateMap(toISO(christmas2Sundays[0]), 'christmas-2');
 	}
 
+	// --- Naming of Jesus (Jan 1) ---
+	if (slugToId['naming-of-jesus']) insertDateMap(`${year}-01-01`, 'naming-of-jesus', false);
+
 	// --- Epiphany (Jan 6) ---
 	insertDateMap(`${year}-01-06`, 'epiphany');
 
-	// --- Epiphany Sundays ---
-	// Baptism of Christ / First Sunday of Epiphany: first Sunday after Jan 6
+	// --- Epiphany Sundays + weekdays ---
 	const epiphanySundayStart = new Date(year, 0, 7);
+	const ashWednesday = addDays(easter, -46);
 	const epiphanySundays = getSundaysBetween(
 		epiphanySundayStart,
-		new Date(year, 1, 1) // up to Feb 1
+		addDays(ashWednesday, -15) // stop before Before Lent Sundays
 	);
 	const epiphanyWeekSlugs = ['epiphany-1', 'epiphany-2', 'epiphany-3', 'epiphany-4'];
 	for (let i = 0; i < Math.min(epiphanySundays.length, 4); i++) {
 		insertDateMap(toISO(epiphanySundays[i]), epiphanyWeekSlugs[i]);
+		insertWeekdays(epiphanySundays[i], epiphanyWeekSlugs[i]);
 	}
 
 	// --- Candlemas (Feb 2) ---
 	insertDateMap(`${year}-02-02`, 'candlemas');
 
-	// --- Sundays before Lent ---
-	const ashWednesday = addDays(easter, -46);
-	// Sunday next before Lent = Sunday before Ash Wednesday
-	const sundayBeforeLent = addDays(ashWednesday, -(ashWednesday.getDay() === 0 ? 7 : ashWednesday.getDay()));
-	insertDateMap(toISO(sundayBeforeLent), 'sunday-before-lent');
+	// --- Sundays before Lent + weekdays ---
+	const sundayBeforeLent = addDays(
+		ashWednesday,
+		-(ashWednesday.getDay() === 0 ? 7 : ashWednesday.getDay())
+	);
+	insertDateMap(toISO(sundayBeforeLent), 'before-lent-1');
+	insertWeekdays(sundayBeforeLent, 'before-lent-1');
 
-	// Second Sunday before Lent
 	const secondSundayBeforeLent = addDays(sundayBeforeLent, -7);
-	insertDateMap(toISO(secondSundayBeforeLent), 'second-sunday-before-lent');
+	insertDateMap(toISO(secondSundayBeforeLent), 'before-lent-2');
+	insertWeekdays(secondSundayBeforeLent, 'before-lent-2');
 
 	// --- Ash Wednesday ---
 	insertDateMap(toISO(ashWednesday), 'ash-wednesday');
 
-	// --- Lent Sundays ---
-	// Ash Wednesday is always a Wednesday (day 3), so the next Sunday is +4 days
+	// --- Lent Sundays + weekdays ---
 	const lentSunday1 = addDays(ashWednesday, 4);
 	for (let w = 0; w < 5; w++) {
-		insertDateMap(toISO(addDays(lentSunday1, w * 7)), `lent-${w + 1}`);
+		const sunday = addDays(lentSunday1, w * 7);
+		insertDateMap(toISO(sunday), `lent-${w + 1}`);
+		insertWeekdays(sunday, `lent-${w + 1}`);
 	}
 
 	// --- Holy Week ---
@@ -259,10 +323,12 @@ for (let year = 2024; year <= 2030; year++) {
 	insertDateMap(toISO(addDays(easter, -2)), 'good-friday');
 	insertDateMap(toISO(addDays(easter, -1)), 'easter-eve');
 
-	// --- Easter ---
+	// --- Easter + weekdays ---
 	insertDateMap(toISO(easter), 'easter-day');
 	for (let w = 2; w <= 7; w++) {
-		insertDateMap(toISO(addDays(easter, (w - 1) * 7)), `easter-${w}`);
+		const sunday = addDays(easter, (w - 1) * 7);
+		insertDateMap(toISO(sunday), `easter-${w}`);
+		insertWeekdays(sunday, `easter-${w}`);
 	}
 
 	// --- Ascension Day (Easter + 39) ---
@@ -274,40 +340,70 @@ for (let year = 2024; year <= 2030; year++) {
 	// --- Trinity Sunday (Easter + 56) ---
 	insertDateMap(toISO(addDays(easter, 56)), 'trinity-sunday');
 
-	// --- Ordinary Time Propers (after Trinity) ---
-	// Proper 4 starts the Sunday after Trinity Sunday
+	// --- Ordinary Time Propers (after Trinity) + weekdays ---
 	const trinitySunday = addDays(easter, 56);
 	let properSunday = addDays(trinitySunday, 7);
 
-	// Calculate which proper to start with based on the calendar
-	// Propers are numbered by the week - Proper 4 is the first Sunday after Trinity in some years
-	// We need to match propers to their approximate calendar weeks
-	// Proper N covers the week containing the dates closest to N weeks after a reference point
-	// Simpler approach: assign sequentially from Proper 4
 	let properNum = 4;
 	while (properSunday < adventSunday && properNum <= 25) {
-		// Check if this is in the Kingdom season (last 4 Sundays before Advent)
 		const weeksBeforeAdvent = Math.round(
 			(adventSunday.getTime() - properSunday.getTime()) / (7 * 24 * 60 * 60 * 1000)
 		);
 
 		if (weeksBeforeAdvent <= 3) {
-			// Kingdom season: last 4 Sundays before Advent
-			// 3 = Fourth Sunday before Advent, 2 = Third, 1 = Second, 0 = Christ the King
 			const kingdomSlug =
 				weeksBeforeAdvent === 0
 					? 'christ-the-king'
 					: `kingdom-${weeksBeforeAdvent + 1}`;
 			insertDateMap(toISO(properSunday), kingdomSlug);
+			if (weeksBeforeAdvent > 0) {
+				insertWeekdays(properSunday, kingdomSlug);
+			}
 		} else {
 			insertDateMap(toISO(properSunday), `proper-${properNum}`);
+			insertWeekdays(properSunday, `proper-${properNum}`);
 			properNum++;
 		}
 		properSunday = addDays(properSunday, 7);
 	}
 
-	// --- Fixed feasts ---
-	insertDateMap(`${year}-11-01`, 'all-saints');
+	// --- Fixed feasts (as non-principal overlays) ---
+	const fixedFeasts: [number, number, string][] = [
+		[1, 25, 'conversion-of-st-paul'],
+		[2, 2, 'candlemas'],
+		[3, 19, 'st-joseph'],
+		[3, 25, 'annunciation'],
+		[4, 25, 'st-mark'],
+		[5, 1, 'ss-philip-and-james'],
+		[5, 14, 'st-matthias'],
+		[5, 31, 'visit-of-mary'],
+		[6, 11, 'st-barnabas'],
+		[6, 24, 'birth-of-john-the-baptist'],
+		[6, 29, 'ss-peter-and-paul'],
+		[7, 3, 'st-thomas'],
+		[7, 22, 'st-mary-magdalene'],
+		[7, 25, 'st-james'],
+		[8, 6, 'transfiguration'],
+		[8, 15, 'blessed-virgin-mary'],
+		[8, 24, 'st-bartholomew'],
+		[9, 14, 'holy-cross-day'],
+		[9, 21, 'st-matthew'],
+		[9, 29, 'st-michael-and-all-angels'],
+		[10, 18, 'st-luke'],
+		[10, 28, 'ss-simon-and-jude'],
+		[11, 1, 'all-saints'],
+		[11, 2, 'all-souls'],
+		[11, 30, 'st-andrew']
+	];
+
+	for (const [month, day, slug] of fixedFeasts) {
+		if (slugToId[slug]) {
+			const dateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+			// All Saints is principal; others are non-principal overlays
+			const isPrincipal = slug === 'all-saints';
+			insertDateMap(dateStr, slug, isPrincipal);
+		}
+	}
 }
 
 console.log(`  Inserted ${dateMapInserted} date map entries.`);

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ReadingTypeLabels } from '$lib/types/enums';
+	import { ReadingTypeLabels, ServiceContextLabels } from '$lib/types/enums';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
@@ -35,6 +35,33 @@
 		B: 'Year B (Mark)',
 		C: 'Year C (Luke)'
 	};
+
+	// Preferred display order for service contexts
+	const contextOrder = [
+		'principal',
+		'morning_prayer',
+		'evening_prayer',
+		'second_service',
+		'third_service',
+		'daily_eucharist'
+	];
+
+	function sortedContexts(groups: Record<string, unknown[]>): string[] {
+		const keys = Object.keys(groups);
+		return keys.sort((a, b) => {
+			const ai = contextOrder.indexOf(a);
+			const bi = contextOrder.indexOf(b);
+			return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+		});
+	}
+
+	function contextLabel(ctx: string): string {
+		return ServiceContextLabels[ctx as keyof typeof ServiceContextLabels] ?? ctx;
+	}
+
+	function hasReadings(groups: Record<string, unknown[]>): boolean {
+		return Object.values(groups).some((arr) => arr.length > 0);
+	}
 </script>
 
 <svelte:head>
@@ -48,11 +75,11 @@
 	<form method="GET" class="flex flex-wrap items-end gap-4">
 		<div>
 			<label for="date" class="mb-1 block text-sm font-medium">Date</label>
-			<input type="date" id="date" name="date" value={data.date} class="input rounded border border-surface-600 bg-surface-800 px-3 py-2" />
+			<input type="date" id="date" name="date" value={data.date} class="input rounded border border-surface-300 bg-surface-100 px-3 py-2" />
 		</div>
 		<div>
 			<label for="tradition" class="mb-1 block text-sm font-medium">Tradition</label>
-			<select id="tradition" name="tradition" class="input rounded border border-surface-600 bg-surface-800 px-3 py-2">
+			<select id="tradition" name="tradition" class="input rounded border border-surface-300 bg-surface-100 px-3 py-2">
 				<option value="cw" selected={data.tradition === 'cw'}>Common Worship</option>
 				<option value="bcp" selected={data.tradition === 'bcp'}>Book of Common Prayer</option>
 			</select>
@@ -62,7 +89,7 @@
 
 	<!-- Occasion info -->
 	{#if data.occasion}
-		<div class="border-surface-700 rounded border p-6">
+		<div class="border-surface-300 rounded border p-6">
 			<div class="mb-4 flex flex-wrap items-center gap-3">
 				<h2 class="text-2xl font-bold">{data.occasion.name}</h2>
 				{#if data.occasion.colour && colourDisplay[data.occasion.colour]}
@@ -71,7 +98,7 @@
 					</span>
 				{/if}
 			</div>
-			<div class="text-surface-400 flex flex-wrap gap-4 text-sm">
+			<div class="text-surface-500 flex flex-wrap gap-4 text-sm">
 				{#if data.occasion.season}
 					<span>Season: {seasonLabels[data.occasion.season] ?? data.occasion.season}</span>
 				{/if}
@@ -81,52 +108,76 @@
 			</div>
 		</div>
 
-		<!-- Primary tradition readings -->
+		<!-- Primary tradition readings grouped by context -->
 		<div>
 			<h3 class="mb-3 text-lg font-semibold">
-				{data.tradition === 'cw' ? 'Common Worship' : 'Book of Common Prayer'} — Principal Service
+				{data.tradition === 'cw' ? 'Common Worship' : 'Book of Common Prayer'}
 			</h3>
-			{#if data.readings.length === 0}
-				<p class="text-surface-400 py-4 text-center">No readings found for this date and tradition.</p>
-			{:else}
-				<div class="space-y-2">
-					{#each data.readings as reading}
-						<div class="border-surface-700 flex items-baseline gap-3 rounded border p-3">
-							<span class="text-surface-400 w-28 shrink-0 text-sm">
-								{ReadingTypeLabels[reading.readingType as keyof typeof ReadingTypeLabels] ?? reading.readingType}
-							</span>
-							<span class="font-medium">{reading.reference}</span>
-							{#if reading.alternateYear}
-								<span class="text-surface-500 text-xs">(Year {reading.alternateYear})</span>
-							{/if}
-						</div>
+			{#if hasReadings(data.groups)}
+				<div class="space-y-6">
+					{#each sortedContexts(data.groups) as ctx}
+						{@const readings = data.groups[ctx]}
+						{#if readings && readings.length > 0}
+							<div>
+								<h4 class="text-surface-600 mb-2 text-sm font-semibold uppercase tracking-wide">
+									{contextLabel(ctx)}
+								</h4>
+								<div class="space-y-2">
+									{#each readings as reading}
+										<div class="border-surface-300 flex items-baseline gap-3 rounded border p-3">
+											<span class="text-surface-500 w-28 shrink-0 text-sm">
+												{ReadingTypeLabels[reading.readingType as keyof typeof ReadingTypeLabels] ?? reading.readingType}
+											</span>
+											<span class="font-medium">{reading.reference}</span>
+											{#if reading.alternateYear}
+												<span class="text-surface-400 text-xs">(Year {reading.alternateYear})</span>
+											{/if}
+										</div>
+									{/each}
+								</div>
+							</div>
+						{/if}
 					{/each}
 				</div>
+			{:else}
+				<p class="text-surface-500 py-4 text-center">No readings found for this date and tradition.</p>
 			{/if}
 		</div>
 
 		<!-- Alternative tradition readings -->
-		{#if data.altReadings.length > 0}
+		{#if hasReadings(data.altGroups)}
 			<div>
-				<h3 class="mb-3 text-lg font-semibold text-surface-400">
-					{data.altTradition === 'cw' ? 'Common Worship' : 'Book of Common Prayer'} — Principal Service
+				<h3 class="text-surface-500 mb-3 text-lg font-semibold">
+					{data.altTradition === 'cw' ? 'Common Worship' : 'Book of Common Prayer'}
 				</h3>
-				<div class="space-y-2 opacity-75">
-					{#each data.altReadings as reading}
-						<div class="border-surface-700 flex items-baseline gap-3 rounded border p-3">
-							<span class="text-surface-400 w-28 shrink-0 text-sm">
-								{ReadingTypeLabels[reading.readingType as keyof typeof ReadingTypeLabels] ?? reading.readingType}
-							</span>
-							<span class="font-medium">{reading.reference}</span>
-						</div>
+				<div class="space-y-6 opacity-75">
+					{#each sortedContexts(data.altGroups) as ctx}
+						{@const readings = data.altGroups[ctx]}
+						{#if readings && readings.length > 0}
+							<div>
+								<h4 class="text-surface-600 mb-2 text-sm font-semibold uppercase tracking-wide">
+									{contextLabel(ctx)}
+								</h4>
+								<div class="space-y-2">
+									{#each readings as reading}
+										<div class="border-surface-300 flex items-baseline gap-3 rounded border p-3">
+											<span class="text-surface-500 w-28 shrink-0 text-sm">
+												{ReadingTypeLabels[reading.readingType as keyof typeof ReadingTypeLabels] ?? reading.readingType}
+											</span>
+											<span class="font-medium">{reading.reference}</span>
+										</div>
+									{/each}
+								</div>
+							</div>
+						{/if}
 					{/each}
 				</div>
 			</div>
 		{/if}
 	{:else}
-		<div class="text-surface-400 py-8 text-center">
+		<div class="text-surface-500 py-8 text-center">
 			<p>No lectionary occasion found for this date.</p>
-			<p class="mt-2 text-sm">Try selecting a Sunday or major feast day.</p>
+			<p class="mt-2 text-sm">Try selecting a different date.</p>
 		</div>
 	{/if}
 </div>

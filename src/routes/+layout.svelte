@@ -19,20 +19,20 @@
 </svelte:head>
 
 <div class="flex min-h-screen flex-col">
-	<header class="bg-surface-900 text-surface-50 border-surface-700 border-b">
+	<header class="bg-surface-50 text-surface-900 border-surface-300 border-b">
 		<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
 			<a href="/" class="text-lg font-semibold">Chapel Planner</a>
 
 			<!-- Desktop nav -->
 			<nav class="hidden gap-4 md:flex" aria-label="Main navigation">
 				{#each navLinks as link}
-					<a href={link.href} class="hover:text-primary-400 transition-colors">{link.label}</a>
+					<a href={link.href} class="hover:text-primary-600 transition-colors">{link.label}</a>
 				{/each}
 			</nav>
 
 			<!-- Mobile menu button -->
 			<button
-				class="md:hidden rounded p-1 text-surface-300 hover:text-surface-50"
+				class="md:hidden rounded p-1 text-surface-700 hover:text-surface-700"
 				onclick={() => mobileNavOpen = !mobileNavOpen}
 				aria-label="Toggle navigation menu"
 				aria-expanded={mobileNavOpen}
@@ -49,11 +49,11 @@
 
 		<!-- Mobile nav -->
 		{#if mobileNavOpen}
-			<nav class="border-surface-700 border-t px-4 pb-3 md:hidden" aria-label="Mobile navigation">
+			<nav class="border-surface-300 border-t px-4 pb-3 md:hidden" aria-label="Mobile navigation">
 				{#each navLinks as link}
 					<a
 						href={link.href}
-						class="hover:text-primary-400 block py-2 transition-colors"
+						class="hover:text-primary-600 block py-2 transition-colors"
 						onclick={() => mobileNavOpen = false}
 					>{link.label}</a>
 				{/each}
@@ -65,7 +65,7 @@
 		{@render children()}
 	</main>
 
-	<footer class="text-surface-400 border-surface-700 border-t py-4 text-center text-sm">
+	<footer class="text-surface-500 border-surface-300 border-t py-4 text-center text-sm">
 		Chapel Planner
 	</footer>
 </div>

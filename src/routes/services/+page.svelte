@@ -28,33 +28,33 @@
 	</div>
 
 	{#if filtersOpen}
-		<form method="GET" class="grid grid-cols-1 gap-3 rounded-lg border border-surface-700 bg-surface-800 p-4 sm:grid-cols-2 lg:grid-cols-4">
+		<form method="GET" class="grid grid-cols-1 gap-3 rounded-lg border border-surface-300 bg-surface-100 p-4 sm:grid-cols-2 lg:grid-cols-4">
 			<div>
-				<label for="filter-from" class="mb-1 block text-xs text-surface-400">From</label>
+				<label for="filter-from" class="mb-1 block text-xs text-surface-500">From</label>
 				<input
 					id="filter-from"
 					type="date"
 					name="from"
 					value={data.filters.from}
-					class="w-full rounded border border-surface-600 bg-surface-900 px-3 py-2 text-sm"
+					class="w-full rounded border border-surface-300 bg-surface-50 px-3 py-2 text-sm"
 				/>
 			</div>
 			<div>
-				<label for="filter-to" class="mb-1 block text-xs text-surface-400">To</label>
+				<label for="filter-to" class="mb-1 block text-xs text-surface-500">To</label>
 				<input
 					id="filter-to"
 					type="date"
 					name="to"
 					value={data.filters.to}
-					class="w-full rounded border border-surface-600 bg-surface-900 px-3 py-2 text-sm"
+					class="w-full rounded border border-surface-300 bg-surface-50 px-3 py-2 text-sm"
 				/>
 			</div>
 			<div>
-				<label for="filter-type" class="mb-1 block text-xs text-surface-400">Service Type</label>
+				<label for="filter-type" class="mb-1 block text-xs text-surface-500">Service Type</label>
 				<select
 					id="filter-type"
 					name="serviceType"
-					class="w-full rounded border border-surface-600 bg-surface-900 px-3 py-2 text-sm"
+					class="w-full rounded border border-surface-300 bg-surface-50 px-3 py-2 text-sm"
 				>
 					<option value="">All types</option>
 					{#each Object.entries(ServiceTypeLabels) as [value, label]}
@@ -63,11 +63,11 @@
 				</select>
 			</div>
 			<div>
-				<label for="filter-block" class="mb-1 block text-xs text-surface-400">Block</label>
+				<label for="filter-block" class="mb-1 block text-xs text-surface-500">Block</label>
 				<select
 					id="filter-block"
 					name="blockId"
-					class="w-full rounded border border-surface-600 bg-surface-900 px-3 py-2 text-sm"
+					class="w-full rounded border border-surface-300 bg-surface-50 px-3 py-2 text-sm"
 				>
 					<option value="">All blocks</option>
 					{#each data.blocks as block}
@@ -83,12 +83,12 @@
 	{/if}
 
 	{#if data.services.length === 0}
-		<p class="text-surface-400 py-12 text-center">No services found.</p>
+		<p class="text-surface-500 py-12 text-center">No services found.</p>
 	{:else}
-		<div class="text-surface-400 text-sm">{data.services.length} service{data.services.length !== 1 ? 's' : ''}</div>
-		<div class="overflow-x-auto rounded-lg border border-surface-700">
+		<div class="text-surface-500 text-sm">{data.services.length} service{data.services.length !== 1 ? 's' : ''}</div>
+		<div class="overflow-x-auto rounded-lg border border-surface-300">
 			<table class="w-full">
-				<thead class="bg-surface-800">
+				<thead class="bg-surface-100">
 					<tr>
 						<th class="px-4 py-3 text-left text-sm font-medium">Date</th>
 						<th class="px-4 py-3 text-left text-sm font-medium">Time</th>
@@ -100,21 +100,21 @@
 				</thead>
 				<tbody>
 					{#each data.services as service}
-						<tr class="border-surface-700 hover:bg-surface-800 border-t">
+						<tr class="border-surface-300 hover:bg-surface-100 border-t">
 							<td class="px-4 py-3 text-sm">{formatDate(service.date)}</td>
 							<td class="px-4 py-3 text-sm">{formatTime(service.time)}</td>
 							<td class="px-4 py-3 text-sm hidden sm:table-cell">{ServiceTypeLabels[service.serviceType as keyof typeof ServiceTypeLabels] ?? service.serviceType}</td>
 							<td class="px-4 py-3 text-sm">
-								<a href="/services/{service.id}" class="text-primary-400 hover:underline">
+								<a href="/services/{service.id}" class="text-primary-600 hover:underline">
 									{service.title || service.liturgicalDay || ServiceTypeLabels[service.serviceType as keyof typeof ServiceTypeLabels] || 'Service'}
 								</a>
 							</td>
 							<td class="px-4 py-3 text-sm hidden md:table-cell">{service.rite}</td>
 							<td class="px-4 py-3 text-sm">
 								{#if service.isConfirmed}
-									<span class="rounded bg-green-900 px-2 py-0.5 text-xs text-green-300">Confirmed</span>
+									<span class="rounded bg-green-100 px-2 py-0.5 text-xs text-green-800">Confirmed</span>
 								{:else}
-									<span class="rounded bg-yellow-900 px-2 py-0.5 text-xs text-yellow-300">Draft</span>
+									<span class="rounded bg-yellow-100 px-2 py-0.5 text-xs text-yellow-800">Draft</span>
 								{/if}
 							</td>
 						</tr>

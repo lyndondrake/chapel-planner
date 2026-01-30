@@ -50,11 +50,13 @@ export function getOccasionsByDate(date: string) {
 
 /**
  * Get readings for an occasion, filtered by tradition and liturgical year.
+ * Optionally filter by service context.
  */
 export function getReadingsForOccasion(
 	occasionId: number,
 	tradition: string = 'cw',
-	liturgicalYear?: string | null
+	liturgicalYear?: string | null,
+	serviceContext?: string | null
 ) {
 	let readings = db
 		.select()
@@ -74,7 +76,94 @@ export function getReadingsForOccasion(
 		);
 	}
 
+	// Filter by service context if specified
+	if (serviceContext) {
+		readings = readings.filter((r) => r.serviceContext === serviceContext);
+	}
+
 	return readings.sort((a, b) => (a.sortOrder ?? 0) - (b.sortOrder ?? 0));
+}
+
+/**
+ * Get all readings for a date, grouped by service context.
+ * Returns readings for a specific tradition, organised into contexts
+ * (principal, morning_prayer, evening_prayer, etc.).
+ */
+export function getReadingsGroupedByContext(date: string, tradition: string = 'cw') {
+	const occasion = getOccasionByDate(date);
+	if (!occasion) return { occasion: null, groups: {} as Record<string, never[]> };
+
+	const allReadings = db
+		.select()
+		.from(lectionaryReadings)
+		.where(
+			and(
+				eq(lectionaryReadings.occasionId, occasion.id),
+				eq(lectionaryReadings.tradition, tradition)
+			)
+		)
+		.all();
+
+	// Filter by liturgical year
+	const litYear = occasion.liturgicalYear;
+	const filtered = allReadings.filter(
+		(r) => !r.alternateYear || r.alternateYear === litYear
+	);
+
+	// Group by service context
+	const groups: Record<string, typeof filtered> = {};
+	for (const reading of filtered) {
+		const ctx = reading.serviceContext ?? 'principal';
+		if (!groups[ctx]) groups[ctx] = [];
+		groups[ctx].push(reading);
+	}
+
+	// Sort readings within each group
+	for (const ctx of Object.keys(groups)) {
+		groups[ctx].sort((a, b) => (a.sortOrder ?? 0) - (b.sortOrder ?? 0));
+	}
+
+	return { occasion, groups };
+}
+
+/**
+ * Map a service type to the most appropriate lectionary service context.
+ * E.g. choral_eucharist → principal, sunday_evensong → evening_prayer.
+ */
+export function serviceTypeToContext(serviceType: string): string {
+	const mapping: Record<string, string> = {
+		choral_eucharist: 'principal',
+		said_eucharist: 'principal',
+		feast_day: 'principal',
+		morning_prayer: 'morning_prayer',
+		choral_matins: 'morning_prayer',
+		sunday_evensong: 'evening_prayer',
+		evening_prayer: 'evening_prayer',
+		gaudy_evensong: 'evening_prayer',
+		thursday_compline: 'evening_prayer'
+	};
+	return mapping[serviceType] ?? 'principal';
+}
+
+/**
+ * Get readings for a specific date, filtered by service context.
+ * Uses the date map to find the occasion and the liturgical year to filter readings.
+ */
+export function getReadingsForDateAndContext(
+	date: string,
+	tradition: string = 'cw',
+	serviceContext?: string | null
+) {
+	const occasion = getOccasionByDate(date);
+	if (!occasion) return { occasion: null, readings: [] };
+
+	const readings = getReadingsForOccasion(
+		occasion.id,
+		tradition,
+		occasion.liturgicalYear,
+		serviceContext
+	);
+	return { occasion, readings };
 }
 
 /**
