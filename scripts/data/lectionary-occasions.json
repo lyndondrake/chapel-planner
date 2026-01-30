@@ -3747,5 +3747,272 @@
     "fixedMonth": 11,
     "fixedDay": 30,
     "priority": 90
+  },
+  {
+    "name": "Day of Thanksgiving for Holy Communion (Corpus Christi)",
+    "slug": "corpus-christi",
+    "season": "ordinary_time",
+    "colour": "white",
+    "isFixed": false,
+    "priority": 80
+  },
+  {
+    "name": "Mothering Sunday",
+    "slug": "mothering-sunday",
+    "season": "lent",
+    "colour": "rose",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 40
+  },
+  {
+    "name": "Dedication Festival",
+    "slug": "dedication-festival",
+    "season": "ordinary_time",
+    "colour": "white",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 40
+  },
+  {
+    "name": "Bible Sunday",
+    "slug": "bible-sunday",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 40
+  },
+  {
+    "name": "Easter Vigil",
+    "slug": "easter-vigil",
+    "season": "easter",
+    "colour": "white",
+    "isFixed": false,
+    "dayOfWeek": 6,
+    "priority": 40
+  },
+  {
+    "name": "Christmas Eve",
+    "slug": "christmas-eve",
+    "season": "christmas",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 24,
+    "priority": 80
+  },
+  {
+    "name": "Rogation Day",
+    "slug": "rogation-day",
+    "season": "easter",
+    "colour": "purple",
+    "isFixed": false,
+    "priority": 40
+  },
+  {
+    "name": "Peter the Apostle",
+    "slug": "peter-apostle",
+    "season": "ordinary_time",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 6,
+    "fixedDay": 29,
+    "priority": 40
+  },
+  {
+    "name": "Fifth Sunday before Advent",
+    "slug": "kingdom-5",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Monday of Kingdom Week 5",
+    "slug": "kingdom-5-mon",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Kingdom Week 5",
+    "slug": "kingdom-5-tue",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Kingdom Week 5",
+    "slug": "kingdom-5-wed",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Kingdom Week 5",
+    "slug": "kingdom-5-thu",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Kingdom Week 5",
+    "slug": "kingdom-5-fri",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Kingdom Week 5",
+    "slug": "kingdom-5-sat",
+    "season": "kingdom",
+    "colour": "green",
+    "isFixed": false,
+    "weekOfSeason": 5,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Third Sunday before Lent",
+    "slug": "before-lent-3",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Monday of Week before Lent 3",
+    "slug": "before-lent-3-mon",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Week before Lent 3",
+    "slug": "before-lent-3-tue",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Week before Lent 3",
+    "slug": "before-lent-3-wed",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Week before Lent 3",
+    "slug": "before-lent-3-thu",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Week before Lent 3",
+    "slug": "before-lent-3-fri",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Week before Lent 3",
+    "slug": "before-lent-3-sat",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 6,
+    "priority": 30
+  },
+  {
+    "name": "Fourth Sunday before Lent",
+    "slug": "before-lent-4",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 0,
+    "priority": 50
+  },
+  {
+    "name": "Monday of Week before Lent 4",
+    "slug": "before-lent-4-mon",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 1,
+    "priority": 30
+  },
+  {
+    "name": "Tuesday of Week before Lent 4",
+    "slug": "before-lent-4-tue",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 2,
+    "priority": 30
+  },
+  {
+    "name": "Wednesday of Week before Lent 4",
+    "slug": "before-lent-4-wed",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 3,
+    "priority": 30
+  },
+  {
+    "name": "Thursday of Week before Lent 4",
+    "slug": "before-lent-4-thu",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 4,
+    "priority": 30
+  },
+  {
+    "name": "Friday of Week before Lent 4",
+    "slug": "before-lent-4-fri",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 5,
+    "priority": 30
+  },
+  {
+    "name": "Saturday of Week before Lent 4",
+    "slug": "before-lent-4-sat",
+    "season": "epiphany",
+    "colour": "green",
+    "isFixed": false,
+    "dayOfWeek": 6,
+    "priority": 30
   }
 ]

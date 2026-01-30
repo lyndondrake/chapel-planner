@@ -125,6 +125,9 @@ function buildDateSlugMap(startYear: number, endYear: number): Map<string, strin
 			setWeekdays(sunday, `advent-${w + 1}`);
 		}
 
+		// Christmas Eve
+		set(`${year}-12-24`, 'christmas-eve');
+
 		// Christmas Day
 		set(`${year}-12-25`, 'christmas-day');
 
@@ -189,6 +192,20 @@ function buildDateSlugMap(startYear: number, endYear: number): Map<string, strin
 		set(toISO(secondSundayBeforeLent), 'before-lent-2');
 		setWeekdays(secondSundayBeforeLent, 'before-lent-2');
 
+		// Third and Fourth Sundays before Lent (late Easter years)
+		const thirdSundayBeforeLent = addDays(sundayBeforeLent, -14);
+		const epiphany4End = epiphanySundays.length >= 4 ? addDays(epiphanySundays[3], 7) : epiphanySundayStart;
+		if (thirdSundayBeforeLent >= epiphany4End) {
+			set(toISO(thirdSundayBeforeLent), 'before-lent-3');
+			setWeekdays(thirdSundayBeforeLent, 'before-lent-3');
+
+			const fourthSundayBeforeLent = addDays(sundayBeforeLent, -21);
+			if (fourthSundayBeforeLent >= epiphany4End) {
+				set(toISO(fourthSundayBeforeLent), 'before-lent-4');
+				setWeekdays(fourthSundayBeforeLent, 'before-lent-4');
+			}
+		}
+
 		// Ash Wednesday
 		set(toISO(ashWednesday), 'ash-wednesday');
 
@@ -226,6 +243,9 @@ function buildDateSlugMap(startYear: number, endYear: number): Map<string, strin
 		// Trinity Sunday
 		set(toISO(addDays(easter, 56)), 'trinity-sunday');
 
+		// Corpus Christi (Easter + 60, Thursday after Trinity)
+		set(toISO(addDays(easter, 60)), 'corpus-christi');
+
 		// Ordinary Time (Proper Sundays after Trinity)
 		const trinitySunday = addDays(easter, 56);
 		let properSunday = addDays(trinitySunday, 7);
@@ -236,7 +256,7 @@ function buildDateSlugMap(startYear: number, endYear: number): Map<string, strin
 				(adventSunday.getTime() - properSunday.getTime()) / (7 * 24 * 60 * 60 * 1000)
 			);
 
-			if (weeksBeforeAdvent <= 3) {
+			if (weeksBeforeAdvent <= 4) {
 				const kingdomSlug =
 					weeksBeforeAdvent === 0
 						? 'christ-the-king'
@@ -340,7 +360,12 @@ const summarySlugOverrides: Record<string, string> = {
 	'ash wednesday': 'ash-wednesday',
 	'corpus christi': 'corpus-christi',
 	'christ the king': 'christ-the-king',
-	'sunday before lent': 'before-lent-1'
+	'sunday before lent': 'before-lent-1',
+	'mothering sunday': 'mothering-sunday',
+	'dedication festival': 'dedication-festival',
+	'bible sunday': 'bible-sunday',
+	'easter vigil': 'easter-vigil',
+	'peter': 'peter-apostle'
 };
 
 function parseSummaryToSlug(summary: string): string | null {
@@ -395,19 +420,17 @@ function parseSummaryToSlug(summary: string): string | null {
 	const beforeLentMatch = lower.match(/^(\d+) before lent$/);
 	if (beforeLentMatch) {
 		const n = parseInt(beforeLentMatch[1]);
-		if (n <= 2) return `before-lent-${n}`;
-		// 3 before Lent = Epiphany 4 or 3; 4 before Lent = Epiphany 3 or 2
-		// Resolved by date mapping
+		if (n >= 1 && n <= 4) return `before-lent-${n}`;
 		return null;
 	}
 
 	// "N before Advent" → kingdom Sundays
 	// In CW: "3 before Advent" = kingdom-4 (wba=3), "2 before Advent" = kingdom-3 (wba=2)
-	// "4 before Advent" = a proper Sunday (resolved by date mapping)
+	// "4 before Advent" = kingdom-5 (wba=4)
 	const beforeAdventMatch = lower.match(/^(\d+) before advent$/);
 	if (beforeAdventMatch) {
 		const n = parseInt(beforeAdventMatch[1]);
-		if (n >= 2 && n <= 3) return `kingdom-${n + 1}`;
+		if (n >= 2 && n <= 4) return `kingdom-${n + 1}`;
 		return null;
 	}
 
@@ -735,20 +758,28 @@ function main() {
 	const unmatchedSummaries = new Set<string>();
 
 	for (const entry of allEntries) {
-		// Try to determine the slug for this entry
-		let slug = dateSlugMap.get(entry.dateStart);
+		// Always compute both slug sources
+		const dateSlug = dateSlugMap.get(entry.dateStart);
+		const summarySlug = parseSummaryToSlug(entry.summary);
 
-		// If no date mapping, try summary-based mapping
-		if (!slug) {
-			slug = parseSummaryToSlug(entry.summary) ?? undefined;
-		}
+		let slug: string | undefined;
 
-		if (!slug || !validSlugs.has(slug)) {
-			// Try summary override even when we have a date-based slug
-			const summarySlug = parseSummaryToSlug(entry.summary);
-			if (summarySlug && validSlugs.has(summarySlug)) {
-				slug = summarySlug;
-			}
+		// If summary contains "(or)" or the summary slug differs from the date slug,
+		// prefer the summary slug — this routes feast alternatives to their own occasion
+		const hasOrMarker = entry.summary.includes('(or)');
+		if (hasOrMarker && summarySlug && validSlugs.has(summarySlug)) {
+			slug = summarySlug;
+		} else if (summarySlug && validSlugs.has(summarySlug) && dateSlug && summarySlug !== dateSlug) {
+			// Summary-based slug is valid and different from date slug — prefer summary
+			// (e.g. a fixed feast on a date that also has a seasonal mapping)
+			slug = summarySlug;
+		} else if (dateSlug && validSlugs.has(dateSlug)) {
+			slug = dateSlug;
+		} else if (summarySlug && validSlugs.has(summarySlug)) {
+			slug = summarySlug;
+		} else {
+			// Fall back to date slug even if not in valid slugs (for weekday entries)
+			slug = dateSlug;
 		}
 
 		if (!slug || !validSlugs.has(slug)) {

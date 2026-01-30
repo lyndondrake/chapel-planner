@@ -64,7 +64,8 @@ const readingFiles = [
 	'scripts/data/lectionary-readings-cw-principal.json',
 	'scripts/data/lectionary-readings-cw-office.json',
 	'scripts/data/lectionary-readings-cw-eucharist.json',
-	'scripts/data/lectionary-readings-bcp-hc.json'
+	'scripts/data/lectionary-readings-bcp-hc.json',
+	'scripts/data/lectionary-readings-bcp-office.json'
 ];
 
 let readingsInserted = 0;
@@ -228,6 +229,9 @@ for (let year = 2024; year <= 2030; year++) {
 		insertWeekdays(sunday, `advent-${w + 1}`);
 	}
 
+	// --- Christmas Eve (Dec 24) ---
+	insertDateMap(`${year}-12-24`, 'christmas-eve');
+
 	// --- Christmas Day ---
 	insertDateMap(`${year}-12-25`, 'christmas-day');
 
@@ -304,6 +308,21 @@ for (let year = 2024; year <= 2030; year++) {
 	insertDateMap(toISO(secondSundayBeforeLent), 'before-lent-2');
 	insertWeekdays(secondSundayBeforeLent, 'before-lent-2');
 
+	// --- Third and Fourth Sundays before Lent (late Easter years) ---
+	const thirdSundayBeforeLent = addDays(sundayBeforeLent, -14);
+	// Only insert if it falls after Epiphany 4 (i.e. there's room)
+	const epiphany4End = epiphanySundays.length >= 4 ? addDays(epiphanySundays[3], 7) : epiphanySundayStart;
+	if (thirdSundayBeforeLent >= epiphany4End) {
+		insertDateMap(toISO(thirdSundayBeforeLent), 'before-lent-3');
+		insertWeekdays(thirdSundayBeforeLent, 'before-lent-3');
+
+		const fourthSundayBeforeLent = addDays(sundayBeforeLent, -21);
+		if (fourthSundayBeforeLent >= epiphany4End) {
+			insertDateMap(toISO(fourthSundayBeforeLent), 'before-lent-4');
+			insertWeekdays(fourthSundayBeforeLent, 'before-lent-4');
+		}
+	}
+
 	// --- Ash Wednesday ---
 	insertDateMap(toISO(ashWednesday), 'ash-wednesday');
 
@@ -315,6 +334,10 @@ for (let year = 2024; year <= 2030; year++) {
 		insertWeekdays(sunday, `lent-${w + 1}`);
 	}
 
+	// --- Mothering Sunday (same date as Lent 4, non-principal) ---
+	const lent4Sunday = addDays(lentSunday1, 3 * 7);
+	insertDateMap(toISO(lent4Sunday), 'mothering-sunday', false);
+
 	// --- Holy Week ---
 	insertDateMap(toISO(addDays(easter, -7)), 'palm-sunday');
 	insertDateMap(toISO(addDays(easter, -6)), 'holy-monday');
@@ -324,6 +347,9 @@ for (let year = 2024; year <= 2030; year++) {
 	insertDateMap(toISO(addDays(easter, -2)), 'good-friday');
 	insertDateMap(toISO(addDays(easter, -1)), 'easter-eve');
 
+	// --- Easter Vigil (same date as Easter Eve, non-principal) ---
+	insertDateMap(toISO(addDays(easter, -1)), 'easter-vigil', false);
+
 	// --- Easter + weekdays ---
 	insertDateMap(toISO(easter), 'easter-day');
 	for (let w = 2; w <= 7; w++) {
@@ -331,6 +357,11 @@ for (let year = 2024; year <= 2030; year++) {
 		insertDateMap(toISO(sunday), `easter-${w}`);
 		insertWeekdays(sunday, `easter-${w}`);
 	}
+
+	// --- Rogation Days (Easter + 36/37/38, Mon–Wed before Ascension) ---
+	insertDateMap(toISO(addDays(easter, 36)), 'rogation-day', false);
+	insertDateMap(toISO(addDays(easter, 37)), 'rogation-day', false);
+	insertDateMap(toISO(addDays(easter, 38)), 'rogation-day', false);
 
 	// --- Ascension Day (Easter + 39) ---
 	insertDateMap(toISO(addDays(easter, 39)), 'ascension-day');
@@ -340,6 +371,9 @@ for (let year = 2024; year <= 2030; year++) {
 
 	// --- Trinity Sunday (Easter + 56) ---
 	insertDateMap(toISO(addDays(easter, 56)), 'trinity-sunday');
+
+	// --- Corpus Christi (Easter + 60, Thursday after Trinity) ---
+	insertDateMap(toISO(addDays(easter, 60)), 'corpus-christi');
 
 	// --- Ordinary Time Propers (after Trinity) + weekdays ---
 	const trinitySunday = addDays(easter, 56);
@@ -351,7 +385,7 @@ for (let year = 2024; year <= 2030; year++) {
 			(adventSunday.getTime() - properSunday.getTime()) / (7 * 24 * 60 * 60 * 1000)
 		);
 
-		if (weeksBeforeAdvent <= 3) {
+		if (weeksBeforeAdvent <= 4) {
 			const kingdomSlug =
 				weeksBeforeAdvent === 0
 					? 'christ-the-king'
@@ -379,7 +413,7 @@ for (let year = 2024; year <= 2030; year++) {
 		[5, 14, 'st-matthias'],
 		[5, 31, 'visit-of-mary'],
 		[6, 11, 'st-barnabas'],
-		[6, 24, 'birth-of-john-the-baptist'],
+		[6, 24, 'birth-of-st-john-baptist'],
 		[6, 29, 'ss-peter-and-paul'],
 		[7, 3, 'st-thomas'],
 		[7, 22, 'st-mary-magdalene'],
@@ -389,7 +423,7 @@ for (let year = 2024; year <= 2030; year++) {
 		[8, 24, 'st-bartholomew'],
 		[9, 14, 'holy-cross-day'],
 		[9, 21, 'st-matthew'],
-		[9, 29, 'st-michael-and-all-angels'],
+		[9, 29, 'st-michael-all-angels'],
 		[10, 18, 'st-luke'],
 		[10, 28, 'ss-simon-and-jude'],
 		[11, 1, 'all-saints'],
@@ -404,6 +438,28 @@ for (let year = 2024; year <= 2030; year++) {
 			const isPrincipal = slug === 'all-saints';
 			insertDateMap(dateStr, slug, isPrincipal);
 		}
+	}
+
+	// --- Peter the Apostle (Jun 29, non-principal alongside SS Peter and Paul) ---
+	if (slugToId['peter-apostle']) {
+		insertDateMap(`${year}-06-29`, 'peter-apostle', false);
+	}
+
+	// --- Bible Sunday (last Sunday after Trinity = Christ the King date, non-principal) ---
+	// Christ the King is the Sunday next before Advent
+	const christTheKingSunday = addDays(adventSunday, -7);
+	if (slugToId['bible-sunday']) {
+		insertDateMap(toISO(christTheKingSunday), 'bible-sunday', false);
+	}
+
+	// --- Dedication Festival (first Sunday of October + last Sunday after Trinity, non-principal) ---
+	if (slugToId['dedication-festival']) {
+		// First Sunday of October
+		const oct1 = new Date(year, 9, 1);
+		const firstSundayOct = oct1.getDay() === 0 ? oct1 : addDays(oct1, 7 - oct1.getDay());
+		insertDateMap(toISO(firstSundayOct), 'dedication-festival', false);
+		// Last Sunday after Trinity (= Christ the King date)
+		insertDateMap(toISO(christTheKingSunday), 'dedication-festival', false);
 	}
 }
 
