@@ -7,6 +7,11 @@ import {
 	toISODate
 } from '$lib/utils/liturgical-date';
 
+export interface ReadingGroup {
+	readingType: string;
+	readings: (typeof lectionaryReadings.$inferSelect)[];
+}
+
 /**
  * Look up the lectionary occasion for a given date.
  * Returns the principal occasion and its readings for the appropriate tradition and year.
@@ -94,6 +99,52 @@ export function getReadingsForOccasion(
 }
 
 /**
+ * Collapse a sorted list of readings into groups, merging alternatives.
+ *
+ * An optional reading merges into the previous group when either:
+ *   (a) it shares the same sortOrder as the group's primary reading
+ *       (regardless of readingType), or
+ *   (b) its sortOrder is primary + 1 and the primary is NOT optional
+ *       — this handles psalm alternatives stored as old_testament that
+ *       follow a non-optional psalm entry.
+ *
+ * Otherwise a new group is started.
+ */
+function groupAlternativeReadings(
+	readings: (typeof lectionaryReadings.$inferSelect)[]
+): ReadingGroup[] {
+	const groups: ReadingGroup[] = [];
+
+	for (const reading of readings) {
+		const lastGroup = groups.length > 0 ? groups[groups.length - 1] : null;
+
+		if (reading.isOptional && lastGroup) {
+			const primary = lastGroup.readings[0];
+			const primarySort = primary?.sortOrder ?? 0;
+			const readingSort = reading.sortOrder ?? 0;
+			const primaryIsOptional = primary?.isOptional ?? false;
+
+			const sameSortOrder = readingSort === primarySort;
+			const adjacentToNonOptional =
+				readingSort === primarySort + 1 && !primaryIsOptional;
+
+			if (sameSortOrder || adjacentToNonOptional) {
+				lastGroup.readings.push(reading);
+				continue;
+			}
+		}
+
+		// Start a new group
+		groups.push({
+			readingType: reading.readingType,
+			readings: [reading]
+		});
+	}
+
+	return groups;
+}
+
+/**
  * Get all readings for a date, grouped by service context.
  * Returns readings for a specific tradition, organised into contexts
  * (principal, morning_prayer, evening_prayer, etc.).
@@ -125,16 +176,20 @@ export function getReadingsGroupedByContext(date: string, tradition: string = 'c
 	);
 
 	// Group by service context
-	const groups: Record<string, typeof filtered> = {};
+	const contextReadings: Record<string, typeof filtered> = {};
 	for (const reading of filtered) {
 		const ctx = reading.serviceContext ?? 'principal';
-		if (!groups[ctx]) groups[ctx] = [];
-		groups[ctx].push(reading);
+		if (!contextReadings[ctx]) contextReadings[ctx] = [];
+		contextReadings[ctx].push(reading);
 	}
 
-	// Sort readings within each group
-	for (const ctx of Object.keys(groups)) {
-		groups[ctx].sort((a, b) => (a.sortOrder ?? 0) - (b.sortOrder ?? 0));
+	// Sort readings within each context, then collapse alternatives into groups
+	const groups: Record<string, ReadingGroup[]> = {};
+	for (const ctx of Object.keys(contextReadings)) {
+		const sorted = contextReadings[ctx].sort(
+			(a, b) => (a.sortOrder ?? 0) - (b.sortOrder ?? 0)
+		);
+		groups[ctx] = groupAlternativeReadings(sorted);
 	}
 
 	return { occasion, groups };

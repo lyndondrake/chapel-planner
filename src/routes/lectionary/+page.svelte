@@ -1,5 +1,10 @@
 <script lang="ts">
-	import { ReadingTypeLabels, ServiceContextLabels } from '$lib/types/enums';
+	import {
+		ReadingTypeLabels,
+		OfficeReadingTypeLabels,
+		ApocryphalBooks,
+		ServiceContextLabels
+	} from '$lib/types/enums';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
@@ -46,6 +51,8 @@
 		'third_service'
 	];
 
+	const officeContexts = new Set(['morning_prayer', 'evening_prayer']);
+
 	function allContexts(
 		cwGroups: Record<string, unknown[]>,
 		bcpGroups: Record<string, unknown[]>
@@ -64,6 +71,30 @@
 
 	function hasReadings(groups: Record<string, unknown[]>): boolean {
 		return Object.values(groups).some((arr) => arr.length > 0);
+	}
+
+	function readingLabel(
+		readingType: string,
+		ctx: string,
+		book: string | null
+	): string {
+		if (officeContexts.has(ctx)) {
+			return OfficeReadingTypeLabels[readingType] ?? readingType;
+		}
+		// For principal/eucharist contexts, detect Apocrypha
+		if (readingType === 'old_testament' && book && ApocryphalBooks.has(book)) {
+			return 'Apocrypha';
+		}
+		return ReadingTypeLabels[readingType as keyof typeof ReadingTypeLabels] ?? readingType;
+	}
+
+	function groupLabel(
+		group: { readingType: string; readings: { book?: string | null }[] },
+		ctx: string
+	): string {
+		// Use the primary (first) reading's book for Apocrypha detection
+		const primaryBook = group.readings[0]?.book ?? null;
+		return readingLabel(group.readingType, ctx, primaryBook);
 	}
 </script>
 
@@ -108,26 +139,33 @@
 		{#if hasReadings(data.cwGroups) || hasReadings(data.bcpGroups)}
 			<div class="space-y-6">
 				{#each allContexts(data.cwGroups, data.bcpGroups) as ctx}
-					{@const cwReadings = data.cwGroups[ctx] ?? []}
-					{@const bcpReadings = data.bcpGroups[ctx] ?? []}
-					{#if cwReadings.length > 0 || bcpReadings.length > 0}
+					{@const cwReadingGroups = data.cwGroups[ctx] ?? []}
+					{@const bcpReadingGroups = data.bcpGroups[ctx] ?? []}
+					{#if cwReadingGroups.length > 0 || bcpReadingGroups.length > 0}
 						<div>
 							<h4 class="text-surface-600 mb-2 text-sm font-semibold uppercase tracking-wide">
 								{contextLabel(ctx)}
 							</h4>
 
-							{#if cwReadings.length > 0}
+							{#if cwReadingGroups.length > 0}
 								<div class="mb-2">
 									<span class="text-surface-400 mb-1 block text-xs font-medium uppercase">Common Worship</span>
 									<div class="space-y-2">
-										{#each cwReadings as reading}
+										{#each cwReadingGroups as group}
 											<div class="border-surface-300 flex items-baseline gap-3 rounded border p-3">
 												<span class="text-surface-500 w-28 shrink-0 text-sm">
-													{ReadingTypeLabels[reading.readingType as keyof typeof ReadingTypeLabels] ?? reading.readingType}
+													{groupLabel(group, ctx)}
 												</span>
-												<span class="font-medium">{reading.reference}</span>
-												{#if reading.alternateYear}
-													<span class="text-surface-400 text-xs">(Year {reading.alternateYear})</span>
+												<span class="font-medium">
+													{#each group.readings as reading, i}
+														{#if i > 0}
+															{' '}<em>or</em>{' '}
+														{/if}
+														{reading.reference}
+													{/each}
+												</span>
+												{#if group.readings[0]?.alternateYear}
+													<span class="text-surface-400 text-xs">(Year {group.readings[0].alternateYear})</span>
 												{/if}
 											</div>
 										{/each}
@@ -135,18 +173,25 @@
 								</div>
 							{/if}
 
-							{#if bcpReadings.length > 0}
+							{#if bcpReadingGroups.length > 0}
 								<div class="mb-2">
 									<span class="text-surface-400 mb-1 block text-xs font-medium uppercase">Book of Common Prayer</span>
 									<div class="space-y-2">
-										{#each bcpReadings as reading}
+										{#each bcpReadingGroups as group}
 											<div class="border-surface-300 flex items-baseline gap-3 rounded border p-3">
 												<span class="text-surface-500 w-28 shrink-0 text-sm">
-													{ReadingTypeLabels[reading.readingType as keyof typeof ReadingTypeLabels] ?? reading.readingType}
+													{groupLabel(group, ctx)}
 												</span>
-												<span class="font-medium">{reading.reference}</span>
-												{#if reading.alternateYear}
-													<span class="text-surface-400 text-xs">(Year {reading.alternateYear})</span>
+												<span class="font-medium">
+													{#each group.readings as reading, i}
+														{#if i > 0}
+															{' '}<em>or</em>{' '}
+														{/if}
+														{reading.reference}
+													{/each}
+												</span>
+												{#if group.readings[0]?.alternateYear}
+													<span class="text-surface-400 text-xs">(Year {group.readings[0].alternateYear})</span>
 												{/if}
 											</div>
 										{/each}

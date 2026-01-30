@@ -119,6 +119,28 @@ export const ReadingTypeLabels: Record<ReadingType, string> = {
 	second_reading: 'Second Reading'
 };
 
+export const OfficeReadingTypeLabels: Record<string, string> = {
+	old_testament: 'First Lesson',
+	psalm: 'Psalm',
+	epistle: 'Second Lesson',
+	gospel: 'Second Lesson',
+	canticle: 'Canticle',
+	second_reading: 'Second Lesson'
+};
+
+export const ApocryphalBooks = new Set([
+	'Ecclesiasticus',
+	'Wisdom of Solomon',
+	'2 Esdras',
+	'Baruch',
+	'Tobit',
+	'Judith',
+	'1 Maccabees',
+	'2 Maccabees',
+	'Wisdom',
+	'Sirach'
+]);
+
 export const LiturgicalSeason = {
 	ADVENT: 'advent',
 	CHRISTMAS: 'christmas',
