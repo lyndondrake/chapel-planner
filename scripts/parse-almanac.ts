@@ -451,10 +451,18 @@ const epistleBooks = new Set([
 	'Hebrews', 'James', 'Peter', 'Jude', 'Revelation', 'Acts'
 ]);
 
-function classifyReadingType(ref: string, sectionContext: string): string {
-	const refLower = ref.toLowerCase();
+function classifyReadingType(ref: string, sectionContext: string, biblerefAttr?: string): string {
+	// Check biblerefAttr first if available (it often has the full "Psalms 139" form
+	// even when the visible text is a bare number like "139")
+	const checkRef = biblerefAttr ?? ref;
+	const checkLower = checkRef.toLowerCase();
 
-	if (refLower.startsWith('psalm') || refLower.match(/^\d+\s*psalm/)) {
+	if (checkLower.startsWith('psalm') || checkLower.match(/^\d+\s*psalm/)) {
+		return 'psalm';
+	}
+
+	// Bare numbers (e.g. "139", "142, 144") in office contexts are psalms
+	if (/^\d[\d,\s]*$/.test(ref.trim())) {
 		return 'psalm';
 	}
 
@@ -504,10 +512,13 @@ interface ParsedSection {
 interface ParsedEntry {
 	dateStart: string; // YYYY-MM-DD
 	summary: string;
+	commemorationName: string | null; // from cwtitle
+	commemorationColour: string | null; // from colours span
 	sections: {
 		lect1: ParsedSection[];
 		lect2: ParsedSection[];
 		lect3: ParsedSection[];
+		lect4: ParsedSection[]; // Exciting Holiness (commemorations)
 		bcphc: RawReading[];
 		bcpadd: RawReading[];
 	};
@@ -541,18 +552,58 @@ function parseAlmanacHtml(html: string): ParsedEntry[] {
 		const lect1Sections = parseLectSpans(blockHtml, 'lect1');
 		const lect2Sections = parseLectSpans(blockHtml, 'lect2');
 		const lect3Sections = parseLectSpans(blockHtml, 'lect3');
+		const lect4Sections = parseLectSpans(blockHtml, 'lect4');
 
 		// Parse BCP HC readings
 		const bcphcReadings = parseBibleRefs(blockHtml, 'bcphc');
 		const bcpaddReadings = parseBibleRefs(blockHtml, 'bcpadd');
 
+		// Extract commemoration metadata from cwtitle and colours spans
+		let commemorationName: string | null = null;
+		let commemorationColour: string | null = null;
+
+		if (lect4Sections.length > 0) {
+			// Get cwtitle text (may have multiple lines for multiple saints)
+			const titleRegex = /<span class="cwtitle">(.*?)<br\s*\/?>/g;
+			const titles: string[] = [];
+			let titleM;
+			while ((titleM = titleRegex.exec(blockHtml)) !== null) {
+				const t = titleM[1].replace(/<[^>]+>/g, '').trim();
+				if (t) titles.push(t);
+			}
+			if (titles.length > 0) {
+				commemorationName = titles[0]; // Use the first/primary title
+			}
+
+			// Get colours — look for the second colour after " / "
+			const colourMatches = [...blockHtml.matchAll(/<span class="colours">(.*?)<\/span>/g)];
+			if (colourMatches.length >= 2) {
+				// Second colours span typically has " / red" or " / white"
+				const secondColour = colourMatches[1][1]
+					.replace(/<br\s*\/?>/g, '')
+					.replace(/^\s*\/\s*/, '')
+					.trim()
+					.toLowerCase();
+				if (secondColour) commemorationColour = secondColour;
+			} else if (colourMatches.length === 1) {
+				const colour = colourMatches[0][1]
+					.replace(/<br\s*\/?>/g, '')
+					.trim()
+					.toLowerCase();
+				if (colour) commemorationColour = colour;
+			}
+		}
+
 		entries.push({
 			dateStart,
 			summary,
+			commemorationName,
+			commemorationColour,
 			sections: {
 				lect1: lect1Sections,
 				lect2: lect2Sections,
 				lect3: lect3Sections,
+				lect4: lect4Sections,
 				bcphc: bcphcReadings,
 				bcpadd: bcpaddReadings
 			}
@@ -715,6 +766,38 @@ function parseReference(ref: string): { book: string | null; chapter: string | n
 }
 
 // ---------------------------------------------------------------------------
+// Commemoration slug generation
+// ---------------------------------------------------------------------------
+
+function commemorationSlug(title: string): string {
+	// "Charles, King and Martyr, 1649" → "charles-king-and-martyr"
+	// "Francis Xavier, Missionary, Apostle of the Indies, 1552" → "francis-xavier-missionary-apostle-of-the-indies"
+	return title
+		.replace(/,\s*\d{3,4}(\s+and\s+\d{3,4})?$/, '') // strip trailing years
+		.replace(/,\s*c\.\s*\d{3,4}$/, '') // strip "c.326" style years
+		.replace(/[,()]/g, '')
+		.replace(/&rsquo;/g, '')
+		.replace(/&ndash;/g, '-')
+		.trim()
+		.toLowerCase()
+		.replace(/\s+/g, '-');
+}
+
+// ---------------------------------------------------------------------------
+// Commemoration occasion output structure
+// ---------------------------------------------------------------------------
+
+interface OutputCommemorationOccasion {
+	slug: string;
+	name: string;
+	colour: string | null;
+	isFixed: true;
+	fixedMonth: number;
+	fixedDay: number;
+	priority: number;
+}
+
+// ---------------------------------------------------------------------------
 // Main processing
 // ---------------------------------------------------------------------------
 
@@ -752,6 +835,8 @@ function main() {
 	const cwOffice: OutputReading[] = [];
 	const cwEucharist: OutputReading[] = [];
 	const bcpHc: OutputReading[] = [];
+	const cwCommemorations: OutputReading[] = [];
+	const commemorationOccasions = new Map<string, OutputCommemorationOccasion>();
 
 	let matched = 0;
 	let unmatched = 0;
@@ -805,7 +890,7 @@ function main() {
 			let sortOrder = 0;
 			for (const reading of section.readings) {
 				sortOrder++;
-				const readingType = classifyReadingType(reading.ref, ctx);
+				const readingType = classifyReadingType(reading.ref, ctx, reading.biblerefAttr);
 				const parsed = parseReference(reading.ref);
 
 				const outputReading: OutputReading = {
@@ -836,7 +921,7 @@ function main() {
 			let sortOrder = 0;
 			for (const reading of section.readings) {
 				sortOrder++;
-				const readingType = classifyReadingType(reading.ref, ctx);
+				const readingType = classifyReadingType(reading.ref, ctx, reading.biblerefAttr);
 				const parsed = parseReference(reading.ref);
 
 				cwEucharist.push({
@@ -864,7 +949,7 @@ function main() {
 			let sortOrder = 0;
 			for (const reading of section.readings) {
 				sortOrder++;
-				const readingType = classifyReadingType(reading.ref, ctx);
+				const readingType = classifyReadingType(reading.ref, ctx, reading.biblerefAttr);
 				const parsed = parseReference(reading.ref);
 
 				cwOffice.push({
@@ -890,7 +975,7 @@ function main() {
 			let sortOrder = 0;
 			for (const reading of bcpReadings) {
 				sortOrder++;
-				const readingType = classifyReadingType(reading.ref, 'principal');
+				const readingType = classifyReadingType(reading.ref, 'principal', reading.biblerefAttr);
 				const parsed = parseReference(reading.ref);
 
 				bcpHc.push({
@@ -909,6 +994,52 @@ function main() {
 				});
 			}
 		}
+
+		// --- lect4: Exciting Holiness (commemoration readings) ---
+		if (entry.sections.lect4.length > 0 && entry.commemorationName) {
+			const commSlug = commemorationSlug(entry.commemorationName);
+			const dateObj = new Date(entry.dateStart + 'T12:00:00');
+			const month = dateObj.getMonth() + 1;
+			const day = dateObj.getDate();
+
+			// Register the commemoration occasion (first occurrence wins)
+			if (!commemorationOccasions.has(commSlug)) {
+				commemorationOccasions.set(commSlug, {
+					slug: commSlug,
+					name: entry.commemorationName,
+					colour: entry.commemorationColour,
+					isFixed: true,
+					fixedMonth: month,
+					fixedDay: day,
+					priority: 20 // lower than principal feasts
+				});
+			}
+
+			// Flatten all lect4 section readings into commemoration readings
+			let sortOrder = 4; // start at 5 (after regular eucharist at 1-4)
+			for (const section of entry.sections.lect4) {
+				for (const reading of section.readings) {
+					sortOrder++;
+					const readingType = classifyReadingType(reading.ref, 'daily_eucharist', reading.biblerefAttr);
+					const parsed = parseReference(reading.ref);
+
+					cwCommemorations.push({
+						occasionSlug: commSlug,
+						tradition: 'cw',
+						serviceContext: 'daily_eucharist',
+						readingType,
+						reference: cleanReference(reading.ref),
+						book: parsed.book,
+						chapter: parsed.chapter,
+						verseStart: parsed.verseStart,
+						verseEnd: parsed.verseEnd,
+						alternateYear: null,
+						isOptional: true, // alternatives to regular daily eucharist
+						sortOrder
+					});
+				}
+			}
+		}
 	}
 
 	console.log(`\nMatched ${matched} entries, ${unmatched} unmatched`);
@@ -925,7 +1056,8 @@ function main() {
 		cwPrincipal: deduplicateReadings(cwPrincipal),
 		cwOffice: deduplicateReadings(cwOffice),
 		cwEucharist: deduplicateReadings(cwEucharist),
-		bcpHc: deduplicateReadings(bcpHc)
+		bcpHc: deduplicateReadings(bcpHc),
+		cwCommemorations: deduplicateReadings(cwCommemorations)
 	};
 
 	console.log(`\nOutput counts (after deduplication):`);
@@ -933,12 +1065,23 @@ function main() {
 	console.log(`  CW Office: ${deduped.cwOffice.length}`);
 	console.log(`  CW Eucharist: ${deduped.cwEucharist.length}`);
 	console.log(`  BCP HC: ${deduped.bcpHc.length}`);
+	console.log(`  CW Commemorations: ${deduped.cwCommemorations.length}`);
+	console.log(`  Commemoration occasions: ${commemorationOccasions.size}`);
 
 	// Write output files
 	writeJsonFile(resolve(dataDir, 'lectionary-readings-cw-principal.json'), deduped.cwPrincipal);
 	writeJsonFile(resolve(dataDir, 'lectionary-readings-cw-office.json'), deduped.cwOffice);
 	writeJsonFile(resolve(dataDir, 'lectionary-readings-cw-eucharist.json'), deduped.cwEucharist);
 	writeJsonFile(resolve(dataDir, 'lectionary-readings-bcp-hc.json'), deduped.bcpHc);
+	writeJsonFile(resolve(dataDir, 'lectionary-readings-cw-commemorations.json'), deduped.cwCommemorations);
+
+	// Write commemoration occasions
+	const commOccasionsList = [...commemorationOccasions.values()];
+	writeFileSync(
+		resolve(dataDir, 'lectionary-occasions-commemorations.json'),
+		JSON.stringify(commOccasionsList, null, 2) + '\n'
+	);
+	console.log(`  Wrote ${resolve(dataDir, 'lectionary-occasions-commemorations.json')}`);
 
 	console.log('\nDone.');
 }

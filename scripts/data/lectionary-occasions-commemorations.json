@@ -1,0 +1,848 @@
+[
+  {
+    "slug": "nicholas-bishop-of-myra",
+    "name": "Nicholas, Bishop of Myra, c.326",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 6,
+    "priority": 20
+  },
+  {
+    "slug": "ambrose-bishop-of-milan-teacher-of-the-faith",
+    "name": "Ambrose, Bishop of Milan, Teacher of the Faith, 397",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 7,
+    "priority": 20
+  },
+  {
+    "slug": "the-conception-of-the-blessed-virgin-mary",
+    "name": "The Conception of the Blessed Virgin Mary",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 8,
+    "priority": 20
+  },
+  {
+    "slug": "lucy-martyr-at-syracuse",
+    "name": "Lucy, Martyr at Syracuse, 304",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 13,
+    "priority": 20
+  },
+  {
+    "slug": "john-of-the-cross-poet-teacher-of-the-faith",
+    "name": "John of the Cross, Poet, Teacher of the Faith, 1591",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 14,
+    "priority": 20
+  },
+  {
+    "slug": "thomas-becket-archbishop-of-canterbury-martyr",
+    "name": "Thomas Becket, Archbishop of Canterbury, Martyr, 1170",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 29,
+    "priority": 20
+  },
+  {
+    "slug": "aelred-of-hexham-abbot-of-rievaulx",
+    "name": "Aelred of Hexham, Abbot of Rievaulx, 1167",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 1,
+    "fixedDay": 12,
+    "priority": 20
+  },
+  {
+    "slug": "hilary-bishop-of-poitiers-teacher-of-the-faith",
+    "name": "Hilary, Bishop of Poitiers, Teacher of the Faith, 367",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 1,
+    "fixedDay": 13,
+    "priority": 20
+  },
+  {
+    "slug": "antony-of-egypt-hermit-abbot",
+    "name": "Antony of Egypt, Hermit, Abbot, 356",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 1,
+    "fixedDay": 17,
+    "priority": 20
+  },
+  {
+    "slug": "wulfstan-bishop-of-worcester",
+    "name": "Wulfstan, Bishop of Worcester, 1095",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 1,
+    "fixedDay": 19,
+    "priority": 20
+  },
+  {
+    "slug": "francis-de-sales-bishop-of-geneva-teacher-of-the-faith",
+    "name": "Francis de Sales, Bishop of Geneva, Teacher of the Faith, 1622",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 1,
+    "fixedDay": 24,
+    "priority": 20
+  },
+  {
+    "slug": "charles-king-and-martyr",
+    "name": "Charles, King and Martyr, 1649",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 1,
+    "fixedDay": 30,
+    "priority": 20
+  },
+  {
+    "slug": "anskar-archbishop-of-hamburg-missionary-in-denmark-and-sweden",
+    "name": "Anskar, Archbishop of Hamburg, Missionary in Denmark and Sweden, 865",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 2,
+    "fixedDay": 3,
+    "priority": 20
+  },
+  {
+    "slug": "janani-luwum-archbishop-of-uganda-martyr",
+    "name": "Janani Luwum, Archbishop of Uganda, Martyr, 1977",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 2,
+    "fixedDay": 17,
+    "priority": 20
+  },
+  {
+    "slug": "polycarp-bishop-of-smyrna-martyr",
+    "name": "Polycarp, Bishop of Smyrna, Martyr, c.155",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 2,
+    "fixedDay": 23,
+    "priority": 20
+  },
+  {
+    "slug": "george-herbert-priest-poet",
+    "name": "George Herbert, Priest, Poet, 1633",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 2,
+    "fixedDay": 27,
+    "priority": 20
+  },
+  {
+    "slug": "david-bishop-of-menevia-patron-of-wales",
+    "name": "David, Bishop of Menevia, Patron of Wales, c.601",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 3,
+    "fixedDay": 1,
+    "priority": 20
+  },
+  {
+    "slug": "chad-bishop-of-lichfield-missionary",
+    "name": "Chad, Bishop of Lichfield, Missionary, 672",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 3,
+    "fixedDay": 2,
+    "priority": 20
+  },
+  {
+    "slug": "perpetua-felicity-and-their-companions-martyrs-at-carthage",
+    "name": "Perpetua, Felicity and their Companions, Martyrs at Carthage, 203",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 3,
+    "fixedDay": 7,
+    "priority": 20
+  },
+  {
+    "slug": "edward-king-bishop-of-lincoln",
+    "name": "Edward King, Bishop of Lincoln, 1910",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 3,
+    "fixedDay": 8,
+    "priority": 20
+  },
+  {
+    "slug": "cuthbert-bishop-of-lindisfarne-missionary",
+    "name": "Cuthbert, Bishop of Lindisfarne, Missionary, 687",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 3,
+    "fixedDay": 20,
+    "priority": 20
+  },
+  {
+    "slug": "thomas-cranmer-archbishop-of-canterbury-reformation-martyr",
+    "name": "Thomas Cranmer, Archbishop of Canterbury, Reformation Martyr, 1556",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 3,
+    "fixedDay": 21,
+    "priority": 20
+  },
+  {
+    "slug": "william-law-priest-spiritual-writer",
+    "name": "William Law, Priest, Spiritual Writer, 1761",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 4,
+    "fixedDay": 10,
+    "priority": 20
+  },
+  {
+    "slug": "alphege-archbishop-of-canterbury-martyr",
+    "name": "Alphege, Archbishop of Canterbury, Martyr, 1012",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 4,
+    "fixedDay": 19,
+    "priority": 20
+  },
+  {
+    "slug": "catherine-of-siena-teacher-of-the-faith",
+    "name": "Catherine of Siena, Teacher of the Faith, 1380",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 4,
+    "fixedDay": 29,
+    "priority": 20
+  },
+  {
+    "slug": "athanasius-bishop-of-alexandria-teacher-of-the-faith",
+    "name": "Athanasius, Bishop of Alexandria, Teacher of the Faith, 373",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 5,
+    "fixedDay": 2,
+    "priority": 20
+  },
+  {
+    "slug": "julian-of-norwich-spiritual-writer",
+    "name": "Julian of Norwich, Spiritual Writer, c.1417",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 5,
+    "fixedDay": 8,
+    "priority": 20
+  },
+  {
+    "slug": "if-30-may-is-not-observed-as-the-day-of-thanksgiving-for-the-institution-of-holy-communion-corpus-christi:",
+    "name": "If 30 May is not observed as the Day of Thanksgiving for the Institution of Holy Communion (Corpus Christi):",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 5,
+    "fixedDay": 30,
+    "priority": 20
+  },
+  {
+    "slug": "boniface-wynfrith-of-crediton-bishop-apostle-of-germany-martyr",
+    "name": "Boniface (Wynfrith) of Crediton, Bishop, Apostle of Germany, Martyr, 754",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 6,
+    "fixedDay": 5,
+    "priority": 20
+  },
+  {
+    "slug": "thomas-ken-bishop-of-bath-and-wells-nonjuror-hymn-writer",
+    "name": "Thomas Ken, Bishop of Bath and Wells, Nonjuror, Hymn Writer, 1711",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 6,
+    "fixedDay": 8,
+    "priority": 20
+  },
+  {
+    "slug": "alban-first-martyr-of-britain",
+    "name": "Alban, first Martyr of Britain, c.250",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 6,
+    "fixedDay": 22,
+    "priority": 20
+  },
+  {
+    "slug": "iren&aelig;us-bishop-of-lyons-teacher-of-the-faith",
+    "name": "Iren&aelig;us, Bishop of Lyons, Teacher of the Faith, c.200",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 6,
+    "fixedDay": 28,
+    "priority": 20
+  },
+  {
+    "slug": "benedict-of-nursia-abbot-of-monte-cassino-father-of-western-monasticism",
+    "name": "Benedict of Nursia, Abbot of Monte Cassino, Father of Western Monasticism, c.550",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 7,
+    "fixedDay": 11,
+    "priority": 20
+  },
+  {
+    "slug": "swithun-bishop-of-winchester",
+    "name": "Swithun, Bishop of Winchester, c.862",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 7,
+    "fixedDay": 15,
+    "priority": 20
+  },
+  {
+    "slug": "gregory-bishop-of-nyssa-and-his-sister-macrina-deaconess-teachers-of-the-faith-c.394-and-c.379",
+    "name": "Gregory, Bishop of Nyssa, and his sister Macrina, Deaconess, Teachers of the Faith, c.394 and c.379",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 7,
+    "fixedDay": 19,
+    "priority": 20
+  },
+  {
+    "slug": "william-wilberforce-social-reformer-olaudah-equiano-and-thomas-clarkson-anti-slavery-campaigners-1833",
+    "name": "William Wilberforce, Social Reformer, Olaudah Equiano and Thomas Clarkson, Anti-Slavery Campaigners, 1833, 1797 and 1846",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 7,
+    "fixedDay": 30,
+    "priority": 20
+  },
+  {
+    "slug": "oswald-king-of-northumbria-martyr",
+    "name": "Oswald, King of Northumbria, Martyr, 642",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 5,
+    "priority": 20
+  },
+  {
+    "slug": "dominic-priest-founder-of-the-order-of-preachers",
+    "name": "Dominic, Priest, Founder of the Order of Preachers, 1221",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 8,
+    "priority": 20
+  },
+  {
+    "slug": "mary-sumner-founder-of-the-mothers-union",
+    "name": "Mary Sumner, Founder of the Mothers&rsquo; Union, 1921",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 9,
+    "priority": 20
+  },
+  {
+    "slug": "laurence-deacon-at-rome-martyr",
+    "name": "Laurence, Deacon at Rome, Martyr, 258",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 10,
+    "priority": 20
+  },
+  {
+    "slug": "jeremy-taylor-bishop-of-down-and-connor-teacher-of-the-faith",
+    "name": "Jeremy Taylor, Bishop of Down and Connor, Teacher of the Faith, 1667",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 13,
+    "priority": 20
+  },
+  {
+    "slug": "bernard-abbot-of-clairvaux-teacher-of-the-faith",
+    "name": "Bernard, Abbot of Clairvaux, Teacher of the Faith, 1153",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 20,
+    "priority": 20
+  },
+  {
+    "slug": "monica-mother-of-augustine-of-hippo",
+    "name": "Monica, mother of Augustine of Hippo, 387",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 27,
+    "priority": 20
+  },
+  {
+    "slug": "augustine-bishop-of-hippo-teacher-of-the-faith",
+    "name": "Augustine, Bishop of Hippo, Teacher of the Faith, 430",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 28,
+    "priority": 20
+  },
+  {
+    "slug": "john-bunyan-spiritual-writer",
+    "name": "John Bunyan, Spiritual Writer, 1688",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 30,
+    "priority": 20
+  },
+  {
+    "slug": "aidan-bishop-of-lindisfarne-missionary",
+    "name": "Aidan, Bishop of Lindisfarne, Missionary, 651",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 31,
+    "priority": 20
+  },
+  {
+    "slug": "gregory-the-great-bishop-of-rome-teacher-of-the-faith",
+    "name": "Gregory the Great, Bishop of Rome, Teacher of the Faith, 604",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 3,
+    "priority": 20
+  },
+  {
+    "slug": "john-chrysostom-bishop-of-constantinople-teacher-of-the-faith",
+    "name": "John Chrysostom, Bishop of Constantinople, Teacher of the Faith, 407",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 13,
+    "priority": 20
+  },
+  {
+    "slug": "ninian-bishop-of-galloway-apostle-of-the-picts",
+    "name": "Ninian, Bishop of Galloway, Apostle of the Picts, c.432",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 16,
+    "priority": 20
+  },
+  {
+    "slug": "hildegard-abbess-of-bingen-visionary",
+    "name": "Hildegard, Abbess of Bingen, Visionary, 1179",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 17,
+    "priority": 20
+  },
+  {
+    "slug": "john-coleridge-patteson-first-bishop-of-melanesia-and-his-companions-martyrs",
+    "name": "John Coleridge Patteson, First Bishop of Melanesia, and his Companions, Martyrs, 1871",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 20,
+    "priority": 20
+  },
+  {
+    "slug": "lancelot-andrewes-bishop-of-winchester-spiritual-writer",
+    "name": "Lancelot Andrewes, Bishop of Winchester, Spiritual Writer, 1626",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 25,
+    "priority": 20
+  },
+  {
+    "slug": "vincent-de-paul-founder-of-the-congregation-of-the-mission-lazarists",
+    "name": "Vincent de Paul, Founder of the Congregation of the Mission (Lazarists), 1660",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 27,
+    "priority": 20
+  },
+  {
+    "slug": "francis-of-assisi-friar-deacon-founder-of-the-friars-minor",
+    "name": "Francis of Assisi, Friar, Deacon, Founder of the Friars Minor, 1226",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 4,
+    "priority": 20
+  },
+  {
+    "slug": "paulinus-bishop-of-york-missionary",
+    "name": "Paulinus, Bishop of York, Missionary, 644",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 10,
+    "priority": 20
+  },
+  {
+    "slug": "wilfrid-of-ripon-bishop-missionary",
+    "name": "Wilfrid of Ripon, Bishop, Missionary, 709",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 12,
+    "priority": 20
+  },
+  {
+    "slug": "teresa-of-avila-teacher-of-the-faith",
+    "name": "Teresa of Avila, Teacher of the Faith, 1582",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 15,
+    "priority": 20
+  },
+  {
+    "slug": "ignatius-bishop-of-antioch-martyr",
+    "name": "Ignatius, Bishop of Antioch, Martyr, c.107",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 17,
+    "priority": 20
+  },
+  {
+    "slug": "henry-martyn-translator-of-the-scriptures-missionary-in-india-and-persia",
+    "name": "Henry Martyn, Translator of the Scriptures, Missionary in India and Persia, 1812",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 19,
+    "priority": 20
+  },
+  {
+    "slug": "alfred-the-great-king-of-the-west-saxons-scholar",
+    "name": "Alfred the Great, King of the West Saxons, Scholar, 899",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 26,
+    "priority": 20
+  },
+  {
+    "slug": "james-hannington-bishop-of-eastern-equatorial-africa-martyr-in-uganda",
+    "name": "James Hannington, Bishop of Eastern Equatorial Africa, Martyr in Uganda, 1885",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 29,
+    "priority": 20
+  },
+  {
+    "slug": "agnes-child-martyr-at-rome",
+    "name": "Agnes, Child Martyr at Rome, 304",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 1,
+    "fixedDay": 21,
+    "priority": 20
+  },
+  {
+    "slug": "thomas-aquinas-priest-philosopher-teacher-of-the-faith",
+    "name": "Thomas Aquinas, Priest, Philosopher, Teacher of the Faith, 1274",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 1,
+    "fixedDay": 28,
+    "priority": 20
+  },
+  {
+    "slug": "cyril-and-methodius-missionaries-to-the-slavs",
+    "name": "Cyril and Methodius, Missionaries to the Slavs, 869 and 885",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 2,
+    "fixedDay": 14,
+    "priority": 20
+  },
+  {
+    "slug": "patrick-bishop-missionary-patron-of-ireland",
+    "name": "Patrick, Bishop, Missionary, Patron of Ireland, c.460",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 3,
+    "fixedDay": 17,
+    "priority": 20
+  },
+  {
+    "slug": "dunstan-archbishop-of-canterbury-restorer-of-monastic-life",
+    "name": "Dunstan, Archbishop of Canterbury, Restorer of Monastic Life, 988",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 5,
+    "fixedDay": 19,
+    "priority": 20
+  },
+  {
+    "slug": "alcuin-of-york-deacon-abbot-of-tours",
+    "name": "Alcuin of York, Deacon, Abbot of Tours, 804",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 5,
+    "fixedDay": 20,
+    "priority": 20
+  },
+  {
+    "slug": "john-and-charles-wesley-evangelists-hymn-writers",
+    "name": "John and Charles Wesley, Evangelists, Hymn Writers, 1791 and 1788",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 5,
+    "fixedDay": 24,
+    "priority": 20
+  },
+  {
+    "slug": "augustine-first-archbishop-of-canterbury",
+    "name": "Augustine, first Archbishop of Canterbury, 605",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 5,
+    "fixedDay": 26,
+    "priority": 20
+  },
+  {
+    "slug": "josephine-butler-social-reformer",
+    "name": "Josephine Butler, Social Reformer, 1906",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 5,
+    "fixedDay": 30,
+    "priority": 20
+  },
+  {
+    "slug": "etheldreda-abbess-of-ely",
+    "name": "Etheldreda, Abbess of Ely, c.678",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 6,
+    "fixedDay": 23,
+    "priority": 20
+  },
+  {
+    "slug": "john-keble-priest-tractarian-poet",
+    "name": "John Keble, Priest, Tractarian, Poet, 1866",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 7,
+    "fixedDay": 14,
+    "priority": 20
+  },
+  {
+    "slug": "clare-of-assisi-founder-of-the-minoresses-poor-clares",
+    "name": "Clare of Assisi, Founder of the Minoresses (Poor Clares), 1253",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 8,
+    "fixedDay": 11,
+    "priority": 20
+  },
+  {
+    "slug": "the-festival-of-the-blessed-virgin-mary-may-for-pastoral-reasons-be-observed-on-8-september-instead-of-15-august.",
+    "name": "The Festival of the Blessed Virgin Mary may, for pastoral reasons, be observed on 8 September instead of 15 August.",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 8,
+    "priority": 20
+  },
+  {
+    "slug": "holy-cross-day-may-be-observed-on-sunday-14-september-or-monday-15-september.",
+    "name": "Holy Cross Day may be observed on Sunday 14 September or Monday 15 September.",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 15,
+    "priority": 20
+  },
+  {
+    "slug": "william-tyndale-translator-of-the-scriptures-reformation-martyr",
+    "name": "William Tyndale, Translator of the Scriptures, Reformation Martyr, 1536",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 6,
+    "priority": 20
+  },
+  {
+    "slug": "edward-the-confessor-king-of-england",
+    "name": "Edward the Confessor, King of England, 1066",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 13,
+    "priority": 20
+  },
+  {
+    "slug": "richard-hooker-priest-anglican-apologist-teacher-of-the-faith",
+    "name": "Richard Hooker, Priest, Anglican Apologist, Teacher of the Faith, 1600",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 3,
+    "priority": 20
+  },
+  {
+    "slug": "willibrord-of-york-bishop-apostle-of-frisia",
+    "name": "Willibrord of York, Bishop, Apostle of Frisia, 739",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 7,
+    "priority": 20
+  },
+  {
+    "slug": "leo-the-great-bishop-of-rome-teacher-of-the-faith",
+    "name": "Leo the Great, Bishop of Rome, Teacher of the Faith, 461",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 10,
+    "priority": 20
+  },
+  {
+    "slug": "martin-bishop-of-tours",
+    "name": "Martin, Bishop of Tours, c.397",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 11,
+    "priority": 20
+  },
+  {
+    "slug": "charles-simeon-priest-evangelical-divine",
+    "name": "Charles Simeon, Priest, Evangelical Divine, 1836",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 13,
+    "priority": 20
+  },
+  {
+    "slug": "hugh-bishop-of-lincoln",
+    "name": "Hugh, Bishop of Lincoln, 1200",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 17,
+    "priority": 20
+  },
+  {
+    "slug": "elizabeth-of-hungary-princess-of-thuringia-philanthropist",
+    "name": "Elizabeth of Hungary, Princess of Thuringia, Philanthropist, 1231",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 18,
+    "priority": 20
+  },
+  {
+    "slug": "hilda-abbess-of-whitby",
+    "name": "Hilda, Abbess of Whitby, 680",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 19,
+    "priority": 20
+  },
+  {
+    "slug": "edmund-king-of-the-east-angles-martyr",
+    "name": "Edmund, King of the East Angles, Martyr, 870",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 20,
+    "priority": 20
+  },
+  {
+    "slug": "the-festival-of-the-holy-innocents-may-be-observed-on-sunday-28-december-or-on-monday-29-december.-if-it-is-observed-on-sunday-28-december:",
+    "name": "The Festival of The Holy Innocents may be observed on Sunday 28 December or on Monday 29 December. If it is observed on Sunday 28 December:",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 12,
+    "fixedDay": 29,
+    "priority": 20
+  },
+  {
+    "slug": "anselm-abbot-of-le-bec-archbishop-of-canterbury-teacher-of-the-faith",
+    "name": "Anselm, Abbot of Le Bec, Archbishop of Canterbury, Teacher of the Faith, 1109",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 4,
+    "fixedDay": 21,
+    "priority": 20
+  },
+  {
+    "slug": "columba-abbot-of-iona-missionary",
+    "name": "Columba, Abbot of Iona, Missionary, 597",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 6,
+    "fixedDay": 9,
+    "priority": 20
+  },
+  {
+    "slug": "richard-bishop-of-chichester",
+    "name": "Richard, Bishop of Chichester, 1253",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 6,
+    "fixedDay": 16,
+    "priority": 20
+  },
+  {
+    "slug": "cyprian-bishop-of-carthage-martyr",
+    "name": "Cyprian, Bishop of Carthage, Martyr, 258",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 9,
+    "fixedDay": 15,
+    "priority": 20
+  },
+  {
+    "slug": "the-festival-of-luke-the-evangelist-may-be-celebrated-on-sunday-18-october-or-on-monday-19-october.",
+    "name": "The Festival of Luke the Evangelist may be celebrated on Sunday 18 October, or on Monday 19 October.",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 10,
+    "fixedDay": 19,
+    "priority": 20
+  },
+  {
+    "slug": "margaret-queen-of-scotland-philanthropist-reformer-of-the-church",
+    "name": "Margaret, Queen of Scotland, Philanthropist, Reformer of the Church, 1093",
+    "colour": "white",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 16,
+    "priority": 20
+  },
+  {
+    "slug": "clement-bishop-of-rome-martyr",
+    "name": "Clement, Bishop of Rome, Martyr, c.100",
+    "colour": "red",
+    "isFixed": true,
+    "fixedMonth": 11,
+    "fixedDay": 23,
+    "priority": 20
+  }
+]

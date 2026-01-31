@@ -11,7 +11,7 @@ export const load: PageServerLoad = async ({ url }) => {
 	const date = dateParam || today;
 
 	// Get readings grouped by service context for both traditions
-	const { occasion, groups: cwGroups } = getReadingsGroupedByContext(date, 'cw');
+	const { occasion, groups: cwGroups, commemorations } = getReadingsGroupedByContext(date, 'cw');
 	const { groups: bcpGroups } = getReadingsGroupedByContext(date, 'bcp');
 
 	return {
@@ -27,6 +27,7 @@ export const load: PageServerLoad = async ({ url }) => {
 				}
 			: null,
 		cwGroups,
-		bcpGroups
+		bcpGroups,
+		commemorations
 	};
 };

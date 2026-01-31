@@ -148,10 +148,13 @@ function groupAlternativeReadings(
  * Get all readings for a date, grouped by service context.
  * Returns readings for a specific tradition, organised into contexts
  * (principal, morning_prayer, evening_prayer, etc.).
+ *
+ * Also merges commemoration readings (from non-principal occasions)
+ * into the daily_eucharist context, and returns commemoration metadata.
  */
 export function getReadingsGroupedByContext(date: string, tradition: string = 'cw') {
 	const occasion = getOccasionByDate(date);
-	if (!occasion) return { occasion: null, groups: {} as Record<string, never[]> };
+	if (!occasion) return { occasion: null, groups: {} as Record<string, never[]>, commemorations: [] as { id: number; name: string; slug: string; colour: string | null }[] };
 
 	const allReadings = db
 		.select()
@@ -175,12 +178,53 @@ export function getReadingsGroupedByContext(date: string, tradition: string = 'c
 			r.alternateYear === officeYear
 	);
 
-	// Group by service context
+	// Look up non-principal occasions (commemorations) and merge their daily_eucharist readings
+	const allOccasions = getOccasionsByDate(date);
+	const commemorations: { id: number; name: string; slug: string; colour: string | null }[] = [];
+	const commReadings: typeof filtered = [];
+
+	for (const occ of allOccasions) {
+		if (occ.isPrincipal || !occ.id || occ.id === occasion.id) continue;
+
+		const commReadingsForOcc = db
+			.select()
+			.from(lectionaryReadings)
+			.where(
+				and(
+					eq(lectionaryReadings.occasionId, occ.id),
+					eq(lectionaryReadings.tradition, tradition)
+				)
+			)
+			.all();
+
+		// Only include daily_eucharist readings from commemorations
+		const eucharistReadings = commReadingsForOcc.filter(
+			(r) => r.serviceContext === 'daily_eucharist' && (!r.alternateYear || r.alternateYear === litYear || r.alternateYear === officeYear)
+		);
+
+		if (eucharistReadings.length > 0) {
+			commemorations.push({
+				id: occ.id,
+				name: occ.name ?? '',
+				slug: occ.slug ?? '',
+				colour: occ.colour ?? null
+			});
+			commReadings.push(...eucharistReadings);
+		}
+	}
+
+	// Group by service context, merging commemoration readings into daily_eucharist
 	const contextReadings: Record<string, typeof filtered> = {};
 	for (const reading of filtered) {
 		const ctx = reading.serviceContext ?? 'principal';
 		if (!contextReadings[ctx]) contextReadings[ctx] = [];
 		contextReadings[ctx].push(reading);
+	}
+
+	// Append commemoration readings to daily_eucharist
+	if (commReadings.length > 0) {
+		if (!contextReadings['daily_eucharist']) contextReadings['daily_eucharist'] = [];
+		contextReadings['daily_eucharist'].push(...commReadings);
 	}
 
 	// Sort readings within each context, then collapse alternatives into groups
@@ -192,7 +236,7 @@ export function getReadingsGroupedByContext(date: string, tradition: string = 'c
 		groups[ctx] = groupAlternativeReadings(sorted);
 	}
 
-	return { occasion, groups };
+	return { occasion, groups, commemorations };
 }
 
 /**

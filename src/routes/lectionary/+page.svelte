@@ -133,6 +133,11 @@
 					<span>{yearLabels[data.occasion.liturgicalYear] ?? `Year ${data.occasion.liturgicalYear}`}</span>
 				{/if}
 			</div>
+			{#if data.commemorations && data.commemorations.length > 0}
+				<div class="text-surface-500 mt-2 text-sm">
+					Also: {data.commemorations.map((c) => c.name).join('; ')}
+				</div>
+			{/if}
 		</div>
 
 		<!-- Readings grouped by service context, showing both traditions -->

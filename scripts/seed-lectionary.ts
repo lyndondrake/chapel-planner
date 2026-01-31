@@ -58,6 +58,46 @@ for (const occ of occasionsRaw) {
 
 console.log(`  Inserted ${Object.keys(slugToId).length} occasions.`);
 
+// --- 1b. Load and insert commemoration occasions ---
+
+const commOccasionsPath = resolve('scripts/data/lectionary-occasions-commemorations.json');
+if (existsSync(commOccasionsPath)) {
+	const commOccasionsRaw = JSON.parse(readFileSync(commOccasionsPath, 'utf-8'));
+	console.log(`  Loading ${commOccasionsRaw.length} commemoration occasions...`);
+
+	let commInserted = 0;
+	for (const occ of commOccasionsRaw) {
+		// Skip if slug already exists (e.g. if a commemoration matches a principal feast)
+		if (slugToId[occ.slug]) continue;
+
+		const result = db
+			.insert(schema.lectionaryOccasions)
+			.values({
+				name: occ.name,
+				slug: occ.slug,
+				season: null,
+				colour: occ.colour ?? null,
+				isFixed: occ.isFixed ?? true,
+				fixedMonth: occ.fixedMonth ?? null,
+				fixedDay: occ.fixedDay ?? null,
+				weekOfSeason: null,
+				dayOfWeek: 0,
+				priority: occ.priority ?? 20,
+				collectCw: null,
+				collectBcp: null,
+				postCommunionCw: null
+			})
+			.returning()
+			.get();
+
+		slugToId[occ.slug] = result.id;
+		commInserted++;
+	}
+	console.log(`  Inserted ${commInserted} commemoration occasions.`);
+} else {
+	console.log('  Skipping commemoration occasions (file not found)');
+}
+
 // --- 2. Load and insert readings from multiple files ---
 
 const readingFiles = [
@@ -65,7 +105,8 @@ const readingFiles = [
 	'scripts/data/lectionary-readings-cw-office.json',
 	'scripts/data/lectionary-readings-cw-eucharist.json',
 	'scripts/data/lectionary-readings-bcp-hc.json',
-	'scripts/data/lectionary-readings-bcp-office.json'
+	'scripts/data/lectionary-readings-bcp-office.json',
+	'scripts/data/lectionary-readings-cw-commemorations.json'
 ];
 
 let readingsInserted = 0;
@@ -437,6 +478,17 @@ for (let year = 2024; year <= 2030; year++) {
 			// All Saints is principal; others are non-principal overlays
 			const isPrincipal = slug === 'all-saints';
 			insertDateMap(dateStr, slug, isPrincipal);
+		}
+	}
+
+	// --- Commemoration date mappings (from commemoration occasions file) ---
+	if (existsSync(commOccasionsPath)) {
+		const commOccasionsRaw = JSON.parse(readFileSync(commOccasionsPath, 'utf-8'));
+		for (const occ of commOccasionsRaw) {
+			if (slugToId[occ.slug] && occ.fixedMonth && occ.fixedDay) {
+				const dateStr = `${year}-${String(occ.fixedMonth).padStart(2, '0')}-${String(occ.fixedDay).padStart(2, '0')}`;
+				insertDateMap(dateStr, occ.slug, false);
+			}
 		}
 	}
 
