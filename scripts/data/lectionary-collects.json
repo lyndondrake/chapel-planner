@@ -1,0 +1,612 @@
+{
+  "advent-1": {
+    "collectCw": "Almighty God,\ngive us grace to cast away the works of darkness\nand to put on the armour of light,\nnow in the time of this mortal life,\nin which your Son Jesus Christ came to us in great humility;\nthat on the last day,\nwhen he shall come again in his glorious majesty\n   to judge the living and the dead,\nwe may rise to the life immortal;\nthrough him who is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty God, give us grace that we may cast away the works of darkness, and put upon us the armour of light, now in the time of this mortal life, in which thy Son Jesus Christ came to visit us in great humility; that in the last day, when he shall come again in his glorious Majesty, to judge both the quick and the dead, we may rise to the life immortal; through him who liveth and reigneth with thee and the Holy Ghost, now and ever.",
+    "postCommunionCw": "O Lord our God,\nmake us watchful and keep us faithful\nas we await the coming of your Son our Lord;\nthat, when he shall appear,\nhe may not find us sleeping in sin\nbut active in his service\nand joyful in his praise;\nthrough Jesus Christ our Lord."
+  },
+  "advent-2": {
+    "collectCw": "O Lord, raise up, we pray, your power\nand come among us,\nand with great might succour us;\nthat whereas, through our sins and wickedness\nwe are grievously hindered\nin running the race that is set before us,\nyour bountiful grace and mercy\nmay speedily help and deliver us;\nthrough Jesus Christ your Son our Lord,\nto whom with you and the Holy Spirit,\nbe honour and glory, now and for ever.",
+    "collectBcp": "Blessed Lord, who hast caused all holy Scriptures to be written for our learning; Grant that we may in such wise hear them, read, mark, learn, and inwardly digest them, that by patience and comfort of thy holy Word, we may embrace and ever hold fast the blessed hope of everlasting life, which thou hast given us in our Saviour Jesus Christ.",
+    "postCommunionCw": "Father in heaven,\nwho sent your Son to redeem the world\nand will send him again to be our judge:\ngive us grace so to imitate him\nin the humility and purity of his first coming\nthat, when he comes again,\nwe may be ready to greet him\nwith joyful love and firm faith;\nthrough Jesus Christ our Lord."
+  },
+  "advent-3": {
+    "collectCw": "O Lord Jesus Christ,\nwho at your first coming sent your messenger\nto prepare your way before you:\ngrant that the ministers and stewards of your mysteries\nmay likewise so prepare and make ready your way\nby turning the hearts of the disobedient to the wisdom of the just,\nthat at your second coming to judge the world\nwe may be found an acceptable people in your sight;\nfor you are alive and reign with the Father\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord Jesu Christ, who at thy first coming didst send thy messenger to prepare thy way before thee; Grant that the ministers and stewards of thy mysteries may likewise so prepare and make ready thy way, by turning the hearts of the disobedient to the wisdom of the just, that at thy second coming to judge the world we may be found an acceptable people in thy sight, who livest and reignest with the Father and the Holy Spirit, ever one God, world without end.",
+    "postCommunionCw": "We give you thanks, O Lord, for these heavenly gifts;\nkindle in us the fire of your Spirit\nthat when your Christ comes again\nwe may shine as lights before his face;\nwho is alive and reigns now and for ever."
+  },
+  "advent-3-thu": {
+    "collectCw": null,
+    "collectBcp": "Almighty and everliving God, who for the more confirmation of the faith didst suffer thy holy Apostle Thomas to be doubtful in thy Son’s resurrection; Grant us so perfectly, and without all doubt, to believe in thy Son Jesus Christ, that our faith in thy sight may never be reproved. Hear us, O Lord, through the same Jesus Christ, to whom, with thee and the Holy Ghost, be all honour and glory, now and for evermore.",
+    "postCommunionCw": null
+  },
+  "advent-4": {
+    "collectCw": null,
+    "collectBcp": "O Lord, raise up (we pray thee) thy power, and come among us, and with great might succour us; that whereas, through our sins and wickedness, we are sore let and hindered in running the race that is set before us, thy bountiful grace and mercy may speedily help and deliver us; through the satisfaction of thy Son our Lord, to whom with thee and the Holy Ghost be honour and glory, world without end.",
+    "postCommunionCw": null
+  },
+  "christmas-day": {
+    "collectCw": "(Christmas Night)\n\nEternal God,\nwho made this most holy night\nto shine with the brightness of your one true light:\nbring us, who have known the revelation of that light on earth,\nto see the radiance of your heavenly glory;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.\n\n(Christmas Day)\n\nAlmighty God,\nyou have given us your only-begotten Son\nto take our nature upon him\nand as at this time to be born of a pure virgin:\ngrant that we, who have been born again\nand made your children by adoption and grace,\nmay daily be renewed by your Holy Spirit;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty God, who hast given us thy only begotten Son to take our nature upon him, and as at this time to be born of a pure Virgin; Grant that we being regenerate, and made thy children by adoption and grace, may daily be renewed by thy Holy Spirit; through the same our Lord Jesus Christ, who liveth and reigneth with thee and the same Spirit, ever one God, world without end.",
+    "postCommunionCw": "(Christmas Night)\n\nGod our Father,\nin this night you have made known to us again\nthe coming of our Lord Jesus Christ:\nconfirm our faith and fix our eyes on him\nuntil the day dawns\nand Christ the Morning Star rises in our hearts.\nTo him be glory both now and for ever.\n\n(Christmas Day)\n\nGod our Father,\nwhose Word has come among us\nin the Holy Child of Bethlehem:\nmay the light of faith illumine our hearts\nand shine in our words and deeds;\nthrough him who is Christ the Lord."
+  },
+  "st-stephen": {
+    "collectCw": "Gracious Father,\nwho gave the first martyr Stephen\ngrace to pray for those who took up stones against him:\ngrant that in all our sufferings for the truth\nwe may learn to love even our enemies\nand to seek forgiveness for those who desire our hurt,\nlooking up to heaven to him who was crucified for us,\nJesus Christ, our mediator and advocate,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Grant, O Lord, that in all our sufferings here upon earth, for the testimony of thy truth, we may stedfastly look up to heaven, and by faith behold the glory that shall be revealed; and, being filled with the Holy Spirit, may learn to love and bless our persecutors, by the example of thy first Martyr Saint Stephen, who prayed for his murderers to thee, O blessed Jesus, who standest at the right hand of God to succour all those that suffer for thee, our only Mediator and Advocate.",
+    "postCommunionCw": "Merciful Lord,\nwe thank you for the signs of your mercy\nrevealed in birth and death:\nsave us by the coming of your Son,\nand give us joy in honouring Stephen,\nfirst martyr of the new Israel;\nthrough Jesus Christ our Lord."
+  },
+  "st-john-evangelist": {
+    "collectCw": "Merciful Lord,\ncast your bright beams of light upon the Church:\nthat, being enlightened by the teaching\nof your blessed apostle and evangelist Saint John,\nwe may so walk in the light of your truth\nthat we may at last attain to the light of everlasting life;\nthrough Jesus Christ your incarnate Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Merciful Lord, we beseech thee to cast thy bright beams of light upon thy Church, that it being enlightened by the doctrine of thy blessed Apostle and Evangelist Saint John may so walk in the light of thy truth, that it may at length attain to the light of everlasting life; through Jesus Christ our Lord.",
+    "postCommunionCw": "Grant, O Lord, we pray,\nthat the Word made flesh\nproclaimed by your apostle John\nmay, by the celebration of these holy mysteries,\never abide and live within us;\nthrough Jesus Christ our Lord."
+  },
+  "holy-innocents": {
+    "collectCw": "Heavenly Father,\nwhose children suffered at the hands of Herod,\nthough they had done no wrong:\nby the suffering of your Son\nand by the innocence of our lives\nfrustrate all evil designs\nand establish your reign of justice and peace;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Almighty God, who out of the mouths of babes and sucklings hast ordained strength, and madest infants to glorify thee by their deaths; Mortify and kill all vices in us, and so strengthen us by thy grace, that by the innocency of our lives, and constancy of our faith, even unto death, we may glorify thy holy Name; through Jesus Christ our Lord.",
+    "postCommunionCw": "Lord Jesus Christ,\nin your humility you have stooped to share our human life\nwith the most defenceless of your children:\nmay we who have received these gifts of your passion\nrejoice in celebrating the witness of the Holy Innocents\n   to the purity of your sacrifice\n   made once for all upon the cross;\nfor you are alive and reign, now and for ever."
+  },
+  "christmas-1": {
+    "collectCw": "Almighty God,\nwho wonderfully created us in your own image\nand yet more wonderfully restored us\nthrough your Son Jesus Christ:\ngrant that, as he came to share in our humanity,\nso we may share the life of his divinity;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty God, who hast given us thy only-begotten Son to take our nature upon him, and as at this time to be born of a pure Virgin: Grant that we being regenerate, and made thy children by adoption and grace, may daily be renewed by thy Holy Spirit; through the same our Lord Jesus Christ, who liveth and reigneth with thee and the same Spirit, ever one God, world without end.",
+    "postCommunionCw": "Heavenly Father,\nwhose blessed Son shared at Nazareth the life of an earthly home:\nhelp your Church to live as one family,\nunited in love and obedience,\nand bring us all at last to our home in heaven;\nthrough Jesus Christ our Lord."
+  },
+  "naming-of-jesus": {
+    "collectCw": "Almighty God,\nwhose blessed Son was circumcised\nin obedience to the law for our sake\nand given the Name that is above every name:\ngive us grace faithfully to bear his Name,\nto worship him in the freedom of the Spirit,\nand to proclaim him as the Saviour of the world;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty God, who madest thy blessed Son to be circumcised, and obedient to the law for man; Grant us the true circumcision of the Spirit; that, our hearts, and all our members, being mortified from all worldly and carnal lusts, we may in all things obey thy blessed will; through the same thy Son Jesus Christ our Lord.\n\nor\n\nO Eternal Lord God, who hast brought thy servants to the beginning of another year: Pardon, we humbly beseech thee, our transgressions in the past, and graciously abide with us all the days of our life; through Jesus Christ our Lord.",
+    "postCommunionCw": "Eternal God,\nwhose incarnate Son was given the Name of Saviour:\ngrant that we who have shared\n   in this sacrament of our salvation\nmay live out our years in the power\n   of the Name above all other names,\nJesus Christ our Lord."
+  },
+  "epiphany": {
+    "collectCw": "O God,\nwho by the leading of a star\nmanifested your only Son to the peoples of the earth:\nmercifully grant that we,\nwho know you now by faith,\nmay at last behold your glory face to face;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God, who by the leading of a star didst manifest thy only-begotten Son to the Gentiles; Mercifully grant, that we, which know thee now by faith, may after this life have the fruition of thy glorious Godhead; through Jesus Christ our Lord.",
+    "postCommunionCw": "Lord God,\nthe bright splendour whom the nations seek:\nmay we who with the wise men have been drawn by your light\ndiscern the glory of your presence in your Son,\nthe Word made flesh, Jesus Christ our Lord."
+  },
+  "epiphany-1": {
+    "collectCw": "Eternal Father,\nwho at the baptism of Jesus\nrevealed him to be your Son,\nanointing him with the Holy Spirit:\ngrant to us, who are born again by water and the Spirit,\nthat we may be faithful to our calling as your adopted children;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord, we beseech thee mercifully to receive the prayers of thy people which call upon thee; and grant that they may both perceive and know what things they ought to do, and also may have grace and power faithfully to fulfil the same; through Jesus Christ our Lord.",
+    "postCommunionCw": "Lord of all time and eternity,\nyou opened the heavens and revealed yourself as Father\nin the baptism of Jesus your beloved Son:\nby the power of your Spirit\ncomplete the heavenly work of our rebirth\nthrough the waters of the new creation;\nthrough Jesus Christ our Lord."
+  },
+  "epiphany-2": {
+    "collectCw": "Almighty God,\nin Christ you make all things new:\ntransform the poverty of our nature by the riches of your grace,\nand in the renewal of our lives\nmake known your heavenly glory;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty and everlasting God, who dost govern all things in heaven and earth; Mercifully hear the supplications of thy people, and grant us thy peace all the days of our life; through Jesus Christ our Lord.",
+    "postCommunionCw": "God of glory,\nyou nourish us with your Word\nwho is the bread of life:\nfill us with your Holy Spirit\nthat through us the light of your glory\nmay shine in all the world.\nWe ask this in the name of Jesus Christ our Lord."
+  },
+  "epiphany-3": {
+    "collectCw": "Almighty God,\nwhose Son revealed in signs and miracles\nthe wonder of your saving presence:\nrenew your people with your heavenly grace,\nand in all our weakness\nsustain us by your mighty power;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty and everlasting God, mercifully look upon our infirmities, and in all our dangers and necessities stretch forth thy right hand to help and defend us; through Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty Father,\nwhose Son our Saviour Jesus Christ is the light of the world:\nmay your people,\nillumined by your word and sacraments,\nshine with the radiance of his glory,\nthat he may be known, worshipped, and obeyed\n   to the ends of the earth;\nfor he is alive and reigns, now and for ever."
+  },
+  "conversion-of-st-paul": {
+    "collectCw": "Almighty God,\nwho caused the light of the gospel\nto shine throughout the world\nthrough the preaching of your servant Saint Paul:\ngrant that we who celebrate his wonderful conversion\nmay follow him in bearing witness to your truth;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God, who, through the preaching of the blessed Apostle Saint Paul, hast caused the light of the Gospel to shine throughout the world; Grant, we beseech thee, that we, having his wonderful conversion in remembrance, may shew forth our thankfulness unto thee for the same, by following the holy doctrine which he taught; through Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "epiphany-4": {
+    "collectCw": "God our creator,\nwho in the beginning\ncommanded the light to shine out of darkness:\nwe pray that the light of the glorious gospel of Christ\nmay dispel the darkness of ignorance and unbelief,\nshine into the hearts of all your people,\nand reveal the knowledge of your glory\n   in the face of Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord, we beseech thee favourably to hear the prayers of thy people; that we, who are justly punished for our offences, may be mercifully delivered by thy goodness, for the glory of thy Name; through Jesus Christ our Saviour, who liveth and reigneth with thee and the Holy Ghost, ever one God, world without end.",
+    "postCommunionCw": "Generous Lord,\nin word and eucharist we have proclaimed the mystery of your love:\nhelp us so to live out our days\nthat we may be signs of your wonders in the world;\nthrough Jesus Christ our Saviour."
+  },
+  "candlemas": {
+    "collectCw": "Almighty and ever-living God,\nclothed in majesty,\nwhose beloved Son was this day presented in the Temple,\nin substance of our flesh:\ngrant that we may be presented to you\nwith pure and clean hearts,\nby your Son Jesus Christ our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty and everliving God, we humbly beseech thy Majesty, that, as thy only-begotten Son was this day presented in the temple in substance of our flesh, so we may be presented unto thee with pure and clean hearts, by the same thy Son Jesus Christ our Lord.",
+    "postCommunionCw": "Lord, you fulfilled the hope of Simeon and Anna,\nwho lived to welcome the Messiah:\nmay we, who have received these gifts beyond words,\nprepare to meet Christ Jesus when he comes\n   to bring us to eternal life;\nfor he is alive and reigns, now and for ever."
+  },
+  "before-lent-2": {
+    "collectCw": "Almighty God,\nyou have created the heavens and the earth\nand made us in your own image:\nteach us to discern your hand in all your works\nand your likeness in all your children;\nthrough Jesus Christ your Son our Lord,\nwho with you and the Holy Spirit reigns supreme over all things,\nnow and for ever.",
+    "collectBcp": "O Lord God, who seest that we put not our trust in any thing that we do; Mercifully grant that by thy power we may be defended against all adversity; through Jesus Christ our Lord.",
+    "postCommunionCw": "God our creator,\nby your gift\nthe tree of life was set at the heart of the earthly paradise,\nand the bread of life at the heart of your Church:\nmay we who have been nourished at your table on earth\nbe transformed by the glory of the Saviour’s cross\nand enjoy the delights of eternity;\nthrough Jesus Christ our Lord."
+  },
+  "before-lent-1": {
+    "collectCw": "Almighty Father,\nwhose Son was revealed in majesty\nbefore he suffered death upon the cross:\ngive us grace to perceive his glory,\nthat we may be strengthened to suffer with him\nand be changed into his likeness, from glory to glory;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord, who hast taught us that all our doings without charity are nothing worth; Send thy Holy Ghost, and pour into our hearts that most excellent gift of charity, the very bond of peace and of all virtues, without which whosoever liveth is counted dead before thee. Grant this for thine only Son Jesus Christ’s sake.",
+    "postCommunionCw": "Holy God,\nwe see your glory in the face of Jesus Christ:\nmay we who are partakers at his table\nreflect his life in word and deed,\nthat all the world may know his power to change and save.\nThis we ask through Jesus Christ our Lord."
+  },
+  "ash-wednesday": {
+    "collectCw": null,
+    "collectBcp": "Almighty and everlasting God, who hatest nothing that thou hast made, and dost forgive the sins of all them that are penitent; Create and make in us new and contrite hearts, that we worthily lamenting our sins, and acknowledging our wretchedness, may obtain of thee, the God of all mercy, perfect remission and forgiveness; through Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "lent-1": {
+    "collectCw": "Almighty God,\nwhose Son Jesus Christ fasted forty days in the wilderness,\nand was tempted as we are, yet without sin:\ngive us grace to discipline ourselves in obedience to your Spirit;\nand, as you know our weakness,\nso may we know your power to save;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord, who for our sake didst fast forty days and forty nights; Give us grace to use such abstinence, that, our flesh being subdued to the Spirit, we may ever obey thy godly motions in righteousness and true holiness, to thy honour and glory; who livest and reignest with the Father and the Holy Ghost, one God, world without end.",
+    "postCommunionCw": "Lord God,\nyou have renewed us with the living bread from heaven;\nby it you nourish our faith,\nincrease our hope,\nand strengthen our love:\nteach us always to hunger for him who is the true and living bread,\nand enable us to live by every word\n   that proceeds from out of your mouth;\nthrough Jesus Christ our Lord."
+  },
+  "lent-1-sat": {
+    "collectCw": null,
+    "collectBcp": "O Almighty God, who into the place of the traitor Judas didst choose thy faithful servant Matthias to be of the number of the twelve Apostles; Grant that thy Church, being alway preserved from false Apostles, may be ordered and guided by faithful and true pastors; through Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "lent-2": {
+    "collectCw": "Almighty God,\nyou show to those who are in error the light of your truth,\nthat they may return to the way of righteousness:\ngrant to all those who are admitted\n   into the fellowship of Christ’s religion,\nthat they may reject those things\n   that are contrary to their profession,\nand follow all such things as are agreeable to the same;\nthrough our Lord Jesus Christ,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty God, who seest that we have no power of ourselves to help ourselves; Keep us both outwardly in our bodies, and inwardly in our souls; that we may be defended from all adversities which may happen to the body, and from all evil thoughts which may assault and hurt the soul; through Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nyou see that we have no power of ourselves to help ourselves:\nkeep us both outwardly in our bodies,\nand inwardly in our souls;\nthat we may be defended from all adversities\n   which may happen to the body,\nand from all evil thoughts which may assault and hurt the soul;\nthrough Jesus Christ our Lord."
+  },
+  "lent-3": {
+    "collectCw": "Almighty God,\nwhose most dear Son went not up to joy but first he suffered pain,\nand entered not into glory before he was crucified:\nmercifully grant that we, walking in the way of the cross,\nmay find it none other than the way of life and peace;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "We beseech thee, Almighty God, look upon the hearty desires of thy humble servants and stretch forth the right hand of thy Majesty to be our defence against all our enemies; through Jesus Christ our Lord.",
+    "postCommunionCw": "Merciful Lord,\ngrant your people grace to withstand the temptations\n   of the world, the flesh and the devil,\nand with pure hearts and minds to follow you, the only God;\nthrough Jesus Christ our Lord."
+  },
+  "lent-4": {
+    "collectCw": "Merciful Lord,\nabsolve your people from their offences,\nthat through your bountiful goodness\nwe may all be delivered from the chains of those sins\nwhich by our frailty we have committed;\ngrant this, heavenly Father,\nfor Jesus Christ’s sake, our blessed Lord and Saviour,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Grant, we beseech thee, Almighty God, that we, who for our evil deeds do worthily deserve to be punished, by the comfort of thy grace may mercifully be relieved; through our Lord and Saviour Jesus Christ.",
+    "postCommunionCw": "Lord God,\nwhose blessed Son our Saviour\ngave his back to the smiters\nand did not hide his face from shame:\ngive us grace to endure the sufferings of this present time\nwith sure confidence in the glory that shall be revealed;\nthrough Jesus Christ our Lord."
+  },
+  "lent-5": {
+    "collectCw": "Most merciful God,\nwho by the death and resurrection of your Son Jesus Christ\ndelivered and saved the world:\ngrant that by faith in him who suffered on the cross\nwe may triumph in the power of his victory;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "We beseech thee, Almighty God, mercifully to look upon thy people; that by thy great goodness they may be governed and preserved evermore, both in body and soul; through Jesus Christ our Lord.",
+    "postCommunionCw": "Lord Jesus Christ,\nyou have taught us\nthat what we do for the least of our brothers and sisters\nwe do also for you:\ngive us the will to be the servant of others\nas you were the servant of all,\nand gave up your life and died for us,\nbut are alive and reign, now and for ever."
+  },
+  "st-joseph": {
+    "collectCw": "God our Father,\nwho from the family of your servant David\nraised up Joseph the carpenter\nto be the guardian of your incarnate Son\nand husband of the Blessed Virgin Mary:\ngive us grace to follow him\nin faithful obedience to your commands;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": null,
+    "postCommunionCw": "Heavenly Father,\nwhose Son grew in wisdom and stature\nin the home of Joseph the carpenter of Nazareth\nand on the wood of the cross\n   perfected the work of the world’s salvation:\nhelp us, strengthened by this sacrament of his passion,\nto count the wisdom of the world as foolishness,\nand to walk with him in simplicity and trust;\nthrough Jesus Christ our Lord."
+  },
+  "palm-sunday": {
+    "collectCw": "Almighty and everlasting God,\nwho in your tender love towards the human race\n   sent your Son our Saviour Jesus Christ\nto take upon him our flesh\nand to suffer death upon the cross:\ngrant that we may follow the example of his patience and humility,\nand also be made partakers of his resurrection;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty and everlasting God, who, of thy tender love towards mankind, hast sent thy Son our Saviour Jesus Christ, to take upon him our flesh, and to suffer death upon the cross, that all mankind should follow the example of his great humility; Mercifully grant, that we may both follow the example of his patience, and also be made partakers of his resurrection; through the same Jesus Christ our Lord.",
+    "postCommunionCw": "Lord Jesus Christ,\nyou humbled yourself in taking the form of a servant,\nand in obedience died on the cross for our salvation:\ngive us the mind to follow you\nand to proclaim you as Lord and King,\nto the glory of God the Father."
+  },
+  "good-friday": {
+    "collectCw": null,
+    "collectBcp": "Almighty God, we beseech thee graciously to behold this thy family, for which our Lord Jesus Christ was contented to be betrayed, and given up into the hands of wicked men, and to suffer death upon the cross, who now liveth and reigneth with thee and the Holy Ghost, ever one God, world without end.\n\nAlmighty and everlasting God, by whose Spirit the whole body of the Church is governed and sanctified; Receive our supplications and prayers, which we offer before thee for all estates of men in thy holy Church, that every member of the same, in his vocation and ministry, may truly and godly serve thee; through our Lord and Saviour Jesus Christ.\n\nO merciful God, who hast made all men, and hatest nothing that thou hast made, nor wouldest the death of a sinner, but rather that he should be converted and live; Have mercy upon all Jews, Turks, Infidels, and Hereticks, and take from them all ignorance, hardness of heart, and contempt of thy word; and so fetch them home, blessed Lord, to thy flock, that they may be saved among the remnant of the true Israelites, and be made one fold under one shepherd, Jesus Christ our Lord, who liveth and reigneth with thee and the Holy Spirit, one God, world without end. Amen.\n\nInstead of the third collect may be said:\n\nO merciful God, who hast made all men, and hatest nothing that thou hast made, nor wouldest the death of a sinner, but rather that he should be converted and live: Have mercy upon thine ancient people the Jews, and upon all who have not known thee, or who deny the faith of Christ crucified; take from them all ignorance, hardness of heart, and contempt of thy Word; and so fetch them home, blessed Lord, to thy fold, that they may be made one flock under one shepherd, Jesus Christ our Lord, who liveth and reigneth with thee and the Holy Spirit, one God, world without end.",
+    "postCommunionCw": null
+  },
+  "easter-eve": {
+    "collectCw": null,
+    "collectBcp": "Grant, O Lord, that as we are baptized into the death of thy blessed Son our Saviour Jesus Christ, so by continual mortifying our corrupt affections we may be buried with him; and that, through the grave, and gate of death, we may pass to our joyful resurrection; for his merits, who died, and was buried, and rose again for us, thy Son Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "easter-day": {
+    "collectCw": "Lord of all life and power,\nwho through the mighty resurrection of your Son\novercame the old order of sin and death\nto make all things new in him:\ngrant that we, being dead to sin\nand alive to you in Jesus Christ,\nmay reign with him in glory;\nto whom with you and the Holy Spirit\nbe praise and honour, glory and might,\nnow and in all eternity.",
+    "collectBcp": "Almighty God, who through thine only-begotten Son Jesus Christ hast overcome death, and opened unto us the gate of everlasting life; We humbly beseech thee, that as by thy special grace preventing us thou dost put into our minds good desires, so by thy continual help we may bring the same to good effect; through Jesus Christ our Lord, who liveth and reigneth with thee and the Holy Ghost, ever one God, world without end.\n\nO God, who for our redemption didst give thine only-begotten Son to the death of the cross, and by his glorious resurrection hast delivered us from the power of our enemy: Grant us to die daily unto sin, that we may evermore live with him in the joy of his resurrection; through the same Jesus Christ our Lord.",
+    "postCommunionCw": "God of Life,\nwho for our redemption gave your only-begotten Son\n   to the death of the cross,\nand by his glorious resurrection\nhave delivered us from the power of our enemy:\ngrant us so to die daily to sin,\nthat we may evermore live with him in the joy of his risen life;\nthrough Jesus Christ our Lord."
+  },
+  "easter-2": {
+    "collectCw": "Almighty Father,\nyou have given your only Son to die for our sins\nand to rise again for our justification:\ngrant us so to put away the leaven of malice and wickedness\nthat we may always serve you\nin pureness of living and truth;\nthrough the merits of your Son Jesus Christ our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty Father, who hast given thine only Son to die for our sins, and to rise again for our justification; Grant us so to put away the leaven of malice and wickedness, that we may alway serve thee in pureness of living and truth; through the merits of the same thy Son Jesus Christ our Lord.",
+    "postCommunionCw": "Lord God our Father,\nthrough our Saviour Jesus Christ\nyou have assured your children of eternal life\nand in baptism have made us one with him:\ndeliver us from the death of sin\nand raise us to new life in your love,\nin the fellowship of the Holy Spirit,\nby the grace of our Lord Jesus Christ."
+  },
+  "annunciation": {
+    "collectCw": "We beseech you, O Lord,\npour your grace into our hearts,\nthat as we have known the incarnation of your Son Jesus Christ\n   by the message of an angel,\nso by his cross and passion\nwe may be brought to the glory of his resurrection;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": null,
+    "postCommunionCw": "God most high,\nwhose handmaid bore the Word made flesh:\nwe thank you that in this sacrament of our redemption\nyou visit us with your Holy Spirit\nand overshadow us by your power;\nstrengthen us to walk with Mary the joyful path of obedience\nand so to bring forth the fruits of holiness;\nthrough Jesus Christ our Lord."
+  },
+  "easter-2-tue": {
+    "collectCw": null,
+    "collectBcp": "We beseech thee, O Lord, pour thy grace into our hearts; that, as we have known the incarnation of thy Son Jesus Christ by the message of an angel, so by his cross and passion we may be brought unto the glory of his resurrection; through the same Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "easter-3": {
+    "collectCw": "Almighty Father,\nwho in your great mercy gladdened the disciples\n   with the sight of the risen Lord:\ngive us such knowledge of his presence with us,\nthat we may be strengthened and sustained by his risen life\nand serve you continually in righteousness and truth;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty God, who hast given thine only Son to be unto us both a sacrifice for sin, and also an ensample of godly life; Give us grace that we may always most thankfully receive that his inestimable benefit, and also daily endeavour ourselves to follow the blessed steps of his most holy life; through the same Jesus Christ our Lord.",
+    "postCommunionCw": "Living God,\nyour Son made himself known to his disciples\nin the breaking of bread:\nopen the eyes of our faith,\nthat we may see him in all his redeeming work;\nwho is alive and reigns, now and for ever."
+  },
+  "easter-4": {
+    "collectCw": "Almighty God,\nwhose Son Jesus Christ is the resurrection and the life:\nraise us, who trust in him,\nfrom the death of sin to the life of righteousness,\nthat we may seek those things which are above,\nwhere he reigns with you\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty God, who shewest to them that be in error the light of thy truth, to the intent that they may return into the way of righteousness; Grant unto all them that are admitted into the fellowship of Christ’s religion, that they may eschew those things that are contrary to their profession, and follow all such things as are agreeable to the same; through our Lord Jesus Christ.",
+    "postCommunionCw": "Merciful Father,\nyou gave your Son Jesus Christ to be the good shepherd,\nand in his love for us to lay down his life and rise again:\nkeep us always under his protection,\nand give us grace to follow in his steps;\nthrough Jesus Christ our Lord."
+  },
+  "easter-4-tue": {
+    "collectCw": "God of hosts,\nwho so kindled the flame of love\nin the heart of your servant George\nthat he bore witness to the risen Lord\nby his life and by his death:\ngive us the same faith and power of love\nthat we who rejoice in his triumphs\nmay come to share with him the fullness of the resurrection;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": null,
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened\nby the blood of your martyr George:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr George:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord."
+  },
+  "st-mark": {
+    "collectCw": "Almighty God,\nwho enlightened your holy Church\nthrough the inspired witness of your evangelist Saint Mark:\ngrant that we, being firmly grounded\n   in the truth of the gospel,\nmay be faithful to its teaching both in word and deed;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Almighty God, who hast instructed thy holy Church with the heavenly doctrine of thy Evangelist Saint Mark; Give us grace, that, being not like children carried away with every blast of vain doctrine, we may be established in the truth of thy holy Gospel; through Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "easter-5": {
+    "collectCw": "Almighty God,\nwho through your only-begotten Son Jesus Christ\nhave overcome death and opened to us the gate of everlasting life:\ngrant that, as by your grace going before us\n   you put into our minds good desires,\nso by your continual help\nwe may bring them to good effect;\nthrough Jesus Christ our risen Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Almighty God, who alone canst order the unruly wills and affections of sinful men; Grant unto thy people, that they may love the thing which thou commandest, and desire that which thou dost promise; that so, among the sundry and manifold changes of the world, our hearts may surely there be fixed, where true joys are to be found; through Jesus Christ our Lord.",
+    "postCommunionCw": "Eternal God,\nwhose Son Jesus Christ is the way, the truth, and the life:\ngrant us to walk in his way,\nto rejoice in his truth,\nand to share his risen life;\nwho is alive and reigns, now and for ever."
+  },
+  "ss-philip-and-james": {
+    "collectCw": "Almighty Father,\nwhom truly to know is eternal life:\nteach us to know your Son Jesus Christ\nas the way, the truth, and the life;\nthat we may follow the steps\n   of your holy apostles Philip and James,\nand walk steadfastly in the way that leads to your glory;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Almighty God, whom truly to know is everlasting life; Grant us perfectly to know thy Son Jesus Christ to be the way, the truth, and the life; that, following the steps of thy holy Apostles, Saint Philip and Saint James, we may stedfastly walk in the way that leadeth to eternal life; through the same thy Son Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "easter-6": {
+    "collectCw": "God our redeemer,\nyou have delivered us from the power of darkness\nand brought us into the kingdom of your Son:\ngrant, that as by his death he has recalled us to life,\nso by his continual presence in us he may raise us\n   to eternal joy;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord, from whom all good things do come; Grant to us thy humble servants, that by thy holy inspiration we may think those things that be good, and by thy merciful guiding may perform the same; through our Lord Jesus Christ.",
+    "postCommunionCw": "God our Father,\nwhose Son Jesus Christ gives the water of eternal life:\nmay we thirst for you,\nthe spring of life and source of goodness,\nthrough him who is alive and reigns, now and for ever."
+  },
+  "ascension-day": {
+    "collectCw": null,
+    "collectBcp": "Grant, we beseech thee, Almighty God, that like as we do believe thy only-begotten Son our Lord Jesus Christ to have ascended into the heavens; so we may also in heart and mind thither ascend, and with him continually dwell; who liveth and reigneth with thee and the Holy Ghost, one God, world without end.",
+    "postCommunionCw": null
+  },
+  "easter-7": {
+    "collectCw": "O God the King of glory,\nyou have exalted your only Son Jesus Christ\nwith great triumph to your kingdom in heaven:\nwe beseech you, leave us not comfortless,\nbut send your Holy Spirit to strengthen us\nand exalt us to the place where our Saviour Christ is gone before,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God the King of Glory, who hast exalted thine only Son Jesus Christ with great triumph unto thy kingdom in heaven; We beseech thee, leave us not comfortless; but send to us thine Holy Ghost to comfort us, and exalt us unto the same place whither our Saviour Christ is gone before; who liveth and reigneth with thee and the Holy Ghost, one God, world without end.",
+    "postCommunionCw": "Eternal God, giver of love and power,\nyour Son Jesus Christ has sent us into all the world\nto preach the gospel of his kingdom:\nconfirm us in this mission,\nand help us to live the good news we proclaim;\nthrough Jesus Christ our Lord."
+  },
+  "st-matthias": {
+    "collectCw": "Almighty God,\nwho in the place of the traitor Judas\nchose your faithful servant Matthias\nto be of the number of the Twelve:\npreserve your Church from false apostles\nand, by the ministry of faithful pastors and teachers,\nkeep us steadfast in your truth;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": null,
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "pentecost": {
+    "collectCw": "God, who as at this time\ntaught the hearts of your faithful people\nby sending to them the light of your Holy Spirit:\ngrant us by the same Spirit\nto have a right judgement in all things\nand evermore to rejoice in his holy comfort;\nthrough the merits of Christ Jesus our Saviour,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "God, who as at this time didst teach the hearts of thy faithful people, by the sending to them the light of thy Holy Spirit; Grant us by the same Spirit to have a right judgement in all things, and evermore to rejoice in his holy comfort; through the merits of Christ Jesus our Saviour, who liveth and reigneth with thee, in the unity of the same Spirit, one God, world without end.",
+    "postCommunionCw": "Faithful God,\nwho fulfilled the promises of Easter\nby sending us your Holy Spirit\nand opening to every race and nation\nthe way of life eternal:\nopen our lips by your Spirit,\nthat every tongue may tell of your glory;\nthrough Jesus Christ our Lord."
+  },
+  "trinity-sunday": {
+    "collectCw": "Almighty and everlasting God,\nyou have given us your servants grace,\nby the confession of a true faith,\nto acknowledge the glory of the eternal Trinity\nand in the power of the divine majesty to worship the Unity:\nkeep us steadfast in this faith,\nthat we may evermore be defended from all adversities;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty and everlasting God, who hast given unto us thy servants grace, by the confession of a true faith to acknowledge the glory of the eternal Trinity, and in the power of the Divine Majesty to worship the Unity; We beseech thee, that thou wouldest keep us stedfast in this faith, and evermore defend us from all adversities, who livest and reignest, one God, world without end.",
+    "postCommunionCw": "Almighty and eternal God,\nyou have revealed yourself as Father, Son and Holy Spirit,\nand live and reign in the perfect unity of love:\nhold us firm in this faith,\nthat we may know you in all your ways\nand evermore rejoice in your eternal glory,\nwho are three Persons yet one God,\nnow and for ever."
+  },
+  "visit-of-mary": {
+    "collectCw": "Mighty God,\nby whose grace Elizabeth rejoiced with Mary\nand greeted her as the mother of the Lord:\nlook with favour on your lowly servants\nthat, with Mary, we may magnify your holy name\nand rejoice to acclaim her Son our Saviour,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": null,
+    "postCommunionCw": "Gracious God,\nwho gave joy to Elizabeth and Mary\nas they recognized the signs of redemption\n   at work within them:\nhelp us, who have shared in the joy of this eucharist,\nto know the Lord deep within us\nand his love shining out in our lives,\nthat the world may rejoice in your salvation;\nthrough Jesus Christ our Lord."
+  },
+  "proper-4": {
+    "collectCw": "O God,\nthe strength of all those who put their trust in you,\nmercifully accept our prayers\nand, because through the weakness of our mortal nature\nwe can do no good thing without you,\ngrant us the help of your grace,\nthat in the keeping of your commandments\nwe may please you both in will and deed;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God, the strength of all them that put their trust in thee, mercifully accept our prayers; and because through the weakness of our mortal nature we can do no good thing without thee, grant us the help of thy grace, that in keeping of thy commandments we may please thee both in will and deed; through Jesus Christ our Lord.",
+    "postCommunionCw": "Eternal Father,\nwe thank you for nourishing us\nwith these heavenly gifts:\nmay our communion strengthen us in faith,\nbuild us up in hope,\nand make us grow in love;\nfor the sake of Jesus Christ our Lord."
+  },
+  "proper-5": {
+    "collectCw": "Lord, you have taught us\nthat all our doings without love are nothing worth:\nsend your Holy Spirit\nand pour into our hearts that most excellent gift of love,\nthe true bond of peace and of all virtues,\nwithout which whoever lives is counted dead before you.\nGrant this for your only Son Jesus Christ’s sake,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord, who never failest to help and govern them whom thou dost bring up in thy stedfast fear and love; Keep us, we beseech thee, under the protection of thy good providence, and make us to have a perpetual fear and love of thy holy Name; through Jesus Christ our Lord.",
+    "postCommunionCw": "Loving Father,\nwe thank you for feeding us at the supper of your Son:\nsustain us with your Spirit,\nthat we may serve you here on earth\nuntil our joy is complete in heaven,\nand we share in the eternal banquet\nwith Jesus Christ our Lord."
+  },
+  "st-barnabas": {
+    "collectCw": "Bountiful God, giver of all gifts,\nwho poured your Spirit upon your servant Barnabas\nand gave him grace to encourage others:\nhelp us, by his example,\nto be generous in our judgements\nand unselfish in our service;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord God Almighty, who didst endue thy holy Apostle Barnabas with singular gifts of the Holy Ghost; Leave us not, we beseech thee, destitute of thy manifold gifts, nor yet of grace to use them alway to thy honour and glory; through Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "proper-6": {
+    "collectCw": "Almighty God,\nyou have broken the tyranny of sin\nand have sent the Spirit of your Son into our hearts\n   whereby we call you Father:\ngive us grace to dedicate our freedom to your service,\nthat we and all creation may be brought\n   to the glorious liberty of the children of God;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord, we beseech thee mercifully to hear us; and grant that we, to whom thou hast given an hearty desire to pray, may by thy mighty aid be defended and comforted in all dangers and adversities; through Jesus Christ our Lord.",
+    "postCommunionCw": "O God, whose beauty is beyond our imagining\nand whose power we cannot comprehend:\nshow us your glory as far as we can grasp it,\nand shield us from knowing more than we can bear\nuntil we may look upon you without fear;\nthrough Jesus Christ our Saviour."
+  },
+  "proper-7": {
+    "collectCw": "O God, the protector of all who trust in you,\nwithout whom nothing is strong, nothing is holy:\nincrease and multiply upon us your mercy;\nthat with you as our ruler and guide\nwe may so pass through things temporal\nthat we lose not our hold on things eternal;\ngrant this, heavenly Father,\nfor our Lord Jesus Christ’s sake,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God, the protector of all that trust in thee, without whom nothing is strong, nothing is holy; Increase and multiply upon us thy mercy; that, thou being our ruler and guide, we may so pass through things temporal, that we finally lose not the things eternal. Grant this, O heavenly Father, for Jesus Christ’s sake our Lord.",
+    "postCommunionCw": "Eternal God,\ncomfort of the afflicted and healer of the broken,\nyou have fed us at the table of life and hope:\nteach us the ways of gentleness and peace,\nthat all the world may acknowledge\nthe kingdom of your Son Jesus Christ our Lord."
+  },
+  "birth-of-st-john-baptist": {
+    "collectCw": "Almighty God,\nby whose providence your servant John the Baptist\n   was wonderfully born,\nand sent to prepare the way of your Son our Saviour\nby the preaching of repentance:\nlead us to repent according to his preaching\nand, after his example,\nconstantly to speak the truth, boldly to rebuke vice,\nand patiently to suffer for the truth’s sake;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty God, by whose providence thy servant John Baptist was wonderfully born, and sent to prepare the way of thy Son our Saviour, by preaching of repentance; Make us so to follow his doctrine and holy life, that we may truly repent according to his preaching, and after his example constantly speak the truth, boldly rebuke vice, and patiently suffer for the truth’s sake; through Jesus Christ our Lord.",
+    "postCommunionCw": "Merciful Lord,\nwhose prophet John the Baptist\nproclaimed your Son as the Lamb of God\n   who takes away the sin of the world:\ngrant that we who in this sacrament\n   have known your forgiveness and your life-giving love\nmay ever tell of your mercy and your peace;\nthrough Jesus Christ our Lord."
+  },
+  "ss-peter-and-paul": {
+    "collectCw": "Almighty God,\nwhose blessed apostles Peter and Paul\nglorified you in their death as in their life:\ngrant that your Church,\ninspired by their teaching and example,\nand made one by your Spirit,\nmay ever stand firm upon the one foundation,\nJesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": null,
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "peter-apostle": {
+    "collectCw": "Almighty God,\nwho inspired your apostle Saint Peter\nto confess Jesus as Christ and Son of the living God:\nbuild up your Church upon this rock,\nthat in unity and peace it may proclaim one truth\nand follow one Lord, your Son our Saviour Christ,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Almighty God, who by thy Son Jesus Christ didst give to thy Apostle Saint Peter many excellent gifts, and commandedst him earnestly to feed thy flock; Make, we beseech thee, all Bishops and Pastors diligently to preach thy holy Word, and the people obediently to follow the same, that they may receive the crown of everlasting glory; through Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "proper-8": {
+    "collectCw": "Almighty and everlasting God,\nby whose Spirit the whole body of the Church\n   is governed and sanctified:\nhear our prayer which we offer for all your faithful people,\nthat in their vocation and ministry\nthey may serve you in holiness and truth\nto the glory of your name;\nthrough our Lord and Saviour Jesus Christ,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Grant, O Lord, we beseech thee, that the course of this world may be so peaceably ordered by thy governance, that thy Church may joyfully serve thee in all godly quietness; through Jesus Christ our Lord.",
+    "postCommunionCw": "Grant, O Lord, we beseech you,\nthat the course of this world may be so peaceably ordered\n   by your governance,\nthat your Church may joyfully serve you in all godly quietness;\nthrough Jesus Christ our Lord."
+  },
+  "proper-8-tue": {
+    "collectCw": null,
+    "collectBcp": "O God, who didst lead the Blessed Virgin Mary to visit Elizabeth, to their exceeding joy and comfort: Grant unto thy people, that as Mary did rejoice to be called the Mother of the Lord, so they may ever rejoice to believe the incarnation of thine only-begotten Son; to whom with thee and the Holy Ghost be all honour and glory, world without end.",
+    "postCommunionCw": null
+  },
+  "st-thomas": {
+    "collectCw": "Almighty and eternal God,\nwho, for the firmer foundation of our faith,\nallowed your holy apostle Thomas\n   to doubt the resurrection of your Son\ntill word and sight convinced him:\ngrant to us, who have not seen, that we also may believe\nand so confess Christ as our Lord and our God;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": null,
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "proper-9": {
+    "collectCw": "Merciful God,\nyou have prepared for those who love you\nsuch good things as pass our understanding:\npour into our hearts such love toward you\nthat we, loving you in all things and above all things,\nmay obtain your promises,\nwhich exceed all that we can desire;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God, who hast prepared for them that love thee such good things as pass man’s understanding; Pour into our hearts such love toward thee, that we, loving thee above all things, may obtain thy promises, which exceed all that we can desire; through Jesus Christ our Lord.",
+    "postCommunionCw": "God of our pilgrimage,\nyou have led us to the living water:\nrefresh and sustain us\nas we go forward on our journey,\nin the name of Jesus Christ our Lord."
+  },
+  "proper-10": {
+    "collectCw": "Lord of all power and might,\nthe author and giver of all good things:\ngraft in our hearts the love of your name,\nincrease in us true religion,\nnourish us with all goodness,\nand of your great mercy keep us in the same;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Lord of all power and might, who art the author and giver of all good things; Graft in our hearts the love of thy Name, increase in us true religion, nourish us with all goodness, and of thy great mercy keep us in the same; through Jesus Christ our Lord.",
+    "postCommunionCw": "Lord God, whose Son is the true vine and the source of life,\never giving himself that the world may live:\nmay we so receive within ourselves\n   the power of his death and passion\nthat, in his saving cup,\n   we may share his glory and be made perfect in his love;\nfor he is alive and reigns, now and for ever."
+  },
+  "proper-11": {
+    "collectCw": "Almighty Lord and everlasting God,\nwe beseech you to direct, sanctify and govern\n   both our hearts and bodies\nin the ways of your laws\n   and the works of your commandments;\nthat through your most mighty protection, both here and ever,\nwe may be preserved in body and soul;\nthrough our Lord and Saviour Jesus Christ,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God, whose never-failing providence ordereth all things both in heaven and earth; We humbly beseech thee to put away from us all hurtful things, and to give us those things which be profitable for us; through Jesus Christ our Lord.",
+    "postCommunionCw": "Strengthen for service, Lord,\nthe hands that have taken holy things;\nmay the ears which have heard your word\n   be deaf to clamour and dispute;\nmay the tongues which have sung your praise be free from deceit;\nmay the eyes which have seen the tokens of your love\n   shine with the light of hope;\nand may the bodies which have been fed with your body\n   be refreshed with the fullness of your life;\nglory to you for ever."
+  },
+  "st-mary-magdalene": {
+    "collectCw": "Almighty God,\nwhose Son restored Mary Magdalene\n   to health of mind and body\nand called her to be a witness to his resurrection:\nforgive our sins and heal us by your grace,\nthat we may serve you in the power of his risen life;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Almighty God, whose blessed Son did call and sanctify Mary Magdalen to be a witness to his resurrection: Mercifully grant that by thy grace we may be healed of all our infirmities, and always serve thee in the power of his endless life, who with thee and the Holy Ghost liveth and reigneth, one God, world without end.",
+    "postCommunionCw": "God of life and love,\nwhose risen Son called Mary Magdalene by name\nand sent her to tell of his resurrection to his apostles:\nin your mercy, help us,\nwho have been united with him in this eucharist,\nto proclaim the good news\n   that he is alive and reigns, now and for ever"
+  },
+  "st-james": {
+    "collectCw": "Merciful God,\nwhose holy apostle Saint James,\nleaving his father and all that he had,\nwas obedient to the calling of your Son Jesus Christ\nand followed him even to death:\nhelp us, forsaking the false attractions of the world,\nto be ready at all times to answer your call without delay;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Grant, O merciful God, that as thine holy Apostle Saint James, leaving his father and all that he had, without delay was obedient unto the calling of thy Son Jesus Christ, and followed him; so we, forsaking all worldly and carnal affections, may be evermore ready to follow thy holy commandments; through Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "proper-12": {
+    "collectCw": "Almighty God,\nwho sent your Holy Spirit\nto be the life and light of your Church:\nopen our hearts to the riches of your grace,\nthat we may bring forth the fruit of the Spirit\nin love and joy and peace;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Grant to us, Lord, we beseech thee, the spirit to think and do always such things as be rightful; that we, who cannot do any thing that is good without thee, may by thee be enabled to live according to thy will; through Jesus Christ our Lord.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal the fullness of your peace,\ngather people of every race and language\n   to share in the eternal banquet of Jesus Christ our Lord."
+  },
+  "proper-13": {
+    "collectCw": "Let your merciful ears, O Lord,\nbe open to the prayers of your humble servants;\nand that they may obtain their petitions\nmake them to ask such things as shall please you;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Let thy merciful ears, O Lord, be open to the prayers of thy humble servants; and that they may obtain their petitions make them to ask such things as shall please thee; through Jesus Christ our Lord.",
+    "postCommunionCw": "God of our pilgrimage,\nyou have willed that the gate of mercy\nshould stand open for those who trust in you:\nlook upon us with your favour\nthat we who follow the path of your will\nmay never wander from the way of life;\nthrough Jesus Christ our Lord."
+  },
+  "transfiguration": {
+    "collectCw": "Father in heaven,\nwhose Son Jesus Christ was wonderfully transfigured\nbefore chosen witnesses upon the holy mountain,\nand spoke of the exodus he would accomplish at Jerusalem:\ngive us strength so to hear his voice and bear our cross\nthat in the world to come we may see him as he is;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God, who before the passion of thine only-begotten Son didst reveal his glory upon the holy mount: Grant unto us thy servants, that in faith beholding the light of his countenance, we may be strengthened to bear the cross, and be changed into his likeness from glory to glory; through the same Jesus Christ our Lord.",
+    "postCommunionCw": "Holy God,\nwe see your glory in the face of Jesus Christ:\nmay we who are partakers at his table\nreflect his life in word and deed,\nthat all the world may know his power to change and save.\nThis we ask through Jesus Christ our Lord."
+  },
+  "proper-13-wed": {
+    "collectCw": null,
+    "collectBcp": "Almighty God, who hast taught us that in the name of Jesus Christ alone is salvation: Mercifully grant that thy faithful people, ever glorifying in his name, may make thy salvation known to all the world, through the same Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "proper-14": {
+    "collectCw": "O God, you declare your almighty power\nmost chiefly in showing mercy and pity:\nmercifully grant to us such a measure of your grace,\nthat we, running the way of your commandments,\nmay receive your gracious promises,\nand be made partakers of your heavenly treasure;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God, who declarest thy almighty power most chiefly in shewing mercy and pity; Mercifully grant unto us such a measure of thy grace, that we, running the way of thy commandments, may obtain thy gracious promises, and be made partakers of thy heavenly treasure; through Jesus Christ our Lord.",
+    "postCommunionCw": "Lord of all mercy,\nwe your faithful people have celebrated that one true sacrifice\n   which takes away our sins and brings pardon and peace:\nby our communion\nkeep us firm on the foundation of the gospel\nand preserve us from all sin;\nthrough Jesus Christ our Lord."
+  },
+  "blessed-virgin-mary": {
+    "collectCw": "Almighty God,\nwho looked upon the lowliness of the Blessed Virgin Mary\nand chose her to be the mother of your only Son:\ngrant that we who are redeemed by his blood\nmay share with her in the glory of your eternal kingdom;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": null,
+    "postCommunionCw": "God most high,\nwhose handmaid bore the Word made flesh:\nwe thank you that in this sacrament of our redemption\nyou visit us with your Holy Spirit\nand overshadow us by your power;\nstrengthen us to walk with Mary the joyful path of obedience\nand so to bring forth the fruits of holiness;\nthrough Jesus Christ our Lord."
+  },
+  "proper-15": {
+    "collectCw": "Almighty and everlasting God,\nyou are always more ready to hear than we to pray\nand to give more than either we desire or deserve:\npour down upon us the abundance of your mercy,\nforgiving us those things of which our conscience is afraid\nand giving us those good things\n   which we are not worthy to ask\nbut through the merits and mediation\nof Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty and everlasting God, who art always more ready to hear than we to pray, and art wont to give more than either we desire or deserve; Pour down upon us the abundance of thy mercy; forgiving us those things whereof our conscience is afraid, and giving us those good things which we are not worthy to ask, but through the merits and mediation of Jesus Christ, thy Son, our Lord.",
+    "postCommunionCw": "God of all mercy,\nin this eucharist you have set aside our sins\nand given us your healing:\ngrant that we who are made whole in Christ\nmay bring that healing to this broken world,\nin the name of Jesus Christ our Lord."
+  },
+  "st-bartholomew": {
+    "collectCw": "Almighty and everlasting God,\nwho gave to your apostle Bartholomew grace\n   truly to believe and to preach your word:\ngrant that your Church\nmay love that word which he believed\nand may faithfully preach and receive the same;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Almighty and everlasting God, who didst give to thine Apostle Bartholomew grace truly to believe and to preach thy Word; Grant, we beseech thee, unto thy Church, to love that Word which he believed, and both to preach and receive the same; through Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "proper-16": {
+    "collectCw": "Almighty God,\nwho called your Church to bear witness\nthat you were in Christ reconciling the world to yourself:\nhelp us to proclaim the good news of your love,\nthat all who hear it may be drawn to you;\nthrough him who was lifted up on the cross,\nand reigns with you in the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty and merciful God, of whose only gift it cometh that thy faithful people do unto thee true and laudable service; Grant, we beseech thee, that we may so faithfully serve thee in this life, that we fail not finally to attain thy heavenly promises; through the merits of Jesus Christ our Lord.",
+    "postCommunionCw": "God our creator,\nyou feed your children with the true manna,\nthe living bread from heaven:\nlet this holy food sustain us through our earthly pilgrimage\nuntil we come to that place\n   where hunger and thirst are no more;\nthrough Jesus Christ our Lord."
+  },
+  "proper-16-thu": {
+    "collectCw": null,
+    "collectBcp": "O God, who didst vouchsafe to thy servant John Baptist to be in birth and death the forerunner of thy Son: Grant that as he was slain for truth and righteousness, so we may contend for the same unto the end; for the love of thy Son Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "proper-17": {
+    "collectCw": "Almighty God,\nwhose only Son has opened for us\na new and living way into your presence:\ngive us pure hearts and steadfast wills\nto worship you in spirit and in truth;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty and everlasting God, give unto us the increase of faith, hope, and charity; and, that we may obtain that which thou dost promise, make us to love that which thou dost command; through Jesus Christ our Lord.",
+    "postCommunionCw": "Lord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "proper-18": {
+    "collectCw": "God, who in generous mercy sent the Holy Spirit\n   upon your Church in the burning fire of your love:\ngrant that your people may be fervent\n   in the fellowship of the gospel\nthat, always abiding in you,\nthey may be found steadfast in faith and active in service;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Keep, we beseech thee, O Lord, thy Church with thy perpetual mercy; and, because the frailty of man without thee cannot but fall, keep us ever by thy help from all things hurtful, and lead us to all things profitable to our salvation; through Jesus Christ our Lord.",
+    "postCommunionCw": "Keep, O Lord, your Church, with your perpetual mercy;\nand, because without you our human frailty cannot but fall,\nkeep us ever by your help from all things hurtful,\nand lead us to all things profitable to our salvation;\nthrough Jesus Christ our Lord."
+  },
+  "holy-cross-day": {
+    "collectCw": "Almighty God,\nwho in the passion of your blessed Son\nmade an instrument of painful death\nto be for us the means of life and peace:\ngrant us so to glory in the cross of Christ\nthat we may gladly suffer for his sake;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God, who by the passion of thy blessed Son hast made the instrument of shameful death to be unto us the means of life and peace: Grant us so to glory in the Cross of Christ, that we may gladly suffer shame and loss; for the sake of the same thy Son our Lord.",
+    "postCommunionCw": "Faithful God,\nwhose Son bore our sins in his body on the tree\nand gave us this sacrament to show forth his death until he comes:\ngive us grace to glory in the cross of our Lord Jesus Christ,\nfor he is our salvation, our life and our hope,\nwho reigns as Lord, now and for ever."
+  },
+  "proper-19": {
+    "collectCw": "O Lord, we beseech you mercifully to hear the prayers\n   of your people who call upon you;\nand grant that they may both perceive and know\n   what things they ought to do,\nand also may have grace and power faithfully to fulfil them;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord, we beseech thee, let thy continual pity cleanse and defend thy Church; and, because it cannot continue in safety without thy succour, preserve it evermore by thy help and goodness; through Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nyou have taught us through your Son\nthat love is the fulfilling of the law:\ngrant that we may love you with our whole heart\nand our neighbours as ourselves;\nthrough Jesus Christ our Lord."
+  },
+  "st-matthew": {
+    "collectCw": "O Almighty God,\nwhose blessed Son called Matthew the tax collector\nto be an apostle and evangelist:\ngive us grace to forsake the selfish pursuit of gain\n   and the possessive love of riches\nthat we may follow in the way of your Son Jesus Christ,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Almighty God, who by thy blessed Son didst call Matthew from the receipt of custom to be an Apostle and Evangelist; Grant us grace to forsake all covetous desires and inordinate love of riches, and to follow the same thy Son Jesus Christ; who liveth and reigneth with thee and the Holy Ghost, one God, world without end.",
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "proper-20": {
+    "collectCw": "Almighty God,\nyou have made us for yourself,\nand our hearts are restless till they find their rest in you:\npour your love into our hearts and draw us to yourself,\nand so bring us at last to your heavenly city\nwhere we shall see you face to face;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Lord, we pray thee that thy grace may always prevent and follow us, and make us continually to be given to all good works; through Jesus Christ our Lord.",
+    "postCommunionCw": "Lord, we pray that your grace\n   may always precede and follow us,\nand make us continually to be given to all good works;\nthrough Jesus Christ our Lord."
+  },
+  "st-michael-all-angels": {
+    "collectCw": "Everlasting God,\nyou have ordained and constituted\n   the ministries of angels and mortals in a wonderful order:\ngrant that as your holy angels always serve you in heaven,\nso, at your command,\nthey may help and defend us on earth;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O everlasting God, who hast ordained and constituted the services of Angels and men in a wonderful order; Mercifully grant that, as thy holy Angels alway do thee service in heaven, so by thy appointment they may succour and defend us on earth; through Jesus Christ our Lord.",
+    "postCommunionCw": "Lord of heaven,\nin this eucharist you have brought us near\n   to an innumerable company of angels\n   and to the spirits of the saints made perfect:\nas in this food of our earthly pilgrimage\n   we have shared their fellowship,\nso may we come to share their joy in heaven;\nthrough Jesus Christ our Lord."
+  },
+  "proper-21": {
+    "collectCw": "Almighty and everlasting God,\nincrease in us your gift of faith\nthat, forsaking what lies behind\nand reaching out to that which is before,\nwe may run the way of your commandments\nand win the crown of everlasting joy;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Lord, we beseech thee, grant thy people grace to withstand the temptations of the world, the flesh, and the devil, and with pure hearts and minds to follow thee the only God; through Jesus Christ our Lord.",
+    "postCommunionCw": "We praise and thank you, O Christ, for this sacred feast:\nfor here we receive you,\nhere the memory of your passion is renewed,\nhere our minds are filled with grace,\nand here a pledge of future glory is given,\nwhen we shall feast at that table where you reign\nwith all your saints for ever."
+  },
+  "proper-21-tue": {
+    "collectCw": null,
+    "collectBcp": "O everlasting God, who hast ordained and constituted the services of Angels and men in a wonderful order; Mercifully grant that, as thy holy Angels alway do thee service in heaven, so by thy appointment they may succour and defend us on earth; through Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "proper-22": {
+    "collectCw": "O God, forasmuch as without you\nwe are not able to please you;\nmercifully grant that your Holy Spirit\nmay in all things direct and rule our hearts;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God, forasmuch as without thee we are not able to please thee; Mercifully grant, that thy Holy Spirit may in all things direct and rule our hearts; through Jesus Christ our Lord.",
+    "postCommunionCw": "Holy and blessed God,\nyou have fed us with the body and blood of your Son\nand filled us with your Holy Spirit:\nmay we honour you,\nnot only with our lips\nbut in lives dedicated to the service\n   of Jesus Christ our Lord."
+  },
+  "proper-23": {
+    "collectCw": "God, the giver of life,\nwhose Holy Spirit wells up within your Church:\nby the Spirit’s gifts equip us to live the gospel of Christ\n   and make us eager to do your will,\nthat we may share with the whole creation\n   the joys of eternal life;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Almighty and most merciful God, of thy bountiful goodness keep us, we beseech thee, from all things that may hurt us; that we, being ready both in body and soul, may cheerfully accomplish those things that thou wouldest have done; through Jesus Christ our Lord.",
+    "postCommunionCw": "God our Father,\nwhose Son, the light unfailing,\nhas come from heaven to deliver the world\n   from the darkness of ignorance:\nlet these holy mysteries open the eyes of our understanding\nthat we may know the way of life,\nand walk in it without stumbling;\nthrough Jesus Christ our Lord."
+  },
+  "proper-23-fri": {
+    "collectCw": "Almighty God,\nyou called Luke the physician,\nwhose praise is in the gospel,\nto be an evangelist and physician of the soul:\nby the grace of the Spirit\nand through the wholesome medicine of the gospel,\ngive your Church the same love and power to heal;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty God, who calledst Luke the Physician, whose praise is in the Gospel, to be an Evangelist, and Physician of the soul; May it please thee that, by the wholesome medicines of the doctrine delivered by him, all the diseases of our souls may be healed; through the merits of thy Son Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "proper-24": {
+    "collectCw": "Grant, we beseech you, merciful Lord,\nto your faithful people pardon and peace,\nthat they may be cleansed from all their sins\nand serve you with a quiet mind;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Grant, we beseech thee, merciful Lord, to thy faithful people pardon and peace; that they may be cleansed from all their sins, and serve thee with a quiet mind; through Jesus Christ our Lord.",
+    "postCommunionCw": "Father of light,\nin whom is no change or shadow of turning,\nyou give us every good and perfect gift\nand have brought us to birth by your word of truth:\nmay we be a living sign of that kingdom\nwhere your whole creation will be made perfect in Jesus Christ our Lord."
+  },
+  "proper-25": {
+    "collectCw": "Blessed Lord,\nwho caused all holy Scriptures to be written for our learning:\nhelp us so to hear them,\nto read, mark, learn and inwardly digest them\nthat, through patience, and the comfort of your holy word,\nwe may embrace and for ever hold fast\n   the hope of everlasting life,\nwhich you have given us in our Saviour Jesus Christ,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Lord, we beseech thee to keep thy household the Church in continual godliness; that through thy protection it may be free from all adversities, and devoutly given to serve thee in good works, to the glory of thy Name; through Jesus Christ our Lord.",
+    "postCommunionCw": "God of all grace,\nyour Son Jesus Christ fed the hungry\nwith the bread of his life\nand the word of his kingdom:\nrenew your people with your heavenly grace,\nand in all our weakness\nsustain us by your true and living bread;\nwho is alive and reigns, now and for ever."
+  },
+  "ss-simon-and-jude": {
+    "collectCw": "Almighty God,\nwho built your Church upon the foundation\n   of the apostles and prophets,\nwith Jesus Christ himself as the chief cornerstone:\nso join us together in unity of spirit by their doctrine,\nthat we may be made a holy temple acceptable to you;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Almighty God, who hast built thy Church upon the foundation of the Apostles and Prophets, Jesus Christ himself being the head corner-stone; Grant us so to be joined together in unity of spirit by their doctrine, that we may be made an holy temple acceptable unto thee; through Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "all-saints": {
+    "collectCw": null,
+    "collectBcp": "O Almighty God, who hast knit together thine elect in one communion and fellowship, in the mystical body of thy Son Christ our Lord; Grant us grace so to follow thy blessed Saints in all virtuous and godly living, that we may come to those unspeakable joys, which thou hast prepared for them that unfeignedly love thee; through Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "kingdom-5": {
+    "collectCw": "Almighty and eternal God,\nyou have kindled the flame of love\n   in the hearts of the saints:\ngrant to us the same faith and power of love,\nthat, as we rejoice in their triumphs,\nwe may be sustained by their example and fellowship;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God, our refuge and strength, who art the author of all godliness; Be ready, we beseech thee, to hear the devout prayers of thy Church; and grant that those things which we ask faithfully we may obtain effectually; through Jesus Christ our Lord.",
+    "postCommunionCw": "Lord of heaven,\nin this eucharist you have brought us near\n   to an innumerable company of angels\n   and to the spirits of the saints made perfect:\nas in this food of our earthly pilgrimage\n   we have shared their fellowship,\nso may we come to share their joy in heaven;\nthrough Jesus Christ our Lord."
+  },
+  "kingdom-4": {
+    "collectCw": "Almighty Father,\nwhose will is to restore all things\nin your beloved Son, the King of all:\ngovern the hearts and minds of those in authority,\nand bring the families of the nations,\ndivided and torn apart by the ravages of sin,\nto be subject to his just and gentle rule;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord, we beseech thee, absolve thy people from their offences; that through thy bountiful goodness we may all be delivered from the bands of those sins, which by our frailty we have committed: Grant this, O heavenly Father, for Jesus Christ’s sake, our blessed Lord and Saviour.",
+    "postCommunionCw": "God of peace,\nwhose Son Jesus Christ proclaimed the kingdom\nand restored the broken to wholeness of life:\nlook with compassion on the anguish of the world,\nand by your healing power\nmake whole both people and nations;\nthrough our Lord and Saviour Jesus Christ."
+  },
+  "kingdom-3": {
+    "collectCw": "Heavenly Father,\nwhose blessed Son was revealed\n   to destroy the works of the devil\nand to make us the children of God and heirs of eternal life:\ngrant that we, having this hope,\nmay purify ourselves even as he is pure;\nthat when he shall appear in power and great glory\nwe may be made like him in his eternal and glorious kingdom;\nwhere he is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O God, who knowest us to be set in the midst of so many and great dangers, that by reason of the frailty of our nature we cannot always stand upright; Grant to us such strength and protection, as may support us in all dangers, and carry us through all temptations; through Jesus Christ our Lord.",
+    "postCommunionCw": "Gracious Lord,\nin this holy sacrament\nyou give substance to our hope:\nbring us at the last\nto that fullness of life for which we long;\nthrough Jesus Christ our Saviour."
+  },
+  "christ-the-king": {
+    "collectCw": "Eternal Father,\nwhose Son Jesus Christ ascended to the throne of heaven\n   that he might rule over all things as Lord and King:\nkeep the Church in the unity of the Spirit\nand in the bond of peace,\nand bring the whole created order to worship at his feet;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Stir up, we beseech thee, O Lord, the wills of thy faithful people; that they, plenteously bringing forth the fruit of good works, may of thee be plenteously rewarded; through Jesus Christ our Lord.",
+    "postCommunionCw": "Stir up, O Lord,\nthe wills of your faithful people;\nthat they, plenteously bringing forth the fruit of good works,\nmay by you be plenteously rewarded;\nthrough Jesus Christ our Lord.\n\nThis Post Communion may be used as the Collect at Morning and Evening Prayer during this week."
+  },
+  "st-andrew": {
+    "collectCw": "Almighty God,\nwho gave such grace to your apostle Saint Andrew\nthat he readily obeyed the call of your Son Jesus Christ\n   and brought his brother with him:\ncall us by your holy word,\nand give us grace to follow you without delay\n   and to tell the good news of your kingdom;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty God, who didst give such grace unto thy holy Apostle Saint Andrew, that he readily obeyed the calling of thy Son Jesus Christ, and followed him without delay; Grant unto us all, that we, being called by thy holy word, may forthwith give up ourselves obediently to fulfil thy holy commandments; through the same Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "advent-3-sat": {
+    "collectCw": null,
+    "collectBcp": "Almighty and everliving God, who for the more confirmation of the faith didst suffer thy holy Apostle Thomas to be doubtful in thy Son’s resurrection; Grant us so perfectly, and without all doubt, to believe in thy Son Jesus Christ, that our faith in thy sight may never be reproved. Hear us, O Lord, through the same Jesus Christ, to whom, with thee and the Holy Ghost, be all honour and glory, now and for evermore.",
+    "postCommunionCw": null
+  },
+  "christmas-eve": {
+    "collectCw": null,
+    "collectBcp": "O God, who makest us glad with the yearly remembrance of the birth of thy only Son, Jesus Christ: Grant that as we joyfully receive him for our redeemer, so we may with sure confidence behold him, when he shall come to be our judge; who liveth and reigneth with thee and the Holy Ghost, one God, world without end.",
+    "postCommunionCw": null
+  },
+  "christmas-2": {
+    "collectCw": "Almighty God,\nin the birth of your Son\nyou have poured on us the new light of your incarnate Word,\nand shown us the fullness of your love:\nhelp us to walk in his light and dwell in his love\nthat we may know the fullness of his joy;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty God who didst wonderfully create man in thine own image, and didst yet more wonderfully restore him: Grant, we beseech thee, that as thy Son our Lord Jesus Christ was made in the likeness of men, so we may be made partakers of the divine nature; through the same thy Son, who with thee and the Holy Ghost liveth and reigneth, one God, world without end.",
+    "postCommunionCw": "All praise to you,\nalmighty God and heavenly king,\nwho sent your Son into the world\nto take our nature upon him\nand to be born of a pure virgin:\ngrant that, as we are born again in him,\nso he may continually dwell in us\nand reign on earth as he reigns in heaven,\nnow and for ever."
+  },
+  "before-lent-4": {
+    "collectCw": "O God,\nyou know us to be set\nin the midst of so many and great dangers,\nthat by reason of the frailty of our nature\nwe cannot always stand upright:\ngrant to us such strength and protection\nas may support us in all dangers\nand carry us through all temptations;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord, we beseech thee to keep thy Church and household continually in thy true religion; that they who do lean only upon the hope of thy heavenly grace may evermore be defended by thy mighty power; through Jesus Christ our Lord.",
+    "postCommunionCw": "Go before us, Lord, in all we do\nwith your most gracious favour,\nand guide us with your continual help,\nthat in all our works\nbegun, continued and ended in you,\nwe may glorify your holy name,\nand finally by your mercy receive everlasting life;\nthrough Jesus Christ our Lord."
+  },
+  "before-lent-3": {
+    "collectCw": "Almighty God,\nwho alone can bring order\nto the unruly wills and passions of sinful humanity:\ngive your people grace\nso to love what you command\nand to desire what you promise,\nthat, among the many changes of this world,\nour hearts may surely there be fixed\nwhere true joys are to be found;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "O Lord, we beseech thee favourably to hear the prayers of thy people; that we, who are justly punished for our offences, may be mercifully delivered by thy goodness, for the glory of thy Name; through Jesus Christ our Saviour, who liveth and reigneth with thee and the Holy Ghost, ever one God, world without end.",
+    "postCommunionCw": "Merciful Father,\nwho gave Jesus Christ to be for us the bread of life,\nthat those who come to him should never hunger:\ndraw us to the Lord in faith and love,\nthat we may eat and drink with him\nat his table in the kingdom,\nwhere he is alive and reigns, now and for ever."
+  },
+  "before-lent-2-mon": {
+    "collectCw": null,
+    "collectBcp": "O Almighty God, who into the place of the traitor Judas didst choose thy faithful servant Matthias to be of the number of the twelve Apostles; Grant that thy Church, being alway preserved from false Apostles, may be ordered and guided by faithful and true pastors; through Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "easter-2-mon": {
+    "collectCw": "God of hosts,\nwho so kindled the flame of love\nin the heart of your servant George\nthat he bore witness to the risen Lord\nby his life and by his death:\ngive us the same faith and power of love\nthat we who rejoice in his triumphs\nmay come to share with him the fullness of the resurrection;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": null,
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened\nby the blood of your martyr George:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr George:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord."
+  },
+  "proper-5-tue": {
+    "collectCw": null,
+    "collectBcp": "O Almighty God, who by thy Son Jesus Christ didst give to thy Apostle Saint Peter many excellent gifts, and commandedst him earnestly to feed thy flock; Make, we beseech thee, all Bishops and Pastors diligently to preach thy holy Word, and the people obediently to follow the same, that they may receive the crown of everlasting glory; through Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "proper-5-wed": {
+    "collectCw": null,
+    "collectBcp": "O God, who didst lead the Blessed Virgin Mary to visit Elizabeth, to their exceeding joy and comfort: Grant unto thy people, that as Mary did rejoice to be called the Mother of the Lord, so they may ever rejoice to believe the incarnation of thine only-begotten Son; to whom with thee and the Holy Ghost be all honour and glory, world without end.",
+    "postCommunionCw": null
+  },
+  "proper-10-thu": {
+    "collectCw": null,
+    "collectBcp": "Almighty God, who hast taught us that in the name of Jesus Christ alone is salvation: Mercifully grant that thy faithful people, ever glorifying in his name, may make thy salvation known to all the world, through the same Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "proper-13-tue": {
+    "collectCw": null,
+    "collectBcp": "O Almighty and everlasting God, who didst give to thine Apostle Bartholomew grace truly to believe and to preach thy Word; Grant, we beseech thee, unto thy Church, to love that Word which he believed, and both to preach and receive the same; through Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "proper-13-fri": {
+    "collectCw": null,
+    "collectBcp": "O God, who didst vouchsafe to thy servant John Baptist to be in birth and death the forerunner of thy Son: Grant that as he was slain for truth and righteousness, so we may contend for the same unto the end; for the love of thy Son Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "proper-15-mon": {
+    "collectCw": null,
+    "collectBcp": "O merciful God, hear the prayers of thy servants who commemorate the Nativity of the Mother of the Lord; and grant that by the incarnation of thy dear Son we may indeed be made nigh unto him; who liveth and reigneth with thee and the Holy Ghost, one God, world without end.",
+    "postCommunionCw": null
+  },
+  "proper-17-mon": {
+    "collectCw": "Almighty God,\nwhose only Son has opened for us\na new and living way into your presence:\ngive us pure hearts and steadfast wills\nto worship you in spirit and in truth;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": null,
+    "postCommunionCw": "Lord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "proper-17-tue": {
+    "collectCw": null,
+    "collectBcp": "O Almighty God, who by thy blessed Son didst call Matthew from the receipt of custom to be an Apostle and Evangelist; Grant us grace to forsake all covetous desires and inordinate love of riches, and to follow the same thy Son Jesus Christ; who liveth and reigneth with thee and the Holy Ghost, one God, world without end.",
+    "postCommunionCw": null
+  },
+  "proper-20-sat": {
+    "collectCw": "Almighty God,\nyou called Luke the physician,\nwhose praise is in the gospel,\nto be an evangelist and physician of the soul:\nby the grace of the Spirit\nand through the wholesome medicine of the gospel,\ngive your Church the same love and power to heal;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": "Almighty God, who calledst Luke the Physician, whose praise is in the Gospel, to be an Evangelist, and Physician of the soul; May it please thee that, by the wholesome medicines of the doctrine delivered by him, all the diseases of our souls may be healed; through the merits of thy Son Jesus Christ our Lord.",
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "advent-1-tue": {
+    "collectCw": null,
+    "collectBcp": "Almighty God, who didst give such grace unto thy holy Apostle Saint Andrew, that he readily obeyed the calling of thy Son Jesus Christ, and followed him without delay; Grant unto us all, that we, being called by thy holy word, may forthwith give up ourselves obediently to fulfil thy holy commandments; through the same Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "advent-4-tue": {
+    "collectCw": null,
+    "collectBcp": "Almighty and everliving God, who for the more confirmation of the faith didst suffer thy holy Apostle Thomas to be doubtful in thy Son’s resurrection; Grant us so perfectly, and without all doubt, to believe in thy Son Jesus Christ, that our faith in thy sight may never be reproved. Hear us, O Lord, through the same Jesus Christ, to whom, with thee and the Holy Ghost, be all honour and glory, now and for evermore.",
+    "postCommunionCw": null
+  },
+  "christmas-dec-30": {
+    "collectCw": null,
+    "collectBcp": "O Almighty God, who out of the mouths of babes and sucklings hast ordained strength, and madest infants to glorify thee by their deaths; Mortify and kill all vices in us, and so strengthen us by thy grace, that by the innocency of our lives, and constancy of our faith, even unto death, we may glorify thy holy Name; through Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "epiphany-3-tue": {
+    "collectCw": null,
+    "collectBcp": "O God, who, through the preaching of the blessed Apostle Saint Paul, hast caused the light of the Gospel to shine throughout the world; Grant, we beseech thee, that we, having his wonderful conversion in remembrance, may shew forth our thankfulness unto thee for the same, by following the holy doctrine which he taught; through Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "lent-1-tue": {
+    "collectCw": null,
+    "collectBcp": "O Almighty God, who into the place of the traitor Judas didst choose thy faithful servant Matthias to be of the number of the twelve Apostles; Grant that thy Church, being alway preserved from false Apostles, may be ordered and guided by faithful and true pastors; through Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "easter-3-thu": {
+    "collectCw": "God of hosts,\nwho so kindled the flame of love\nin the heart of your servant George\nthat he bore witness to the risen Lord\nby his life and by his death:\ngive us the same faith and power of love\nthat we who rejoice in his triumphs\nmay come to share with him the fullness of the resurrection;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": null,
+    "postCommunionCw": "Eternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr George:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.\n\nor\n\nGod our redeemer,\nwhose Church was strengthened\nby the blood of your martyr George:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord."
+  },
+  "proper-7-thu": {
+    "collectCw": null,
+    "collectBcp": "O God, who didst lead the Blessed Virgin Mary to visit Elizabeth, to their exceeding joy and comfort: Grant unto thy people, that as Mary did rejoice to be called the Mother of the Lord, so they may ever rejoice to believe the incarnation of thine only-begotten Son; to whom with thee and the Holy Ghost be all honour and glory, world without end.",
+    "postCommunionCw": null
+  },
+  "proper-12-fri": {
+    "collectCw": null,
+    "collectBcp": "Almighty God, who hast taught us that in the name of Jesus Christ alone is salvation: Mercifully grant that thy faithful people, ever glorifying in his name, may make thy salvation known to all the world, through the same Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "proper-15-sat": {
+    "collectCw": null,
+    "collectBcp": "O God, who didst vouchsafe to thy servant John Baptist to be in birth and death the forerunner of thy Son: Grant that as he was slain for truth and righteousness, so we may contend for the same unto the end; for the love of thy Son Jesus Christ our Lord.",
+    "postCommunionCw": null
+  },
+  "proper-23-mon": {
+    "collectCw": "Almighty God,\nyou called Luke the physician,\nwhose praise is in the gospel,\nto be an evangelist and physician of the soul:\nby the grace of the Spirit\nand through the wholesome medicine of the gospel,\ngive your Church the same love and power to heal;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "collectBcp": null,
+    "postCommunionCw": "Almighty God,\nwho on the day of Pentecost\nsent your Holy Spirit to the apostles\nwith the wind from heaven and in tongues of flame,\nfilling them with joy and boldness to preach the gospel:\nby the power of the same Spirit\nstrengthen us to witness to your truth\nand to draw everyone to the fire of your love;\nthrough Jesus Christ our Lord.\n\nor\n\nLord God, the source of truth and love,\nkeep us faithful to the apostles’ teaching and fellowship,\nunited in prayer and the breaking of bread,\nand one in joy and simplicity of heart,\nin Jesus Christ our Lord."
+  },
+  "proper-23-tue": {
+    "collectCw": null,
+    "collectBcp": "Almighty God, who calledst Luke the Physician, whose praise is in the Gospel, to be an Evangelist, and Physician of the soul; May it please thee that, by the wholesome medicines of the doctrine delivered by him, all the diseases of our souls may be healed; through the merits of thy Son Jesus Christ our Lord.",
+    "postCommunionCw": null
+  }
+}

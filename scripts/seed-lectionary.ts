@@ -1,5 +1,6 @@
 import Database from 'better-sqlite3';
 import { drizzle } from 'drizzle-orm/better-sqlite3';
+import { eq } from 'drizzle-orm';
 import { resolve } from 'path';
 import { mkdirSync, readFileSync, existsSync } from 'fs';
 import * as schema from '../src/lib/server/db/schema';
@@ -48,7 +49,10 @@ for (const occ of occasionsRaw) {
 			priority: occ.priority ?? 50,
 			collectCw: occ.collectCw ?? null,
 			collectBcp: occ.collectBcp ?? null,
-			postCommunionCw: occ.postCommunionCw ?? null
+			postCommunionCw: occ.postCommunionCw ?? null,
+			occasionRank: occ.occasionRank ?? null,
+			canTransferToSunday: occ.canTransferToSunday ?? false,
+			commonSlug: occ.commonSlug ?? null
 		})
 		.returning()
 		.get();
@@ -57,6 +61,33 @@ for (const occ of occasionsRaw) {
 }
 
 console.log(`  Inserted ${Object.keys(slugToId).length} occasions.`);
+
+// --- 1a. Load collects overlay and update occasions ---
+
+const collectsPath = resolve('scripts/data/lectionary-collects.json');
+if (existsSync(collectsPath)) {
+	const collectsRaw: Record<string, { collectCw: string | null; collectBcp: string | null; postCommunionCw: string | null }> = JSON.parse(
+		readFileSync(collectsPath, 'utf-8')
+	);
+	let collectsUpdated = 0;
+	for (const [slug, collects] of Object.entries(collectsRaw)) {
+		const occasionId = slugToId[slug];
+		if (!occasionId) continue;
+
+		db.update(schema.lectionaryOccasions)
+			.set({
+				collectCw: collects.collectCw ?? null,
+				collectBcp: collects.collectBcp ?? null,
+				postCommunionCw: collects.postCommunionCw ?? null
+			})
+			.where(eq(schema.lectionaryOccasions.id, occasionId))
+			.run();
+		collectsUpdated++;
+	}
+	console.log(`  Updated ${collectsUpdated} occasions with collects.`);
+} else {
+	console.log('  Skipping collects overlay (file not found)');
+}
 
 // --- 1b. Load and insert commemoration occasions ---
 
@@ -83,9 +114,12 @@ if (existsSync(commOccasionsPath)) {
 				weekOfSeason: null,
 				dayOfWeek: 0,
 				priority: occ.priority ?? 20,
-				collectCw: null,
+				collectCw: occ.collectCw ?? null,
 				collectBcp: null,
-				postCommunionCw: null
+				postCommunionCw: occ.postCommunionCw ?? null,
+				occasionRank: occ.occasionRank ?? 'lesser_festival',
+				canTransferToSunday: false,
+				commonSlug: null
 			})
 			.returning()
 			.get();
@@ -142,7 +176,8 @@ for (const file of readingFiles) {
 				reference: reading.reference,
 				alternateYear: reading.alternateYear ?? null,
 				isOptional: reading.isOptional ?? false,
-				sortOrder: reading.sortOrder ?? 0
+				sortOrder: reading.sortOrder ?? 0,
+				readingSetLabel: reading.readingSetLabel ?? null
 			})
 			.run();
 
@@ -224,9 +259,13 @@ function getSundaysBetween(start: Date, end: Date): Date[] {
 
 const dayAbbrevs = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 
+// Dates occupied by principal feasts (priority >= 100) — weekday entries
+// should not be inserted as primary on these dates.
+const principalFeastDates = new Set<string>();
+
 let dateMapInserted = 0;
 
-function insertDateMap(date: string, slug: string, isPrincipal: boolean = true) {
+function insertDateMap(date: string, slug: string, mappingType: string = 'primary') {
 	const occasionId = slugToId[slug];
 	if (!occasionId) return;
 
@@ -237,7 +276,7 @@ function insertDateMap(date: string, slug: string, isPrincipal: boolean = true) 
 			date,
 			occasionId,
 			liturgicalYear: litYear,
-			isPrincipal: isPrincipal
+			mappingType
 		})
 		.run();
 
@@ -252,9 +291,12 @@ function insertDateMap(date: string, slug: string, isPrincipal: boolean = true) 
 function insertWeekdays(sundayDate: Date, slugPrefix: string) {
 	for (let d = 1; d <= 6; d++) {
 		const weekday = addDays(sundayDate, d);
+		const dateStr = toISO(weekday);
 		const slug = `${slugPrefix}-${dayAbbrevs[d]}`;
 		if (slugToId[slug]) {
-			insertDateMap(toISO(weekday), slug);
+			// Skip weekday primary if a principal feast occupies this date
+			if (principalFeastDates.has(dateStr)) continue;
+			insertDateMap(dateStr, slug);
 		}
 	}
 }
@@ -262,6 +304,12 @@ function insertWeekdays(sundayDate: Date, slugPrefix: string) {
 for (let year = 2024; year <= 2030; year++) {
 	const easter = computeEaster(year);
 	const adventSunday = getAdventSunday(year);
+
+	// Register principal feast dates so weekday inserts can be skipped.
+	// These are non-Sunday dates with priority >= 100 that are inserted as primary.
+	principalFeastDates.add(`${year}-02-02`); // Candlemas
+	principalFeastDates.add(`${year}-01-06`); // Epiphany
+	principalFeastDates.add(`${year}-12-25`); // Christmas Day
 
 	// --- Advent Sundays + weekdays ---
 	for (let w = 0; w < 4; w++) {
@@ -293,10 +341,10 @@ for (let year = 2024; year <= 2030; year++) {
 	// Jan 1 of the following year
 	insertDateMap(`${year + 1}-01-01`, 'christmas-jan-1');
 
-	// --- Christmas fixed feasts (as non-principal if they overlap) ---
-	if (slugToId['st-stephen']) insertDateMap(`${year}-12-26`, 'st-stephen', false);
-	if (slugToId['st-john-evangelist']) insertDateMap(`${year}-12-27`, 'st-john-evangelist', false);
-	if (slugToId['holy-innocents']) insertDateMap(`${year}-12-28`, 'holy-innocents', false);
+	// --- Christmas fixed feasts (alternatives overlaying the date-specific days) ---
+	if (slugToId['st-stephen']) insertDateMap(`${year}-12-26`, 'st-stephen', 'alternative');
+	if (slugToId['st-john-evangelist']) insertDateMap(`${year}-12-27`, 'st-john-evangelist', 'alternative');
+	if (slugToId['holy-innocents']) insertDateMap(`${year}-12-28`, 'holy-innocents', 'alternative');
 
 	// --- Christmas Sundays ---
 	const christmasSundays = getSundaysBetween(
@@ -316,7 +364,7 @@ for (let year = 2024; year <= 2030; year++) {
 	}
 
 	// --- Naming of Jesus (Jan 1) ---
-	if (slugToId['naming-of-jesus']) insertDateMap(`${year}-01-01`, 'naming-of-jesus', false);
+	if (slugToId['naming-of-jesus']) insertDateMap(`${year}-01-01`, 'naming-of-jesus', 'alternative');
 
 	// --- Epiphany (Jan 6) ---
 	insertDateMap(`${year}-01-06`, 'epiphany');
@@ -375,9 +423,9 @@ for (let year = 2024; year <= 2030; year++) {
 		insertWeekdays(sunday, `lent-${w + 1}`);
 	}
 
-	// --- Mothering Sunday (same date as Lent 4, non-principal) ---
+	// --- Mothering Sunday (same date as Lent 4, alternative) ---
 	const lent4Sunday = addDays(lentSunday1, 3 * 7);
-	insertDateMap(toISO(lent4Sunday), 'mothering-sunday', false);
+	insertDateMap(toISO(lent4Sunday), 'mothering-sunday', 'alternative');
 
 	// --- Holy Week ---
 	insertDateMap(toISO(addDays(easter, -7)), 'palm-sunday');
@@ -388,8 +436,8 @@ for (let year = 2024; year <= 2030; year++) {
 	insertDateMap(toISO(addDays(easter, -2)), 'good-friday');
 	insertDateMap(toISO(addDays(easter, -1)), 'easter-eve');
 
-	// --- Easter Vigil (same date as Easter Eve, non-principal) ---
-	insertDateMap(toISO(addDays(easter, -1)), 'easter-vigil', false);
+	// --- Easter Vigil (same date as Easter Eve, alternative) ---
+	insertDateMap(toISO(addDays(easter, -1)), 'easter-vigil', 'alternative');
 
 	// --- Easter + weekdays ---
 	insertDateMap(toISO(easter), 'easter-day');
@@ -400,9 +448,9 @@ for (let year = 2024; year <= 2030; year++) {
 	}
 
 	// --- Rogation Days (Easter + 36/37/38, Mon–Wed before Ascension) ---
-	insertDateMap(toISO(addDays(easter, 36)), 'rogation-day', false);
-	insertDateMap(toISO(addDays(easter, 37)), 'rogation-day', false);
-	insertDateMap(toISO(addDays(easter, 38)), 'rogation-day', false);
+	insertDateMap(toISO(addDays(easter, 36)), 'rogation-day', 'commemoration');
+	insertDateMap(toISO(addDays(easter, 37)), 'rogation-day', 'commemoration');
+	insertDateMap(toISO(addDays(easter, 38)), 'rogation-day', 'commemoration');
 
 	// --- Ascension Day (Easter + 39) ---
 	insertDateMap(toISO(addDays(easter, 39)), 'ascension-day');
@@ -443,10 +491,10 @@ for (let year = 2024; year <= 2030; year++) {
 		properSunday = addDays(properSunday, 7);
 	}
 
-	// --- Fixed feasts (as non-principal overlays) ---
+	// --- Fixed feasts (as alternative overlays on their dates) ---
+	// Candlemas is omitted here — it is already inserted as primary at Feb 2 above.
 	const fixedFeasts: [number, number, string][] = [
 		[1, 25, 'conversion-of-st-paul'],
-		[2, 2, 'candlemas'],
 		[3, 19, 'st-joseph'],
 		[3, 25, 'annunciation'],
 		[4, 25, 'st-mark'],
@@ -475,9 +523,9 @@ for (let year = 2024; year <= 2030; year++) {
 	for (const [month, day, slug] of fixedFeasts) {
 		if (slugToId[slug]) {
 			const dateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-			// All Saints is principal; others are non-principal overlays
-			const isPrincipal = slug === 'all-saints';
-			insertDateMap(dateStr, slug, isPrincipal);
+			// All Saints is a principal feast — it replaces the Sunday/weekday as primary
+			const mappingType = slug === 'all-saints' ? 'primary' : 'alternative';
+			insertDateMap(dateStr, slug, mappingType);
 		}
 	}
 
@@ -487,31 +535,45 @@ for (let year = 2024; year <= 2030; year++) {
 		for (const occ of commOccasionsRaw) {
 			if (slugToId[occ.slug] && occ.fixedMonth && occ.fixedDay) {
 				const dateStr = `${year}-${String(occ.fixedMonth).padStart(2, '0')}-${String(occ.fixedDay).padStart(2, '0')}`;
-				insertDateMap(dateStr, occ.slug, false);
+				insertDateMap(dateStr, occ.slug, 'commemoration');
 			}
 		}
 	}
 
-	// --- Peter the Apostle (Jun 29, non-principal alongside SS Peter and Paul) ---
+	// --- Peter the Apostle (Jun 29, alternative alongside SS Peter and Paul) ---
 	if (slugToId['peter-apostle']) {
-		insertDateMap(`${year}-06-29`, 'peter-apostle', false);
+		insertDateMap(`${year}-06-29`, 'peter-apostle', 'alternative');
 	}
 
-	// --- Bible Sunday (last Sunday after Trinity = Christ the King date, non-principal) ---
+	// --- Bible Sunday (last Sunday after Trinity = Christ the King date, alternative) ---
 	// Christ the King is the Sunday next before Advent
 	const christTheKingSunday = addDays(adventSunday, -7);
 	if (slugToId['bible-sunday']) {
-		insertDateMap(toISO(christTheKingSunday), 'bible-sunday', false);
+		insertDateMap(toISO(christTheKingSunday), 'bible-sunday', 'alternative');
 	}
 
-	// --- Dedication Festival (first Sunday of October + last Sunday after Trinity, non-principal) ---
+	// --- Dedication Festival (first Sunday of October + last Sunday after Trinity, alternative) ---
 	if (slugToId['dedication-festival']) {
 		// First Sunday of October
 		const oct1 = new Date(year, 9, 1);
 		const firstSundayOct = oct1.getDay() === 0 ? oct1 : addDays(oct1, 7 - oct1.getDay());
-		insertDateMap(toISO(firstSundayOct), 'dedication-festival', false);
+		insertDateMap(toISO(firstSundayOct), 'dedication-festival', 'alternative');
 		// Last Sunday after Trinity (= Christ the King date)
-		insertDateMap(toISO(christTheKingSunday), 'dedication-festival', false);
+		insertDateMap(toISO(christTheKingSunday), 'dedication-festival', 'alternative');
+	}
+
+	// --- Transfer-to-Sunday logic for Candlemas and Annunciation ---
+	// When these feasts fall on a weekday, they may be celebrated on the preceding Sunday.
+	const transferableFeasts: [number, number, string][] = [
+		[2, 2, 'candlemas'],
+		[3, 25, 'annunciation']
+	];
+	for (const [month, day, slug] of transferableFeasts) {
+		const fixedDate = new Date(year, month - 1, day);
+		if (fixedDate.getDay() !== 0) {
+			const precedingSunday = addDays(fixedDate, -fixedDate.getDay());
+			insertDateMap(toISO(precedingSunday), slug, 'transferred');
+		}
 	}
 }
 

@@ -12,6 +12,19 @@ export interface ReadingGroup {
 	readings: (typeof lectionaryReadings.$inferSelect)[];
 }
 
+export interface AlternativeOccasion {
+	id: number;
+	name: string;
+	slug: string;
+	colour: string | null;
+	collectCw: string | null;
+	collectBcp: string | null;
+	postCommunionCw: string | null;
+	mappingType: string;
+	cwGroups: Record<string, ReadingGroup[]>;
+	bcpGroups: Record<string, ReadingGroup[]>;
+}
+
 /**
  * Look up the lectionary occasion for a given date.
  * Returns the principal occasion and its readings for the appropriate tradition and year.
@@ -20,7 +33,7 @@ export function getOccasionByDate(date: string) {
 	const mapping = db
 		.select()
 		.from(lectionaryDateMap)
-		.where(and(eq(lectionaryDateMap.date, date), eq(lectionaryDateMap.isPrincipal, true)))
+		.where(and(eq(lectionaryDateMap.date, date), eq(lectionaryDateMap.mappingType, 'primary')))
 		.get();
 
 	if (!mapping) return null;
@@ -54,7 +67,7 @@ export function getOccasionsByDate(date: string) {
 			.from(lectionaryOccasions)
 			.where(eq(lectionaryOccasions.id, mapping.occasionId))
 			.get();
-		return { ...occasion, isPrincipal: mapping.isPrincipal, liturgicalYear: mapping.liturgicalYear };
+		return { ...occasion, mappingType: mapping.mappingType, liturgicalYear: mapping.liturgicalYear };
 	});
 }
 
@@ -145,16 +158,63 @@ function groupAlternativeReadings(
 }
 
 /**
+ * Build reading groups for a given occasion and tradition, filtered by year.
+ * Returns a Record mapping service context to ReadingGroup arrays.
+ */
+function buildReadingGroupsForOccasion(
+	occasionId: number,
+	tradition: string,
+	litYear: string | null,
+	officeYear: string | null
+): Record<string, ReadingGroup[]> {
+	const allReadings = db
+		.select()
+		.from(lectionaryReadings)
+		.where(
+			and(
+				eq(lectionaryReadings.occasionId, occasionId),
+				eq(lectionaryReadings.tradition, tradition)
+			)
+		)
+		.all();
+
+	const filtered = allReadings.filter(
+		(r) =>
+			!r.alternateYear ||
+			r.alternateYear === litYear ||
+			r.alternateYear === officeYear
+	);
+
+	const contextReadings: Record<string, typeof filtered> = {};
+	for (const reading of filtered) {
+		const ctx = reading.serviceContext ?? 'principal';
+		if (!contextReadings[ctx]) contextReadings[ctx] = [];
+		contextReadings[ctx].push(reading);
+	}
+
+	const groups: Record<string, ReadingGroup[]> = {};
+	for (const ctx of Object.keys(contextReadings)) {
+		const sorted = contextReadings[ctx].sort(
+			(a, b) => (a.sortOrder ?? 0) - (b.sortOrder ?? 0)
+		);
+		groups[ctx] = groupAlternativeReadings(sorted);
+	}
+
+	return groups;
+}
+
+/**
  * Get all readings for a date, grouped by service context.
  * Returns readings for a specific tradition, organised into contexts
  * (principal, morning_prayer, evening_prayer, etc.).
  *
  * Also merges commemoration readings (from non-principal occasions)
  * into the daily_eucharist context, and returns commemoration metadata.
+ * Occasions with non-eucharist readings are returned as alternativeOccasions.
  */
 export function getReadingsGroupedByContext(date: string, tradition: string = 'cw') {
 	const occasion = getOccasionByDate(date);
-	if (!occasion) return { occasion: null, groups: {} as Record<string, never[]>, commemorations: [] as { id: number; name: string; slug: string; colour: string | null }[] };
+	if (!occasion) return { occasion: null, groups: {} as Record<string, never[]>, commemorations: [] as { id: number; name: string; slug: string; colour: string | null; collectCw: string | null; postCommunionCw: string | null }[], alternativeOccasions: [] as AlternativeOccasion[] };
 
 	const allReadings = db
 		.select()
@@ -178,38 +238,88 @@ export function getReadingsGroupedByContext(date: string, tradition: string = 'c
 			r.alternateYear === officeYear
 	);
 
-	// Look up non-principal occasions (commemorations) and merge their daily_eucharist readings
+	// Look up non-principal occasions (commemorations) and merge their daily_eucharist readings.
+	// Occasions with non-eucharist readings are promoted to alternativeOccasions.
 	const allOccasions = getOccasionsByDate(date);
-	const commemorations: { id: number; name: string; slug: string; colour: string | null }[] = [];
+	const commemorations: { id: number; name: string; slug: string; colour: string | null; collectCw: string | null; postCommunionCw: string | null }[] = [];
+	const alternativeOccasions: AlternativeOccasion[] = [];
 	const commReadings: typeof filtered = [];
 
 	for (const occ of allOccasions) {
-		if (occ.isPrincipal || !occ.id || occ.id === occasion.id) continue;
+		if (occ.mappingType === 'primary' || !occ.id || occ.id === occasion.id) continue;
 
-		const commReadingsForOcc = db
-			.select()
-			.from(lectionaryReadings)
-			.where(
-				and(
-					eq(lectionaryReadings.occasionId, occ.id),
-					eq(lectionaryReadings.tradition, tradition)
+		if (occ.mappingType === 'commemoration') {
+			// Simple commemoration — only daily eucharist readings and/or collects
+			const commReadingsForOcc = db
+				.select()
+				.from(lectionaryReadings)
+				.where(
+					and(
+						eq(lectionaryReadings.occasionId, occ.id),
+						eq(lectionaryReadings.tradition, tradition)
+					)
 				)
-			)
-			.all();
+				.all();
 
-		// Only include daily_eucharist readings from commemorations
-		const eucharistReadings = commReadingsForOcc.filter(
-			(r) => r.serviceContext === 'daily_eucharist' && (!r.alternateYear || r.alternateYear === litYear || r.alternateYear === officeYear)
-		);
+			const eucharistReadings = commReadingsForOcc.filter(
+				(r) => r.serviceContext === 'daily_eucharist' && (!r.alternateYear || r.alternateYear === litYear || r.alternateYear === officeYear)
+			);
 
-		if (eucharistReadings.length > 0) {
-			commemorations.push({
+			const hasCollects = occ.collectCw || occ.postCommunionCw;
+			if (eucharistReadings.length > 0 || hasCollects) {
+				commemorations.push({
+					id: occ.id,
+					name: occ.name ?? '',
+					slug: occ.slug ?? '',
+					colour: occ.colour ?? null,
+					collectCw: occ.collectCw ?? null,
+					postCommunionCw: occ.postCommunionCw ?? null
+				});
+				if (eucharistReadings.length > 0) {
+					commReadings.push(...eucharistReadings);
+				}
+			}
+		} else if (occ.mappingType === 'alternative' || occ.mappingType === 'transferred') {
+			// Full alternative or transferred occasion — build complete reading groups
+			const commReadingsForOcc = db
+				.select()
+				.from(lectionaryReadings)
+				.where(
+					and(
+						eq(lectionaryReadings.occasionId, occ.id),
+						eq(lectionaryReadings.tradition, tradition)
+					)
+				)
+				.all();
+
+			const eucharistReadings = commReadingsForOcc.filter(
+				(r) => r.serviceContext === 'daily_eucharist' && (!r.alternateYear || r.alternateYear === litYear || r.alternateYear === officeYear)
+			);
+
+			const cwAltGroups = buildReadingGroupsForOccasion(occ.id, 'cw', litYear, officeYear);
+			const bcpAltGroups = buildReadingGroupsForOccasion(occ.id, 'bcp', litYear, officeYear);
+
+			// Merge daily_eucharist readings into the principal's groups
+			if (eucharistReadings.length > 0) {
+				commReadings.push(...eucharistReadings);
+			}
+
+			// Remove daily_eucharist from alternative groups (already merged into principal)
+			delete cwAltGroups['daily_eucharist'];
+			delete bcpAltGroups['daily_eucharist'];
+
+			alternativeOccasions.push({
 				id: occ.id,
 				name: occ.name ?? '',
 				slug: occ.slug ?? '',
-				colour: occ.colour ?? null
+				colour: occ.colour ?? null,
+				collectCw: occ.collectCw ?? null,
+				collectBcp: occ.collectBcp ?? null,
+				postCommunionCw: occ.postCommunionCw ?? null,
+				mappingType: occ.mappingType ?? 'alternative',
+				cwGroups: cwAltGroups,
+				bcpGroups: bcpAltGroups
 			});
-			commReadings.push(...eucharistReadings);
 		}
 	}
 
@@ -236,7 +346,7 @@ export function getReadingsGroupedByContext(date: string, tradition: string = 'c
 		groups[ctx] = groupAlternativeReadings(sorted);
 	}
 
-	return { occasion, groups, commemorations };
+	return { occasion, groups, commemorations, alternativeOccasions };
 }
 
 /**

@@ -141,6 +141,8 @@ export const ApocryphalBooks = new Set([
 	'Sirach'
 ]);
 
+export const LessonBooks = new Set(['Acts', 'Revelation']);
+
 export const LiturgicalSeason = {
 	ADVENT: 'advent',
 	CHRISTMAS: 'christmas',
@@ -213,3 +215,22 @@ export const MusicPosition = {
 	OTHER: 'other'
 } as const;
 export type MusicPosition = (typeof MusicPosition)[keyof typeof MusicPosition];
+
+export const MappingType = {
+	PRIMARY: 'primary',
+	ALTERNATIVE: 'alternative',
+	COMMEMORATION: 'commemoration',
+	TRANSFERRED: 'transferred'
+} as const;
+export type MappingType = (typeof MappingType)[keyof typeof MappingType];
+
+export const OccasionRank = {
+	PRINCIPAL_FEAST: 'principal_feast',
+	FESTIVAL: 'festival',
+	LESSER_FESTIVAL: 'lesser_festival',
+	COMMEMORATION: 'commemoration',
+	SUNDAY: 'sunday',
+	WEEKDAY: 'weekday',
+	COMMON: 'common'
+} as const;
+export type OccasionRank = (typeof OccasionRank)[keyof typeof OccasionRank];

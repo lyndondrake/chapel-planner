@@ -124,7 +124,10 @@ export const lectionaryOccasions = sqliteTable('lectionary_occasions', {
 	priority: integer('priority').default(0),
 	collectCw: text('collect_cw'),
 	collectBcp: text('collect_bcp'),
-	postCommunionCw: text('post_communion_cw')
+	postCommunionCw: text('post_communion_cw'),
+	occasionRank: text('occasion_rank'),
+	canTransferToSunday: integer('can_transfer_to_sunday', { mode: 'boolean' }).default(false),
+	commonSlug: text('common_slug')
 });
 
 export const lectionaryReadings = sqliteTable('lectionary_readings', {
@@ -142,7 +145,8 @@ export const lectionaryReadings = sqliteTable('lectionary_readings', {
 	reference: text('reference').notNull(),
 	alternateYear: text('alternate_year'),
 	isOptional: integer('is_optional', { mode: 'boolean' }).default(false),
-	sortOrder: integer('sort_order').default(0)
+	sortOrder: integer('sort_order').default(0),
+	readingSetLabel: text('reading_set_label')
 });
 
 export const lectionaryDateMap = sqliteTable('lectionary_date_map', {
@@ -152,7 +156,7 @@ export const lectionaryDateMap = sqliteTable('lectionary_date_map', {
 		.notNull()
 		.references(() => lectionaryOccasions.id, { onDelete: 'cascade' }),
 	liturgicalYear: text('liturgical_year'),
-	isPrincipal: integer('is_principal', { mode: 'boolean' }).default(true)
+	mappingType: text('mapping_type').notNull().default('primary')
 });
 
 // --- Service Readings ---

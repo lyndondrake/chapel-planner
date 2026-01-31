@@ -3,6 +3,7 @@
 		ReadingTypeLabels,
 		OfficeReadingTypeLabels,
 		ApocryphalBooks,
+		LessonBooks,
 		ServiceContextLabels
 	} from '$lib/types/enums';
 	import type { PageData } from './$types';
@@ -81,7 +82,11 @@
 		if (officeContexts.has(ctx)) {
 			return OfficeReadingTypeLabels[readingType] ?? readingType;
 		}
-		// For principal/eucharist contexts, detect Apocrypha
+		// For principal/eucharist contexts, detect Acts/Revelation in epistle slot
+		if (readingType === 'epistle' && book && LessonBooks.has(book)) {
+			return 'Lesson';
+		}
+		// Detect Apocrypha
 		if (readingType === 'old_testament' && book && ApocryphalBooks.has(book)) {
 			return 'Apocrypha';
 		}
@@ -139,6 +144,49 @@
 				</div>
 			{/if}
 		</div>
+
+		<!-- Collects & Prayers -->
+		{#if data.occasion.collectCw || data.occasion.collectBcp || data.occasion.postCommunionCw || (data.commemorations && data.commemorations.some((c) => c.collectCw || c.postCommunionCw))}
+			<div class="border-surface-300 rounded border p-6">
+				<h3 class="mb-4 text-lg font-semibold">Collects & Prayers</h3>
+				<div class="space-y-4">
+					{#if data.occasion.collectCw}
+						<div>
+							<h4 class="text-surface-600 mb-1 text-sm font-semibold uppercase tracking-wide">CW Collect</h4>
+							<p class="whitespace-pre-line">{data.occasion.collectCw}</p>
+						</div>
+					{/if}
+					{#if data.occasion.collectBcp}
+						<div>
+							<h4 class="text-surface-600 mb-1 text-sm font-semibold uppercase tracking-wide">BCP Collect</h4>
+							<p class="whitespace-pre-line">{data.occasion.collectBcp}</p>
+						</div>
+					{/if}
+					{#if data.occasion.postCommunionCw}
+						<div>
+							<h4 class="text-surface-600 mb-1 text-sm font-semibold uppercase tracking-wide">Post Communion</h4>
+							<p class="whitespace-pre-line">{data.occasion.postCommunionCw}</p>
+						</div>
+					{/if}
+					{#if data.commemorations}
+						{#each data.commemorations as comm}
+							{#if comm.collectCw}
+								<div>
+									<h4 class="text-surface-600 mb-1 text-sm font-semibold uppercase tracking-wide">Collect — {comm.name}</h4>
+									<p class="whitespace-pre-line">{comm.collectCw}</p>
+								</div>
+							{/if}
+							{#if comm.postCommunionCw}
+								<div>
+									<h4 class="text-surface-600 mb-1 text-sm font-semibold uppercase tracking-wide">Post Communion — {comm.name}</h4>
+									<p class="whitespace-pre-line">{comm.postCommunionCw}</p>
+								</div>
+							{/if}
+						{/each}
+					{/if}
+				</div>
+			</div>
+		{/if}
 
 		<!-- Readings grouped by service context, showing both traditions -->
 		{#if hasReadings(data.cwGroups) || hasReadings(data.bcpGroups)}
@@ -209,6 +257,114 @@
 			</div>
 		{:else}
 			<p class="text-surface-500 py-4 text-center">No readings found for this date.</p>
+		{/if}
+
+		<!-- Alternative occasion sections (non-principal occasions with their own readings) -->
+		{#if data.alternativeOccasions && data.alternativeOccasions.length > 0}
+			{#each data.alternativeOccasions as altOcc}
+				<div class="border-surface-300 rounded border p-6">
+					<div class="mb-4 flex flex-wrap items-center gap-3">
+						<h3 class="text-xl font-bold">{altOcc.name}</h3>
+						{#if altOcc.colour && colourDisplay[altOcc.colour]}
+							<span class="rounded px-2 py-0.5 text-xs font-medium {colourDisplay[altOcc.colour].class}">
+								{colourDisplay[altOcc.colour].label}
+							</span>
+						{/if}
+						{#if altOcc.mappingType === 'transferred'}
+							<span class="text-surface-500 text-xs italic">(may be celebrated today)</span>
+						{/if}
+					</div>
+
+					<!-- Collects for alternative occasion -->
+					{#if altOcc.collectCw || altOcc.collectBcp || altOcc.postCommunionCw}
+						<div class="mb-4 space-y-3">
+							{#if altOcc.collectCw}
+								<div>
+									<h4 class="text-surface-600 mb-1 text-sm font-semibold uppercase tracking-wide">CW Collect</h4>
+									<p class="whitespace-pre-line">{altOcc.collectCw}</p>
+								</div>
+							{/if}
+							{#if altOcc.collectBcp}
+								<div>
+									<h4 class="text-surface-600 mb-1 text-sm font-semibold uppercase tracking-wide">BCP Collect</h4>
+									<p class="whitespace-pre-line">{altOcc.collectBcp}</p>
+								</div>
+							{/if}
+							{#if altOcc.postCommunionCw}
+								<div>
+									<h4 class="text-surface-600 mb-1 text-sm font-semibold uppercase tracking-wide">Post Communion</h4>
+									<p class="whitespace-pre-line">{altOcc.postCommunionCw}</p>
+								</div>
+							{/if}
+						</div>
+					{/if}
+
+					<!-- Readings for alternative occasion -->
+					{#each allContexts(altOcc.cwGroups, altOcc.bcpGroups) as ctx}
+						{@const cwReadingGroups = altOcc.cwGroups[ctx] ?? []}
+						{@const bcpReadingGroups = altOcc.bcpGroups[ctx] ?? []}
+						{#if cwReadingGroups.length > 0 || bcpReadingGroups.length > 0}
+							<div class="mb-4">
+								<h4 class="text-surface-600 mb-2 text-sm font-semibold uppercase tracking-wide">
+									{contextLabel(ctx)}
+								</h4>
+
+								{#if cwReadingGroups.length > 0}
+									<div class="mb-2">
+										<span class="text-surface-400 mb-1 block text-xs font-medium uppercase">Common Worship</span>
+										<div class="space-y-2">
+											{#each cwReadingGroups as group}
+												<div class="border-surface-300 flex items-baseline gap-3 rounded border p-3">
+													<span class="text-surface-500 w-28 shrink-0 text-sm">
+														{groupLabel(group, ctx)}
+													</span>
+													<span class="font-medium">
+														{#each group.readings as reading, i}
+															{#if i > 0}
+																{' '}<em>or</em>{' '}
+															{/if}
+															{reading.reference}
+														{/each}
+													</span>
+													{#if group.readings[0]?.alternateYear}
+														<span class="text-surface-400 text-xs">(Year {group.readings[0].alternateYear})</span>
+													{/if}
+												</div>
+											{/each}
+										</div>
+									</div>
+								{/if}
+
+								{#if bcpReadingGroups.length > 0}
+									<div class="mb-2">
+										<span class="text-surface-400 mb-1 block text-xs font-medium uppercase">Book of Common Prayer</span>
+										<div class="space-y-2">
+											{#each bcpReadingGroups as group}
+												<div class="border-surface-300 flex items-baseline gap-3 rounded border p-3">
+													<span class="text-surface-500 w-28 shrink-0 text-sm">
+														{groupLabel(group, ctx)}
+													</span>
+													<span class="font-medium">
+														{#each group.readings as reading, i}
+															{#if i > 0}
+																{' '}<em>or</em>{' '}
+															{/if}
+															{reading.reference}
+														{/each}
+													</span>
+													{#if group.readings[0]?.alternateYear}
+														<span class="text-surface-400 text-xs">(Year {group.readings[0].alternateYear})</span>
+													{/if}
+												</div>
+											{/each}
+										</div>
+									</div>
+								{/if}
+							</div>
+						{/if}
+					{/each}
+				</div>
+			{/each}
 		{/if}
 	{:else}
 		<div class="text-surface-500 py-8 text-center">

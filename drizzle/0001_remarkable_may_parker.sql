@@ -1,0 +1,1 @@
+ALTER TABLE `lectionary_readings` ADD `reading_set_label` text;

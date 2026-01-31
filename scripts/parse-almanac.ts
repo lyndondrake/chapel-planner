@@ -509,11 +509,19 @@ interface ParsedSection {
 	readings: RawReading[];
 }
 
+interface ParsedCollects {
+	collectCw: string | null;
+	postCommunionCw: string | null;
+}
+
 interface ParsedEntry {
 	dateStart: string; // YYYY-MM-DD
 	summary: string;
 	commemorationName: string | null; // from cwtitle
 	commemorationColour: string | null; // from colours span
+	collectsCw: ParsedCollects;
+	collectBcp: string | null;
+	commemorationCollects: ParsedCollects;
 	sections: {
 		lect1: ParsedSection[];
 		lect2: ParsedSection[];
@@ -527,6 +535,107 @@ interface ParsedEntry {
 function parseDateAttr(d: string): string {
 	// "20241201" → "2024-12-01"
 	return `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}`;
+}
+
+function cleanCollectHtml(text: string): string {
+	return text
+		.replace(/<br\s*\/?>/g, '\n')
+		.replace(/&nbsp;/g, ' ')
+		.replace(/&rsquo;/g, '\u2019')
+		.replace(/&lsquo;/g, '\u2018')
+		.replace(/&ndash;/g, '\u2013')
+		.replace(/&mdash;/g, '\u2014')
+		.replace(/&amp;/g, '&')
+		.replace(/<[^>]+>/g, '')
+		.replace(/[ \t]+\n/g, '\n')
+		.replace(/\n{3,}/g, '\n\n')
+		.trim();
+}
+
+function extractCollects(blockHtml: string, spanClass: string): ParsedCollects {
+	// Gather all content from spans of the given class
+	const spanRegex = new RegExp(`<span class="${spanClass}">([\\s\\S]*?)</span>`, 'g');
+	const spanContents: string[] = [];
+	let m;
+	while ((m = spanRegex.exec(blockHtml)) !== null) {
+		spanContents.push(m[1]);
+	}
+
+	if (spanContents.length === 0) {
+		return { collectCw: null, postCommunionCw: null };
+	}
+
+	// Join all spans into one block of text
+	const fullText = spanContents.join('\n');
+
+	// Split by Collect and Post Communion markers
+	let collectText: string | null = null;
+	let postCommunionText: string | null = null;
+
+	// Find the position of "Collect" and "Post Communion" markers
+	const collectMarker = /<em>Collect<\/em>/;
+	const postCommunionMarker = /<em>Post Communion<\/em>/;
+
+	const collectMatch = collectMarker.exec(fullText);
+	const postCommunionMatch = postCommunionMarker.exec(fullText);
+
+	if (collectMatch && postCommunionMatch) {
+		// Both markers present — collect is between Collect marker and Post Communion marker
+		const collectStart = collectMatch.index + collectMatch[0].length;
+		const collectEnd = postCommunionMatch.index;
+		const pcStart = postCommunionMatch.index + postCommunionMatch[0].length;
+
+		collectText = fullText.slice(collectStart, collectEnd);
+		postCommunionText = fullText.slice(pcStart);
+	} else if (collectMatch) {
+		// Only Collect marker
+		const collectStart = collectMatch.index + collectMatch[0].length;
+		collectText = fullText.slice(collectStart);
+	}
+
+	// Process (or) alternatives within each text block
+	function processOrAlternatives(text: string | null): string | null {
+		if (!text) return null;
+		// Split by (or) markers
+		const parts = text.split(/<em>\(or\)<\/em>/);
+		const cleaned = parts
+			.map((p) => cleanCollectHtml(p))
+			.filter((p) => p.length > 0);
+		if (cleaned.length === 0) return null;
+		return cleaned.join('\n\nor\n\n');
+	}
+
+	return {
+		collectCw: processOrAlternatives(collectText),
+		postCommunionCw: processOrAlternatives(postCommunionText)
+	};
+}
+
+function extractBcpCollect(blockHtml: string): string | null {
+	const spanRegex = /<span class="bcpcoll">([\s\S]*?)<\/span>/g;
+	const spanContents: string[] = [];
+	let m;
+	while ((m = spanRegex.exec(blockHtml)) !== null) {
+		spanContents.push(m[1]);
+	}
+
+	if (spanContents.length === 0) return null;
+
+	const fullText = spanContents.join('\n');
+
+	// Remove the "BCP Collect" marker
+	const markerMatch = /<em>BCP Collect<\/em>/.exec(fullText);
+	const textAfterMarker = markerMatch
+		? fullText.slice(markerMatch.index + markerMatch[0].length)
+		: fullText;
+
+	// Handle (or) alternatives
+	const parts = textAfterMarker.split(/<em>\(or\)<\/em>/);
+	const cleaned = parts
+		.map((p) => cleanCollectHtml(p))
+		.filter((p) => p.length > 0);
+	if (cleaned.length === 0) return null;
+	return cleaned.join('\n\nor\n\n');
 }
 
 function parseAlmanacHtml(html: string): ParsedEntry[] {
@@ -557,6 +666,11 @@ function parseAlmanacHtml(html: string): ParsedEntry[] {
 		// Parse BCP HC readings
 		const bcphcReadings = parseBibleRefs(blockHtml, 'bcphc');
 		const bcpaddReadings = parseBibleRefs(blockHtml, 'bcpadd');
+
+		// Extract collects
+		const collectsCw = extractCollects(blockHtml, 'collects1 cwcol');
+		const collectBcp = extractBcpCollect(blockHtml);
+		const commemorationCollects = extractCollects(blockHtml, 'collects2 cwcol');
 
 		// Extract commemoration metadata from cwtitle and colours spans
 		let commemorationName: string | null = null;
@@ -599,6 +713,9 @@ function parseAlmanacHtml(html: string): ParsedEntry[] {
 			summary,
 			commemorationName,
 			commemorationColour,
+			collectsCw,
+			collectBcp,
+			commemorationCollects,
 			sections: {
 				lect1: lect1Sections,
 				lect2: lect2Sections,
@@ -795,6 +912,8 @@ interface OutputCommemorationOccasion {
 	fixedMonth: number;
 	fixedDay: number;
 	priority: number;
+	collectCw: string | null;
+	postCommunionCw: string | null;
 }
 
 // ---------------------------------------------------------------------------
@@ -837,6 +956,7 @@ function main() {
 	const bcpHc: OutputReading[] = [];
 	const cwCommemorations: OutputReading[] = [];
 	const commemorationOccasions = new Map<string, OutputCommemorationOccasion>();
+	const collectsMap = new Map<string, { collectCw: string | null; collectBcp: string | null; postCommunionCw: string | null }>();
 
 	let matched = 0;
 	let unmatched = 0;
@@ -876,6 +996,18 @@ function main() {
 		}
 
 		matched++;
+
+		// --- Collects (first entry for each slug wins) ---
+		if (!collectsMap.has(slug)) {
+			const hasCollect = entry.collectsCw.collectCw || entry.collectBcp || entry.collectsCw.postCommunionCw;
+			if (hasCollect) {
+				collectsMap.set(slug, {
+					collectCw: entry.collectsCw.collectCw,
+					collectBcp: entry.collectBcp,
+					postCommunionCw: entry.collectsCw.postCommunionCw
+				});
+			}
+		}
 
 		const date = new Date(entry.dateStart + 'T12:00:00');
 		const litYear = getLiturgicalYear(date);
@@ -1011,7 +1143,9 @@ function main() {
 					isFixed: true,
 					fixedMonth: month,
 					fixedDay: day,
-					priority: 20 // lower than principal feasts
+					priority: 20, // lower than principal feasts
+					collectCw: entry.commemorationCollects.collectCw,
+					postCommunionCw: entry.commemorationCollects.postCommunionCw
 				});
 			}
 
@@ -1067,6 +1201,7 @@ function main() {
 	console.log(`  BCP HC: ${deduped.bcpHc.length}`);
 	console.log(`  CW Commemorations: ${deduped.cwCommemorations.length}`);
 	console.log(`  Commemoration occasions: ${commemorationOccasions.size}`);
+	console.log(`  Collects: ${collectsMap.size}`);
 
 	// Write output files
 	writeJsonFile(resolve(dataDir, 'lectionary-readings-cw-principal.json'), deduped.cwPrincipal);
@@ -1082,6 +1217,17 @@ function main() {
 		JSON.stringify(commOccasionsList, null, 2) + '\n'
 	);
 	console.log(`  Wrote ${resolve(dataDir, 'lectionary-occasions-commemorations.json')}`);
+
+	// Write collects overlay file
+	const collectsObj: Record<string, { collectCw: string | null; collectBcp: string | null; postCommunionCw: string | null }> = {};
+	for (const [slug, collects] of collectsMap) {
+		collectsObj[slug] = collects;
+	}
+	writeFileSync(
+		resolve(dataDir, 'lectionary-collects.json'),
+		JSON.stringify(collectsObj, null, 2) + '\n'
+	);
+	console.log(`  Wrote ${resolve(dataDir, 'lectionary-collects.json')}`);
 
 	console.log('\nDone.');
 }

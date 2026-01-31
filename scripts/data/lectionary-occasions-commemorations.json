@@ -6,7 +6,11 @@
     "isFixed": true,
     "fixedMonth": 12,
     "fixedDay": 6,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty Father, lover of souls,\nwho chose your servant Nicholas\n   to be a bishop in the Church,\nthat he might give freely out of the treasures of your grace:\nmake us mindful of the needs of others\nand, as we have received, so teach us also to give;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant Nicholas revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "ambrose-bishop-of-milan-teacher-of-the-faith",
@@ -15,7 +19,11 @@
     "isFixed": true,
     "fixedMonth": 12,
     "fixedDay": 7,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of hosts,\nwho called Ambrose from the governor’s throne\nto be a bishop in your Church\nand an intrepid champion of your faithful people:\nmercifully grant that, as he did not fear to rebuke rulers,\nso we, with like courage,\n   may contend for the faith we have received;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Ambrose to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "the-conception-of-the-blessed-virgin-mary",
@@ -24,7 +32,11 @@
     "isFixed": true,
     "fixedMonth": 12,
     "fixedDay": 8,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty and everlasting God,\nwho stooped to raise fallen humanity\nthrough the child-bearing of blessed Mary:\ngrant that we, who have seen your glory\n   revealed in our human nature\nand your love made perfect in our weakness,\nmay daily be renewed in your image\nand conformed to the pattern of your Son\nJesus Christ our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God most high,\nwhose handmaid bore the Word made flesh:\nwe thank you that in this sacrament of our redemption\nyou visit us with your Holy Spirit\nand overshadow us by your power;\nstrengthen us to walk with Mary the joyful path of obedience\nand so to bring forth the fruits of holiness;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "lucy-martyr-at-syracuse",
@@ -33,7 +45,11 @@
     "isFixed": true,
     "fixedMonth": 12,
     "fixedDay": 13,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God our redeemer,\nwho gave light to the world that was in darkness\nby the healing power of the Saviour’s cross:\nshed that light on us, we pray,\nthat with your martyr Lucy\nwe may, by the purity of our lives,\n   reflect the light of Christ\nand, by the merits of his passion,\n   come to the light of everlasting life;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Lucy:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Lucy:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "john-of-the-cross-poet-teacher-of-the-faith",
@@ -42,7 +58,11 @@
     "isFixed": true,
     "fixedMonth": 12,
     "fixedDay": 14,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "O God, the judge of all,\nwho gave your servant John of the Cross\na warmth of nature, a strength of purpose\n   and a mystical faith\nthat sustained him even in the darkness:\nshed your light on all who love you\nand grant them union of body and soul\nin your Son Jesus Christ our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with John of the Cross to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "thomas-becket-archbishop-of-canterbury-martyr",
@@ -51,7 +71,11 @@
     "isFixed": true,
     "fixedMonth": 12,
     "fixedDay": 29,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Lord God,\nwho gave grace to your servant Thomas Becket\nto put aside all earthly fear\n   and be faithful even to death:\ngrant that we, disregarding worldly esteem,\nmay fight all wrong,\nuphold your rule,\nand serve you to our life’s end;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Thomas Becket:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Thomas Becket:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "aelred-of-hexham-abbot-of-rievaulx",
@@ -60,7 +84,11 @@
     "isFixed": true,
     "fixedMonth": 1,
     "fixedDay": 12,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwho endowed Aelred the abbot\nwith the gift of Christian friendship\nand the wisdom to lead others in the way of holiness:\ngrant to your people that same spirit of mutual affection,\nso that, in loving one another,\nwe may know the love of Christ\nand rejoice in the eternal possession\n   of your supreme goodness;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Merciful God,\nwho gave such grace to your servant Aelred\nthat he served you with singleness of heart\nand loved you above all things:\nhelp us, whose communion with you\n   has been renewed in this sacrament,\nto forsake all that holds us back from following Christ\nand to grow into his likeness from glory to glory;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "hilary-bishop-of-poitiers-teacher-of-the-faith",
@@ -69,7 +97,11 @@
     "isFixed": true,
     "fixedMonth": 1,
     "fixedDay": 13,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Everlasting God,\nwhose servant Hilary\nsteadfastly confessed your Son Jesus Christ\n   to be both human and divine:\ngrant us his gentle courtesy\nto bring to all the message of redemption\n   in the incarnate Christ,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Hilary to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "antony-of-egypt-hermit-abbot",
@@ -78,7 +110,11 @@
     "isFixed": true,
     "fixedMonth": 1,
     "fixedDay": 17,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Most gracious God,\nwho called your servant Antony to sell all that he had\nand to serve you in the solitude of the desert:\nby his example may we learn to deny ourselves\nand to love you before all things;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Merciful God,\nwho gave such grace to your servant Antony\nthat he served you with singleness of heart\nand loved you above all things:\nhelp us, whose communion with you\n   has been renewed in this sacrament,\nto forsake all that holds us back from following Christ\nand to grow into his likeness from glory to glory;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "wulfstan-bishop-of-worcester",
@@ -87,7 +123,11 @@
     "isFixed": true,
     "fixedMonth": 1,
     "fixedDay": 19,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Lord God,\nwho raised up Wulfstan to be a bishop among your people\n   and a leader of your Church:\nhelp us, after his example,\n   to live simply,\n   to work diligently\n   and to make your kingdom known;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant Wulfstan revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "francis-de-sales-bishop-of-geneva-teacher-of-the-faith",
@@ -96,7 +136,11 @@
     "isFixed": true,
     "fixedMonth": 1,
     "fixedDay": 24,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Holy God,\nwho called your bishop Francis de Sales\nto bring many to Christ through his devout life\nand to renew your Church with patience and understanding:\ngrant that we may, by word and example,\nreflect your gentleness and love to all we meet;\nthrough Jesus Christ our Saviour,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Francis de Sales to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "charles-king-and-martyr",
@@ -105,7 +149,11 @@
     "isFixed": true,
     "fixedMonth": 1,
     "fixedDay": 30,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "King of kings and Lord of lords,\nwhose faithful servant Charles\nprayed for those who persecuted him\nand died in the living hope of your eternal kingdom:\ngrant us by your grace so to follow his example\nthat we may love and bless our enemies,\nthrough the intercession of your Son, our Lord Jesus Christ,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Charles:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Charles:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "anskar-archbishop-of-hamburg-missionary-in-denmark-and-sweden",
@@ -114,7 +162,11 @@
     "isFixed": true,
     "fixedMonth": 2,
     "fixedDay": 3,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of grace and might,\nwho sent your servant Anskar\nto spread the gospel to the Nordic peoples:\nraise up, we pray, in our generation\n   messengers of your good news\n   and heralds of your kingdom\nthat the world may come to know\n   the immeasurable riches of our Saviour Jesus Christ,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Anskar and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "janani-luwum-archbishop-of-uganda-martyr",
@@ -123,7 +175,11 @@
     "isFixed": true,
     "fixedMonth": 2,
     "fixedDay": 17,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of truth,\nwhose servant Janani Luwum walked in the light,\nand in his death defied the powers of darkness:\nfree us from fear of those who kill the body,\nthat we too may walk as children of light,\nthrough him who overcame darkness by the power of the cross,\nJesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Janani Luwum:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Janani Luwum:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "polycarp-bishop-of-smyrna-martyr",
@@ -132,7 +188,11 @@
     "isFixed": true,
     "fixedMonth": 2,
     "fixedDay": 23,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwho gave to your servant Polycarp\nboldness to confess the name of our Saviour Jesus Christ\n   before the rulers of this world\nand courage to die for his faith:\ngrant that we also may be ready\nto give an answer for the faith that is in us\nand to suffer gladly for the sake of our Lord Jesus Christ,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Polycarp:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Polycarp:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "george-herbert-priest-poet",
@@ -141,7 +201,11 @@
     "isFixed": true,
     "fixedMonth": 2,
     "fixedDay": 27,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "King of glory, king of peace,\nwho called your servant George Herbert\nfrom the pursuit of worldly honours\nto be a priest in the temple of his God and king:\ngrant us also the grace to offer ourselves\nwith singleness of heart in humble obedience to your service;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant George Herbert revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "david-bishop-of-menevia-patron-of-wales",
@@ -150,7 +214,11 @@
     "isFixed": true,
     "fixedMonth": 3,
     "fixedDay": 1,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwho called your servant David\nto be a faithful and wise steward of your mysteries\n   for the people of Wales:\nin your mercy, grant that,\nfollowing his purity of life and zeal for the gospel of Christ,\nwe may with him receive the crown of everlasting life;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant David revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "chad-bishop-of-lichfield-missionary",
@@ -159,7 +227,11 @@
     "isFixed": true,
     "fixedMonth": 3,
     "fixedDay": 2,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nfrom the first fruits of the English nation who turned to Christ,\nyou called your servant Chad\nto be an evangelist and bishop of his own people:\ngive us grace so to follow his peaceable nature,\n   humble spirit and prayerful life,\nthat we may truly commend to others\nthe faith which we ourselves profess;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Chad and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "perpetua-felicity-and-their-companions-martyrs-at-carthage",
@@ -168,7 +240,11 @@
     "isFixed": true,
     "fixedMonth": 3,
     "fixedDay": 7,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Holy God,\nwho gave great courage to Perpetua, Felicity and their companions:\ngrant that we may be worthy to climb the ladder of sacrifice\nand be received into the garden of peace;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyrs Perpetua, Felicity and their companions:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyrs Perpetua, Felicity and their companions:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "edward-king-bishop-of-lincoln",
@@ -177,7 +253,11 @@
     "isFixed": true,
     "fixedMonth": 3,
     "fixedDay": 8,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of peace,\nwho gave such grace to your servant Edward King\nthat whomever he met he drew to Christ:\nfill us, we pray, with tender sympathy and joyful faith,\nthat we also may win others\n   to know the love that passes knowledge;\nthrough him who is the shepherd and guardian of our souls,\nJesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant Edward King revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "cuthbert-bishop-of-lindisfarne-missionary",
@@ -186,7 +266,11 @@
     "isFixed": true,
     "fixedMonth": 3,
     "fixedDay": 20,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwho called your servant Cuthbert from following the flock\nto follow your Son and to be a shepherd of your people:\nin your mercy, grant that we, following his example,\nmay bring those who are lost home to your fold;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Cuthbert and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "thomas-cranmer-archbishop-of-canterbury-reformation-martyr",
@@ -195,7 +279,11 @@
     "isFixed": true,
     "fixedMonth": 3,
     "fixedDay": 21,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Father of all mercies,\nwho through the work of your servant Thomas Cranmer\n   renewed the worship of your Church\nand through his death revealed your strength in human weakness:\nby your grace strengthen us to worship you\nin spirit and in truth\nand so to come to the joys of your everlasting kingdom;\nthrough Jesus Christ our Mediator and Advocate,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Thomas Cranmer:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Thomas Cranmer:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "william-law-priest-spiritual-writer",
@@ -204,7 +292,11 @@
     "isFixed": true,
     "fixedMonth": 4,
     "fixedDay": 10,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwho called your servant William Law\nto a devout and holy life:\ngrant that by your spirit of love\nand through faithfulness in prayer\nwe may find the way to divine knowledge\nand so come to see the hidden things of God;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with William Law to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "alphege-archbishop-of-canterbury-martyr",
@@ -213,7 +305,11 @@
     "isFixed": true,
     "fixedMonth": 4,
     "fixedDay": 19,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Merciful God,\nwho raised up your servant Alphege\nto be a pastor of your people\nand gave him grace to suffer for justice and true religion:\ngrant that we who celebrate his martyrdom\nmay know the power of the risen Christ in our hearts\nand share his peace in lives offered to your service;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Alphege:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Alphege:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "catherine-of-siena-teacher-of-the-faith",
@@ -222,7 +318,11 @@
     "isFixed": true,
     "fixedMonth": 4,
     "fixedDay": 29,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of compassion,\nwho gave your servant Catherine of Siena\na wondrous love of the passion of Christ:\ngrant that your people may be united to him in his majesty\nand rejoice for ever in the revelation of his glory;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Catherine to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "athanasius-bishop-of-alexandria-teacher-of-the-faith",
@@ -231,7 +331,11 @@
     "isFixed": true,
     "fixedMonth": 5,
     "fixedDay": 2,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Ever-living God,\nwhose servant Athanasius testified\n   to the mystery of the Word made flesh for our salvation:\nhelp us, with all your saints,\nto contend for the truth\nand to grow into the likeness of your Son,\nJesus Christ our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Athanasius to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "julian-of-norwich-spiritual-writer",
@@ -240,7 +344,11 @@
     "isFixed": true,
     "fixedMonth": 5,
     "fixedDay": 8,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Most holy God, the ground of our beseeching,\nwho through your servant Julian\nrevealed the wonders of your love:\ngrant that as we are created in your nature\n   and restored by your grace,\nour wills may be so made one with yours\nthat we may come to see you face to face\nand gaze on you for ever;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Julian to the eternal feast of heaven;\nthrough Jesus Christ our Lord.\n\nGrant, we pray, almighty God,\nthat as we believe your only-begotten Son our Lord Jesus Christ\nto have ascended into the heavens,\nso we in heart and mind may also ascend\nand with him continually dwell;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "if-30-may-is-not-observed-as-the-day-of-thanksgiving-for-the-institution-of-holy-communion-corpus-christi:",
@@ -249,7 +357,11 @@
     "isFixed": true,
     "fixedMonth": 5,
     "fixedDay": 30,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of compassion and love,\nby whose grace your servant Josephine Butler\nfollowed in the way of your Son\nin caring for those in need:\nhelp us like her to work with strength\nfor the restoration of all to the dignity\n   and freedom of those created in your image;\nthrough Jesus Christ our Saviour,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwho inspired Josephine Butler to witness to your love\nand to work for the coming of your kingdom:\nmay we, who in this sacrament share the bread of heaven,\nbe fired by your Spirit to proclaim the gospel in our daily living\nand never to rest content until your kingdom come,\non earth as it is in heaven;\nthrough Jesus Christ our Lord.\n\nor another Post Communion for ‘Any Saint’ is used.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "boniface-wynfrith-of-crediton-bishop-apostle-of-germany-martyr",
@@ -258,7 +370,11 @@
     "isFixed": true,
     "fixedMonth": 6,
     "fixedDay": 5,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God our redeemer,\nwho called your servant Boniface\nto preach the gospel among the German people\nand to build up your Church in holiness:\ngrant that we may preserve in our hearts\nthat faith which he taught with his words\n   and sealed with his blood,\nand profess it in lives dedicated to your Son\nJesus Christ our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Boniface:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Boniface:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "thomas-ken-bishop-of-bath-and-wells-nonjuror-hymn-writer",
@@ -267,7 +383,11 @@
     "isFixed": true,
     "fixedMonth": 6,
     "fixedDay": 8,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "O God, from whom all blessings flow,\nby whose providence we are kept\nand by whose grace we are directed:\nhelp us, through the example of your servant Thomas Ken,\nfaithfully to keep your word,\nhumbly to accept adversity\nand steadfastly to worship you;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant Thomas Ken revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "alban-first-martyr-of-britain",
@@ -276,7 +396,11 @@
     "isFixed": true,
     "fixedMonth": 6,
     "fixedDay": 22,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Eternal Father,\nwhen the gospel of Christ first came to our land\nyou gloriously confirmed the faith of Alban\nby making him the first to win a martyr’s crown:\ngrant that, following his example,\nin the fellowship of the saints\nwe may worship you, the living God,\nand give true witness to Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Alban:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Alban:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "iren&aelig;us-bishop-of-lyons-teacher-of-the-faith",
@@ -285,7 +409,11 @@
     "isFixed": true,
     "fixedMonth": 6,
     "fixedDay": 28,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of peace,\nwho through the ministry of your servant Iren&aelig;us\nstrengthened the true faith\nand brought harmony to your Church:\nkeep us steadfast in your true religion,\nand renew us in faith and love,\nthat we may always walk in the way that leads to eternal life;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Iren&aelig;us to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "benedict-of-nursia-abbot-of-monte-cassino-father-of-western-monasticism",
@@ -294,7 +422,11 @@
     "isFixed": true,
     "fixedMonth": 7,
     "fixedDay": 11,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Eternal God,\nwho made Benedict a wise master\n   in the school of your service\nand a guide to many called into community\n   to follow the rule of Christ:\ngrant that we may put your love before all else\nand seek with joy the way of your commandments;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Merciful God,\nwho gave such grace to your servant Benedict\nthat he served you with singleness of heart\nand loved you above all things:\nhelp us, whose communion with you\n   has been renewed in this sacrament,\nto forsake all that holds us back from following Christ\nand to grow into his likeness from glory to glory;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "swithun-bishop-of-winchester",
@@ -303,7 +435,11 @@
     "isFixed": true,
     "fixedMonth": 7,
     "fixedDay": 15,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nby whose grace we celebrate again\nthe feast of your servant Swithun:\ngrant that, as he governed with gentleness\n   the people committed to his care,\nso we, rejoicing in our Christian inheritance,\nmay always seek to build up your Church in unity and love;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant Swithun revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "gregory-bishop-of-nyssa-and-his-sister-macrina-deaconess-teachers-of-the-faith-c.394-and-c.379",
@@ -312,7 +448,11 @@
     "isFixed": true,
     "fixedMonth": 7,
     "fixedDay": 19,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Lord of eternity, creator of all things,\nin your Son Jesus Christ you open for us the way to resurrection\nthat we may enjoy your bountiful goodness:\nmay we who celebrate your servants Gregory and Macrina\npress onwards in faith to your boundless love\nand ever wonder at the miracle of your presence among us;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Gregory and Macrina to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "william-wilberforce-social-reformer-olaudah-equiano-and-thomas-clarkson-anti-slavery-campaigners-1833",
@@ -321,7 +461,11 @@
     "isFixed": true,
     "fixedMonth": 7,
     "fixedDay": 30,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God our deliverer,\nwho sent your Son Jesus Christ\nto set your people free from the slavery of sin:\ngrant that, as your servants William Wilberforce, Olaudah Equiano and Thomas Clarkson\n   toiled against the sin of slavery,\nso we may bring compassion to all\nand work for the freedom of all the children of God;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwho inspired William Wilberforce, Olaudah Equiano and Thomas Clarkson to witness to your love\nand to work for the coming of your kingdom:\nmay we, who in this sacrament share the bread of heaven,\nbe fired by your Spirit to proclaim the gospel in our daily living\nand never to rest content until your kingdom come,\non earth as it is in heaven;\nthrough Jesus Christ our Lord.\n\nor another Post Communion for ‘Any Saint’ is used.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "oswald-king-of-northumbria-martyr",
@@ -330,7 +474,11 @@
     "isFixed": true,
     "fixedMonth": 8,
     "fixedDay": 5,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Lord God almighty,\nwho so kindled the faith of King Oswald with your Spirit\nthat he set up the sign of the cross in his kingdom\nand turned his people to the light of Christ:\ngrant that we, being fired by the same Spirit,\nmay always bear our cross before the world\nand be found faithful servants of the gospel;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Oswald:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Oswald:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "dominic-priest-founder-of-the-order-of-preachers",
@@ -339,7 +487,11 @@
     "isFixed": true,
     "fixedMonth": 8,
     "fixedDay": 8,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwhose servant Dominic grew in the knowledge of your truth\nand formed an order of preachers to proclaim the faith of Christ:\nby your grace give to all your people a love for your word\nand a longing to share the gospel,\nso that the whole world may come to know you\nand your Son Jesus Christ our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Merciful God,\nwho gave such grace to your servant Dominic\nthat he served you with singleness of heart\nand loved you above all things:\nhelp us, whose communion with you\n   has been renewed in this sacrament,\nto forsake all that holds us back from following Christ\nand to grow into his likeness from glory to glory;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "mary-sumner-founder-of-the-mothers-union",
@@ -348,7 +500,11 @@
     "isFixed": true,
     "fixedMonth": 8,
     "fixedDay": 9,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Faithful and loving God,\nwho called Mary Sumner to strive for the renewal of family life:\ngive us the gift of your Holy Spirit,\nthat through word, prayer and deed\n   your family may be strengthened and your people served;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Father,\nfrom whom every family in heaven and on earth takes its name,\nyour servant Mary Sumner revealed your goodness\n   in a life of tranquillity and service:\ngrant that we who have gathered in faith around this table\nmay like her know the love of Christ that surpasses knowledge\nand be filled with all your fullness;\nthrough Jesus Christ our Lord.\n\nor another Post Communion for ‘Any Saint’ is used.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "laurence-deacon-at-rome-martyr",
@@ -357,7 +513,11 @@
     "isFixed": true,
     "fixedMonth": 8,
     "fixedDay": 10,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwho made Laurence a loving servant of your people\nand a wise steward of the treasures of your Church:\nfire us with his example to love as he loved\nand to walk in the way that leads to eternal life;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Laurence:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Laurence:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "jeremy-taylor-bishop-of-down-and-connor-teacher-of-the-faith",
@@ -366,7 +526,11 @@
     "isFixed": true,
     "fixedMonth": 8,
     "fixedDay": 13,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Holy and loving God,\nyou dwell in the human heart\nand make us partakers of the divine nature\nin Christ our great high priest:\nhelp us who remember your servant Jeremy Taylor\nto put our trust in your heavenly promises\nand follow a holy life in virtue and true godliness;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Jeremy Taylor to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "bernard-abbot-of-clairvaux-teacher-of-the-faith",
@@ -375,7 +539,11 @@
     "isFixed": true,
     "fixedMonth": 8,
     "fixedDay": 20,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Merciful redeemer,\nwho, by the life and preaching of your servant Bernard,\nrekindled the radiant light of your Church:\ngrant us, in our generation,\nto be inflamed with the same spirit of discipline and love\nand ever to walk before you as children of light;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Bernard to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "monica-mother-of-augustine-of-hippo",
@@ -384,7 +552,11 @@
     "isFixed": true,
     "fixedMonth": 8,
     "fixedDay": 27,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Faithful God,\nwho strengthened Monica, the mother of Augustine, with wisdom,\nand through her patient endurance encouraged him\n   to seek after you:\ngive us the will to persist in prayer\nthat those who stray from you may be brought to faith\n   in your Son Jesus Christ our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Father,\nfrom whom every family in heaven and on earth takes its name,\nyour servant Monica revealed your goodness\n   in a life of tranquillity and service:\ngrant that we who have gathered in faith around this table\nmay like her know the love of Christ that surpasses knowledge\nand be filled with all your fullness;\nthrough Jesus Christ our Lord.\n\nor another Post Communion for ‘Any Saint’ is used.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "augustine-bishop-of-hippo-teacher-of-the-faith",
@@ -393,7 +565,11 @@
     "isFixed": true,
     "fixedMonth": 8,
     "fixedDay": 28,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Merciful Lord,\nwho turned Augustine from his sins\n   to be a faithful bishop and teacher:\ngrant that we may follow him in penitence and discipline\ntill our restless hearts find their rest in you;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Augustine to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "john-bunyan-spiritual-writer",
@@ -402,7 +578,11 @@
     "isFixed": true,
     "fixedMonth": 8,
     "fixedDay": 30,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of peace,\nwho called your servant John Bunyan\nto be valiant for truth:\ngrant that as strangers and pilgrims\nwe may at the last rejoice with all Christian people\n   in your heavenly city;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with John Bunyan to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "aidan-bishop-of-lindisfarne-missionary",
@@ -411,7 +591,11 @@
     "isFixed": true,
     "fixedMonth": 8,
     "fixedDay": 31,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Everlasting God,\nyou sent the gentle bishop Aidan\nto proclaim the gospel in this land:\ngrant us to live as he taught\nin simplicity, humility and love for the poor;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Aidan and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "gregory-the-great-bishop-of-rome-teacher-of-the-faith",
@@ -420,7 +604,11 @@
     "isFixed": true,
     "fixedMonth": 9,
     "fixedDay": 3,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Merciful Father,\nwho chose your bishop Gregory\nto be a servant of the servants of God:\ngrant that, like him, we may ever long to serve you\nby proclaiming your gospel to the nations,\nand may ever rejoice to sing your praises;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Gregory to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "john-chrysostom-bishop-of-constantinople-teacher-of-the-faith",
@@ -429,7 +617,11 @@
     "isFixed": true,
     "fixedMonth": 9,
     "fixedDay": 13,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of truth and love,\nwho gave to your servant John Chrysostom\neloquence to declare your righteousness in the great congregation\nand courage to bear reproach for the honour of your name:\nmercifully grant to those who minister your word\nsuch excellence in preaching,\nthat all people may share with them\nin the glory that shall be revealed;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with John Chrysostom to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "ninian-bishop-of-galloway-apostle-of-the-picts",
@@ -438,7 +630,11 @@
     "isFixed": true,
     "fixedMonth": 9,
     "fixedDay": 16,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty and everlasting God,\nwho called your servant Ninian to preach the gospel\n   to the people of northern Britain:\nraise up in this and every land\nheralds and evangelists of your kingdom,\nthat your Church may make known the immeasurable riches\n   of your Son our Saviour Jesus Christ,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Ninian and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "hildegard-abbess-of-bingen-visionary",
@@ -447,7 +643,11 @@
     "isFixed": true,
     "fixedMonth": 9,
     "fixedDay": 17,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Most glorious and holy God,\nwhose servant Hildegard, strong in the faith,\nwas caught up in the vision of your heavenly courts:\nby the breath of your Spirit\nopen our eyes to glimpse your glory\nand our lips to sing your praises with all the angels;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Merciful God,\nwho gave such grace to your servant Hildegard\nthat she served you with singleness of heart\nand loved you above all things:\nhelp us, whose communion with you\n   has been renewed in this sacrament,\nto forsake all that holds us back from following Christ\nand to grow into his likeness from glory to glory;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "john-coleridge-patteson-first-bishop-of-melanesia-and-his-companions-martyrs",
@@ -456,7 +656,11 @@
     "isFixed": true,
     "fixedMonth": 9,
     "fixedDay": 20,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of all tribes and peoples and tongues,\nwho called your servant John Coleridge Patteson\nto witness in life and death to the gospel of Christ\namongst the peoples of Melanesia:\ngrant us to hear your call to service\nand to respond trustfully and joyfully\nto Jesus Christ our redeemer,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr John Coleridge Patteson:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr John Coleridge Patteson:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "lancelot-andrewes-bishop-of-winchester-spiritual-writer",
@@ -465,7 +669,11 @@
     "isFixed": true,
     "fixedMonth": 9,
     "fixedDay": 25,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Lord God,\nwho gave to Lancelot Andrewes many gifts of your Holy Spirit,\nmaking him a man of prayer and a pastor of your people:\nperfect in us that which is lacking in your gifts,\n   of faith, to increase it,\n   of hope, to establish it,\n   of love, to kindle it,\nthat we may live in the light of your grace and glory;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant Lancelot Andrewes revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "vincent-de-paul-founder-of-the-congregation-of-the-mission-lazarists",
@@ -474,7 +682,11 @@
     "isFixed": true,
     "fixedMonth": 9,
     "fixedDay": 27,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Merciful God,\nwhose servant Vincent de Paul,\nby his ministry of preaching and pastoral care,\nbrought your love to the sick and the poor:\ngive to all your people a heart of compassion\nthat by word and action they may serve you\n   in serving others in their need;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Merciful God,\nwho gave such grace to your servant Vincent de Paul\nthat he served you with singleness of heart\nand loved you above all things:\nhelp us, whose communion with you\n   has been renewed in this sacrament,\nto forsake all that holds us back from following Christ\nand to grow into his likeness from glory to glory;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "francis-of-assisi-friar-deacon-founder-of-the-friars-minor",
@@ -483,7 +695,11 @@
     "isFixed": true,
     "fixedMonth": 10,
     "fixedDay": 4,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "O God, you ever delight to reveal yourself\nto the childlike and lowly of heart:\ngrant that, following the example of the blessed Francis,\nwe may count the wisdom of this world as foolishness\nand know only Jesus Christ and him crucified,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Merciful God,\nwho gave such grace to your servant Francis\nthat he served you with singleness of heart\nand loved you above all things:\nhelp us, whose communion with you\n   has been renewed in this sacrament,\nto forsake all that holds us back from following Christ\nand to grow into his likeness from glory to glory;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "paulinus-bishop-of-york-missionary",
@@ -492,7 +708,11 @@
     "isFixed": true,
     "fixedMonth": 10,
     "fixedDay": 10,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God our Saviour,\nwho sent Paulinus to preach and to baptize,\nand so to build up your Church in this land:\ngrant that, inspired by his example,\nwe may tell all the world of your truth,\nthat with him we may receive the reward\n   you prepare for all your faithful servants;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Paulinus and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "wilfrid-of-ripon-bishop-missionary",
@@ -501,7 +721,11 @@
     "isFixed": true,
     "fixedMonth": 10,
     "fixedDay": 12,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwho called our forebears to the light of the gospel\n   by the preaching of your servant Wilfrid:\nhelp us, who keep his life and labour in remembrance,\nto glorify your name by following the example\n   of his zeal and perseverance;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Wilfrid and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "teresa-of-avila-teacher-of-the-faith",
@@ -510,7 +734,11 @@
     "isFixed": true,
     "fixedMonth": 10,
     "fixedDay": 15,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Merciful God,\nwho by your Spirit raised up your servant Teresa of Avila\nto reveal to your Church the way of perfection:\ngrant that her teaching\nmay awaken in us a longing for holiness,\nuntil we attain to the perfect union of love\nin Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Teresa to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "ignatius-bishop-of-antioch-martyr",
@@ -519,7 +747,11 @@
     "isFixed": true,
     "fixedMonth": 10,
     "fixedDay": 17,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Feed us, O Lord, with the living bread\nand make us drink deep of the cup of salvation\nthat, following the teaching of your bishop Ignatius\nand rejoicing in the faith\n   with which he embraced a martyr’s death,\nwe may be nourished for that eternal life\n   for which he longed;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Ignatius:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Ignatius:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "henry-martyn-translator-of-the-scriptures-missionary-in-india-and-persia",
@@ -528,7 +760,11 @@
     "isFixed": true,
     "fixedMonth": 10,
     "fixedDay": 19,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwho by your Holy Spirit gave Henry Martyn\na longing to tell the good news of Christ\nand skill to translate the Scriptures:\nby the same Spirit give us grace to offer you our gifts,\nwherever you may lead, at whatever the cost;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Henry Martyn and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "alfred-the-great-king-of-the-west-saxons-scholar",
@@ -537,7 +773,11 @@
     "isFixed": true,
     "fixedMonth": 10,
     "fixedDay": 26,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God, our maker and redeemer,\nwe pray you of your great mercy\nand by the power of your holy cross\nto guide us by your will and to shield us from our foes:\nthat, after the example of your servant Alfred,\nwe may inwardly love you above all things;\nthrough Jesus Christ your Son our Lord\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwho inspired Alfred to witness to your love\nand to work for the coming of your kingdom:\nmay we, who in this sacrament share the bread of heaven,\nbe fired by your Spirit to proclaim the gospel in our daily living\nand never to rest content until your kingdom come,\non earth as it is in heaven;\nthrough Jesus Christ our Lord.\n\nor another Post Communion for ‘Any Saint’ is used.\n\nAlmighty God,\nto whose glory we celebrate the dedication\n   of this house of prayer:\nwe praise you for the many blessings\nyou have given to those who worship you here:\nand we pray that all who seek you in this place may find you,\nand, being filled with the Holy Spirit,\nmay become a living temple acceptable to you;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "james-hannington-bishop-of-eastern-equatorial-africa-martyr-in-uganda",
@@ -546,7 +786,11 @@
     "isFixed": true,
     "fixedMonth": 10,
     "fixedDay": 29,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Most merciful God,\nwho strengthened your Church by the steadfast courage\n   of your martyr James Hannington:\ngrant that we also,\nthankfully remembering his victory of faith,\nmay overcome what is evil\nand glorify your holy name;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr James Hannington:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr James Hannington:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "agnes-child-martyr-at-rome",
@@ -555,7 +799,11 @@
     "isFixed": true,
     "fixedMonth": 1,
     "fixedDay": 21,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Eternal God, shepherd of your sheep,\nwhose child Agnes was strengthened to bear witness\nin her living and her dying\nto the true love of her redeemer:\ngrant us the power to understand, with all your saints,\nwhat is the breadth and length and height and depth\nand to know the love that surpasses knowledge,\neven Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Eternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Agnes:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "thomas-aquinas-priest-philosopher-teacher-of-the-faith",
@@ -564,7 +812,11 @@
     "isFixed": true,
     "fixedMonth": 1,
     "fixedDay": 28,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Eternal God,\nwho enriched your Church with the learning and holiness\n   of your servant Thomas Aquinas:\ngive to all who seek you\na humble mind and a pure heart\nthat they may know your Son Jesus Christ\n   as the way, the truth and the life;\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Thomas Aquinas to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "cyril-and-methodius-missionaries-to-the-slavs",
@@ -573,7 +825,11 @@
     "isFixed": true,
     "fixedMonth": 2,
     "fixedDay": 14,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Lord of all,\nwho gave to your servants Cyril and Methodius\nthe gift of tongues to proclaim the gospel to the Slavs:\nmake your whole Church one as you are one\nthat all Christians may honour one another,\nand east and west acknowledge\n   one Lord, one faith, one baptism,\nand you, the God and Father of all;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Cyril, Methodius and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "patrick-bishop-missionary-patron-of-ireland",
@@ -582,7 +838,11 @@
     "isFixed": true,
     "fixedMonth": 3,
     "fixedDay": 17,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwho in your providence chose your servant Patrick\nto be the apostle of the Irish people:\nkeep alive in us the fire of the faith he kindled\nand strengthen us in our pilgrimage\n   towards the light of everlasting life;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Patrick and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "dunstan-archbishop-of-canterbury-restorer-of-monastic-life",
@@ -591,7 +851,11 @@
     "isFixed": true,
     "fixedMonth": 5,
     "fixedDay": 19,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwho raised up Dunstan to be a true shepherd of the flock,\na restorer of monastic life\nand a faithful counsellor to those in authority:\ngive to all pastors the same gifts of your Holy Spirit\nthat they may be true servants of Christ and of all his people;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant Dunstan revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "alcuin-of-york-deacon-abbot-of-tours",
@@ -600,7 +864,11 @@
     "isFixed": true,
     "fixedMonth": 5,
     "fixedDay": 20,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of wisdom, eternal light,\nwho shone in the heart of your servant Alcuin,\nrevealing to him your power and pity:\nscatter the darkness of our ignorance\nthat, with all our heart and mind and strength,\nwe may seek your face\nand be brought with all your saints\n   to your holy presence;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Merciful God,\nwho gave such grace to your servant Alcuin\nthat he served you with singleness of heart\nand loved you above all things:\nhelp us, whose communion with you\n   has been renewed in this sacrament,\nto forsake all that holds us back from following Christ\nand to grow into his likeness from glory to glory;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "john-and-charles-wesley-evangelists-hymn-writers",
@@ -609,7 +877,11 @@
     "isFixed": true,
     "fixedMonth": 5,
     "fixedDay": 24,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of mercy,\nwho inspired John and Charles Wesley with zeal for your gospel:\ngrant to all people boldness to proclaim your word\nand a heart ever to rejoice in singing your praises;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servants John and Charles Wesley revealed the loving service of Christ\n   in their ministry as pastors of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "augustine-first-archbishop-of-canterbury",
@@ -618,7 +890,11 @@
     "isFixed": true,
     "fixedMonth": 5,
     "fixedDay": 26,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwhose servant Augustine was sent as the apostle\n   of the English people:\ngrant that as he laboured in the Spirit\n   to preach Christ’s gospel in this land,\nso all who hear the good news\nmay strive to make your truth known in all the world;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant Augustine revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "josephine-butler-social-reformer",
@@ -627,7 +903,11 @@
     "isFixed": true,
     "fixedMonth": 5,
     "fixedDay": 30,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of compassion and love,\nby whose grace your servant Josephine Butler\nfollowed in the way of your Son\nin caring for those in need:\nhelp us like her to work with strength\nfor the restoration of all to the dignity\n   and freedom of those created in your image;\nthrough Jesus Christ our Saviour,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwho inspired Josephine Butler to witness to your love\nand to work for the coming of your kingdom:\nmay we, who in this sacrament share the bread of heaven,\nbe fired by your Spirit to proclaim the gospel in our daily living\nand never to rest content until your kingdom come,\non earth as it is in heaven;\nthrough Jesus Christ our Lord.\n\nor another Post Communion for ‘Any Saint’ is used.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "etheldreda-abbess-of-ely",
@@ -636,7 +916,11 @@
     "isFixed": true,
     "fixedMonth": 6,
     "fixedDay": 23,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Eternal God,\nwho bestowed such grace upon your servant Etheldreda\nthat she gave herself wholly to the life of prayer\n   and to the service of your true religion:\ngrant that we, like her,\nmay so live our lives on earth seeking your kingdom\nthat by your guiding\nwe may be joined to the glorious fellowship of your saints;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Merciful God,\nwho gave such grace to your servant Etheldreda\nthat she served you with singleness of heart\nand loved you above all things:\nhelp us, whose communion with you\n   has been renewed in this sacrament,\nto forsake all that holds us back from following Christ\nand to grow into his likeness from glory to glory;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "john-keble-priest-tractarian-poet",
@@ -645,7 +929,11 @@
     "isFixed": true,
     "fixedMonth": 7,
     "fixedDay": 14,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Father of the eternal Word,\nin whose encompassing love\nall things in peace and order move:\ngrant that, as your servant John Keble\n   adored you in all creation,\nso we may have a humble heart of love\n   for the mysteries of your Church\nand know your love to be new every morning,\nin Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant John Keble revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "clare-of-assisi-founder-of-the-minoresses-poor-clares",
@@ -654,7 +942,11 @@
     "isFixed": true,
     "fixedMonth": 8,
     "fixedDay": 11,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of peace,\nwho in the poverty of the blessed Clare\ngave us a clear light to shine in the darkness of this world:\ngive us grace so to follow in her footsteps\nthat we may, at the last, rejoice with her in your eternal glory;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Merciful God,\nwho gave such grace to your servant Clare\nthat she served you with singleness of heart\nand loved you above all things:\nhelp us, whose communion with you\n   has been renewed in this sacrament,\nto forsake all that holds us back from following Christ\nand to grow into his likeness from glory to glory;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "the-festival-of-the-blessed-virgin-mary-may-for-pastoral-reasons-be-observed-on-8-september-instead-of-15-august.",
@@ -663,7 +955,11 @@
     "isFixed": true,
     "fixedMonth": 9,
     "fixedDay": 8,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty and everlasting God,\nwho stooped to raise fallen humanity\nthrough the child-bearing of blessed Mary:\ngrant that we, who have seen your glory\n   revealed in our human nature\nand your love made perfect in our weakness,\nmay daily be renewed in your image\nand conformed to the pattern of your Son,\nJesus Christ our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God most high,\nwhose handmaid bore the Word made flesh:\nwe thank you that in this sacrament of our redemption\nyou visit us with your Holy Spirit\nand overshadow us by your power;\nstrengthen us to walk with Mary the joyful path of obedience\nand so to bring forth the fruits of holiness;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "holy-cross-day-may-be-observed-on-sunday-14-september-or-monday-15-september.",
@@ -672,7 +968,11 @@
     "isFixed": true,
     "fixedMonth": 9,
     "fixedDay": 15,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Holy God, who brought Cyprian to faith in Christ,\nmade him a bishop in the Church\nand crowned his witness with a martyr’s death:\ngrant that, after his example,\nwe may love the Church and her teachings,\nfind your forgiveness within her fellowship\nand so come to share the heavenly banquet\n   you have prepared for us;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Cyprian:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Cyprian:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "william-tyndale-translator-of-the-scriptures-reformation-martyr",
@@ -681,7 +981,11 @@
     "isFixed": true,
     "fixedMonth": 10,
     "fixedDay": 6,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Lord, give to your people grace to hear and keep your word\nthat, after the example of your servant William Tyndale,\nwe may not only profess your gospel\nbut also be ready to suffer and die for it,\nto the honour of your name;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr William Tyndale:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr William Tyndale:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "edward-the-confessor-king-of-england",
@@ -690,7 +994,11 @@
     "isFixed": true,
     "fixedMonth": 10,
     "fixedDay": 13,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Sovereign God,\nwho set your servant Edward\n   upon the throne of an earthly kingdom\nand inspired him with zeal for the kingdom of heaven:\ngrant that we may so confess the faith of Christ\n   by word and deed,\nthat we may, with all your saints, inherit your eternal glory;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwho inspired Edward to witness to your love\nand to work for the coming of your kingdom:\nmay we, who in this sacrament share the bread of heaven,\nbe fired by your Spirit to proclaim the gospel in our daily living\nand never to rest content until your kingdom come,\non earth as it is in heaven;\nthrough Jesus Christ our Lord.\n\nor another Post Communion for ‘Any Saint’ is used.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "richard-hooker-priest-anglican-apologist-teacher-of-the-faith",
@@ -699,7 +1007,11 @@
     "isFixed": true,
     "fixedMonth": 11,
     "fixedDay": 3,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God of peace, the bond of all love,\nwho in your Son Jesus Christ have made the human race\n   your inseparable dwelling place:\nafter the example of your servant Richard Hooker,\ngive grace to us your servants ever to rejoice\n   in the true inheritance of your adopted children\nand to show forth your praises now and ever;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Richard Hooker to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "willibrord-of-york-bishop-apostle-of-frisia",
@@ -708,7 +1020,11 @@
     "isFixed": true,
     "fixedMonth": 11,
     "fixedDay": 7,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God, the Saviour of all,\nyou sent your bishop Willibrord from this land\nto proclaim the good news to many peoples\nand confirm them in their faith:\nhelp us also to witness to your steadfast love\n   by word and deed\nso that your Church may increase\n   and grow strong in holiness;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Willibrord and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "leo-the-great-bishop-of-rome-teacher-of-the-faith",
@@ -717,7 +1033,11 @@
     "isFixed": true,
     "fixedMonth": 11,
     "fixedDay": 10,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God our Father,\nwho made your servant Leo strong in the defence of the faith:\nfill your Church with the spirit of truth\nthat, guided by humility and governed by love,\nshe may prevail against the powers of evil;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Leo to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "martin-bishop-of-tours",
@@ -726,7 +1046,11 @@
     "isFixed": true,
     "fixedMonth": 11,
     "fixedDay": 11,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God all powerful,\nwho called Martin from the armies of this world\nto be a faithful soldier of Christ:\ngive us grace to follow him\nin his love and compassion for the needy,\nand enable your Church to claim for all people\ntheir inheritance as children of God;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant Martin revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "charles-simeon-priest-evangelical-divine",
@@ -735,7 +1059,11 @@
     "isFixed": true,
     "fixedMonth": 11,
     "fixedDay": 13,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Eternal God,\nwho raised up Charles Simeon\n   to preach the good news of Jesus Christ\nand inspire your people in service and mission:\ngrant that we with all your Church may worship the Saviour,\nturn in sorrow from our sins and walk in the way of holiness;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant Charles Simeon revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "hugh-bishop-of-lincoln",
@@ -744,7 +1072,11 @@
     "isFixed": true,
     "fixedMonth": 11,
     "fixedDay": 17,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "O God,\nwho endowed your servant Hugh\nwith a wise and cheerful boldness\nand taught him to commend to earthly rulers\n   the discipline of a holy life:\ngive us grace like him to be bold in the service of the gospel,\nputting our confidence in Christ alone,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant Hugh revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "elizabeth-of-hungary-princess-of-thuringia-philanthropist",
@@ -753,7 +1085,11 @@
     "isFixed": true,
     "fixedMonth": 11,
     "fixedDay": 18,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Lord God,\nwho taught Elizabeth of Hungary\n   to recognize and reverence Christ in the poor of this world:\nby her example\nstrengthen us to love and serve the afflicted and the needy\nand so to honour your Son, the servant king,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Faithful God,\nwho called Elizabeth of Hungary to serve you\nand gave her joy in walking the path of holiness:\nby this eucharist\nin which you renew within us the vision of your glory,\nstrengthen us all to follow the way of perfection\nuntil we come to see you face to face;\nthrough Jesus Christ our Lord.\n\nor another Post Communion for ‘Any Saint’ is used.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "hilda-abbess-of-whitby",
@@ -762,7 +1098,11 @@
     "isFixed": true,
     "fixedMonth": 11,
     "fixedDay": 19,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Eternal God,\nwho made the abbess Hilda to shine like a jewel in our land\nand through her holiness and leadership\n   blessed your Church with new life and unity:\nhelp us, like her, to yearn for the gospel of Christ\nand to reconcile those who are divided;\nthrough him who is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Merciful God,\nwho gave such grace to your servant Hilda\nthat she served you with singleness of heart\nand loved you above all things:\nhelp us, whose communion with you\n   has been renewed in this sacrament,\nto forsake all that holds us back from following Christ\nand to grow into his likeness from glory to glory;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "edmund-king-of-the-east-angles-martyr",
@@ -771,7 +1111,11 @@
     "isFixed": true,
     "fixedMonth": 11,
     "fixedDay": 20,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Eternal God,\nwhose servant Edmund kept faith to the end,\nboth with you and with his people,\nand glorified you by his death:\ngrant us such steadfastness of faith\nthat, with the noble army of martyrs,\nwe may come to enjoy the fullness of the resurrection life;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwhose Church was strengthened by the blood of your martyr Edmund:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.\n\nor\n\nEternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Edmund:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "the-festival-of-the-holy-innocents-may-be-observed-on-sunday-28-december-or-on-monday-29-december.-if-it-is-observed-on-sunday-28-december:",
@@ -780,7 +1124,11 @@
     "isFixed": true,
     "fixedMonth": 12,
     "fixedDay": 29,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Lord God,\nwho gave grace to your servant Thomas Becket\nto put aside all earthly fear\n   and be faithful even to death:\ngrant that we, disregarding worldly esteem,\nmay fight all wrong,\nuphold your rule,\nand serve you to our life’s end;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Eternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Thomas Becket:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.\n\nor\n\nGod our redeemer,\nwhose Church was strengthened by the blood of your martyr Thomas Becket:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "anselm-abbot-of-le-bec-archbishop-of-canterbury-teacher-of-the-faith",
@@ -789,7 +1137,11 @@
     "isFixed": true,
     "fixedMonth": 4,
     "fixedDay": 21,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Eternal God,who gave great gifts to your servant Anselm\nas a pastor and teacher:\ngrant that we, like him, may desire you with our whole heart\nand, so desiring, may seek you\nand, seeking, may find you;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God of truth,\nwhose Wisdom set her table\nand invited us to eat the bread and drink the wine\n   of the kingdom:\nhelp us to lay aside all foolishness\nand to live and walk in the way of insight,\nthat we may come with Anselm to the eternal feast of heaven;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "columba-abbot-of-iona-missionary",
@@ -798,7 +1150,11 @@
     "isFixed": true,
     "fixedMonth": 6,
     "fixedDay": 9,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwho filled the heart of Columba\nwith the joy of the Holy Spirit\nand with deep love for those in his care:\nmay your pilgrim people follow him,\nstrong in faith, sustained by hope,\nand one in the love that binds us to you;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Columba and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "richard-bishop-of-chichester",
@@ -807,7 +1163,11 @@
     "isFixed": true,
     "fixedMonth": 6,
     "fixedDay": 16,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Most merciful redeemer,\nwho gave to your bishop Richard a love of learning,\na zeal for souls and a devotion to the poor:\ngrant that, encouraged by his example,\nwe may know you more clearly,\n   love you more dearly,\n   and follow you more nearly,\nday by day,\nwho with the Father and the Holy Spirit are alive and reign,\none God, now and for ever.",
+    "postCommunionCw": "God, shepherd of your people,\nwhose servant Richard revealed the loving service of Christ\n   in his ministry as a pastor of your people:\nby this eucharist in which we share\nawaken within us the love of Christ\nand keep us faithful to our Christian calling;\nthrough him who laid down his life for us,\nbut is alive and reigns with you, now and for ever.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "cyprian-bishop-of-carthage-martyr",
@@ -816,7 +1176,11 @@
     "isFixed": true,
     "fixedMonth": 9,
     "fixedDay": 15,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Holy God, who brought Cyprian to faith in Christ,\nmade him a bishop in the Church\nand crowned his witness with a martyr’s death:\ngrant that, after his example,\nwe may love the Church and her teachings,\nfind your forgiveness within her fellowship\nand so come to share the heavenly banquet\n   you have prepared for us;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Eternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Cyprian:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.\n\nor\n\nGod our redeemer,\nwhose Church was strengthened by the blood of your martyr Cyprian:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "the-festival-of-luke-the-evangelist-may-be-celebrated-on-sunday-18-october-or-on-monday-19-october.",
@@ -825,7 +1189,11 @@
     "isFixed": true,
     "fixedMonth": 10,
     "fixedDay": 19,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Almighty God,\nwho by your Holy Spirit gave Henry Martyn\na longing to tell the good news of Christ\nand skill to translate the Scriptures:\nby the same Spirit give us grace to offer you our gifts,\nwherever you may lead, at whatever the cost;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Holy Father,\nwho gathered us here around the table of your Son\nto share this meal with the whole household of God:\nin that new world where you reveal\n   the fullness of your peace,\ngather people of every race and language\nto share with Henry Martyn and all your saints\nin the eternal banquet of Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "margaret-queen-of-scotland-philanthropist-reformer-of-the-church",
@@ -834,7 +1202,11 @@
     "isFixed": true,
     "fixedMonth": 11,
     "fixedDay": 16,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "God, the ruler of all,\nwho called your servant Margaret to an earthly throne\nand gave her zeal for your Church and love for your people\nthat she might advance your heavenly kingdom:\nmercifully grant that we who commemorate her example\nmay be fruitful in good works\nand attain to the glorious crown of your saints;\nthrough Jesus Christ your Son our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "God our redeemer,\nwho inspired Margaret to witness to your love\nand to work for the coming of your kingdom:\nmay we, who in this sacrament share the bread of heaven,\nbe fired by your Spirit to proclaim the gospel in our daily living\nand never to rest content until your kingdom come,\non earth as it is in heaven;\nthrough Jesus Christ our Lord.\n\nor another Post Communion for ‘Any Saint’ is used.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   },
   {
     "slug": "clement-bishop-of-rome-martyr",
@@ -843,6 +1215,10 @@
     "isFixed": true,
     "fixedMonth": 11,
     "fixedDay": 23,
-    "priority": 20
+    "priority": 20,
+    "collectCw": "Creator and Father of eternity,\nwhose martyr Clement bore witness with his blood\nto the love he proclaimed and the gospel that he preached:\ngive us thankful hearts as we celebrate your faithfulness,\n   revealed to us in the lives of your saints,\nand strengthen us in our pilgrimage as we follow your Son,\nJesus Christ our Lord,\nwho is alive and reigns with you,\nin the unity of the Holy Spirit,\none God, now and for ever.",
+    "postCommunionCw": "Eternal God,\nwho gave us this holy meal\nin which we have celebrated the glory of the cross\nand the victory of your martyr Clement:\nby our communion with Christ\nin his saving death and resurrection,\ngive us with all your saints the courage to conquer evil\nand so to share the fruit of the tree of life;\nthrough Jesus Christ our Lord.\n\nor\n\nGod our redeemer,\nwhose Church was strengthened by the blood of your martyr Clement:\nso bind us, in life and death, to Christ’s sacrifice\nthat our lives, broken and offered with his,\nmay carry his death and proclaim his resurrection in the world;\nthrough Jesus Christ our Lord.",
+    "occasionRank": "lesser_festival",
+    "canTransferToSunday": false
   }
 ]
