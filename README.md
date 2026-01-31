@@ -125,9 +125,12 @@ chapel-planner/
 │   │                              #   BCP office readings JSON
 │   └── data/                      # Source and generated data files
 │       ├── lectionary-occasions.json
+│       ├── lectionary-occasions-commemorations.json
+│       ├── lectionary-collects.json
 │       ├── lectionary-readings-cw-principal.json
 │       ├── lectionary-readings-cw-office.json
 │       ├── lectionary-readings-cw-eucharist.json
+│       ├── lectionary-readings-cw-commemorations.json
 │       ├── lectionary-readings-bcp-hc.json
 │       ├── lectionary-readings-bcp-office.json
 │       ├── hymns-neh.json
@@ -153,9 +156,9 @@ The database has 11 tables across four domains:
 
 ### Lectionary
 
-- **`lectionary_occasions`** — liturgical occasions (e.g. 'Advent Sunday', 'Easter Day', 'Proper 12 — Wednesday') with season, colour, fixed/moveable date info, and collect texts
-- **`lectionary_readings`** — scripture readings keyed to occasion, tradition (CW/BCP), service context (principal, morning prayer, evening prayer, etc.), and year cycle
-- **`lectionary_date_map`** — maps civil calendar dates to occasions for a range of years, with `isPrincipal` flag to support multiple occasions on one date (e.g. Lent 4 and Mothering Sunday)
+- **`lectionary_occasions`** — liturgical occasions (e.g. 'Advent Sunday', 'Easter Day', 'Proper 12 — Wednesday') with season, colour, fixed/moveable date info, collect texts (CW and BCP), post-communion prayer, occasion rank, and transfer-to-Sunday flag
+- **`lectionary_readings`** — scripture readings keyed to occasion, tradition (CW/BCP), service context (principal, morning prayer, evening prayer, etc.), and year cycle. Includes `readingSetLabel` for grouping coherent alternative sets (e.g. `"acts-as-first-reading"` for apostle feasts where Acts may be read as the first reading with an alternative epistle)
+- **`lectionary_date_map`** — maps civil calendar dates to occasions for a range of years, with `mappingType` (primary, alternative, transferred, commemoration) to support multiple occasions on one date (e.g. Lent 4 and Mothering Sunday)
 
 ### Service readings and music
 
@@ -173,12 +176,13 @@ The lectionary integration covers both the Common Worship and Book of Common Pra
 
 ### Common Worship
 
-- **Principal service** — Revised Common Lectionary (3-year cycle A/B/C) with Old Testament, Psalm, Epistle, and Gospel for every Sunday and principal holy day
+- **Principal service** — Revised Common Lectionary (3-year cycle A/B/C) with Old Testament, Psalm, Epistle, and Gospel for every Sunday and principal holy day. Apostle feasts use a coherent alternative structure where Acts may be read as the first reading with a corresponding alternative epistle, grouped via `readingSetLabel`
 - **Daily office** — Morning Prayer and Evening Prayer readings (2-year cycle) for every day of the liturgical year
 - **Daily eucharist** — weekday eucharistic readings (2-year cycle)
 - **Second and third services** — alternative Sunday readings
+- **Commemorations** — lesser festivals and commemorations with collect and post-communion prayers
 
-Source: parsed from [oremus](https://www.oremus.org/) almanac HTML files using `scripts/parse-almanac.ts`.
+Source: parsed from [oremus](https://www.oremus.org/) almanac HTML files using `scripts/parse-almanac.ts`. Collects are overlaid from a separate `lectionary-collects.json` data file.
 
 ### Book of Common Prayer
 
@@ -189,7 +193,7 @@ The 1922 Revised Table CSV data is sourced from [inthefourthnocturn.de](https://
 
 ### Seeding
 
-The seed script (`scripts/seed-lectionary.ts`) computes the full liturgical calendar for a range of years using the Easter computus (Meeus/Jones/Butcher algorithm), creates date-to-occasion mappings, and inserts all readings. It handles moveable feasts (Easter, Ascension, Pentecost, Trinity, etc.), fixed feasts (Christmas, Epiphany, saints' days), and the variable-length seasons between Epiphany and Lent and between Trinity and Advent.
+The seed script (`scripts/seed-lectionary.ts`) computes the full liturgical calendar for a range of years using the Easter computus (Meeus/Jones/Butcher algorithm), creates date-to-occasion mappings, and inserts all readings. It handles moveable feasts (Easter, Ascension, Pentecost, Trinity, etc.), fixed feasts (Christmas, Epiphany, saints' days), commemorations (lesser festivals), and the variable-length seasons between Epiphany and Lent and between Trinity and Advent. Collect and post-communion texts are overlaid from a separate data file after occasion insertion.
 
 ## npm scripts
 
